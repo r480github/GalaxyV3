@@ -50,9 +50,10 @@ h1 {
   animation: disappear 1s;
   animation-fill-mode: forwards;
   margin-top: -20%;
+  margin-right: 20px;
   position: absolute;
   color: #f2e9e4;
-  font-size: 3vw;
+  font-size: 7em;
 }
 
 .box {
@@ -75,7 +76,7 @@ li {
   color: #9a8c98;
   margin: 2.5vw;
   list-style-type: none;
-  font-size: 1.3vw;
+  font-size: 2.3em;
   cursor: pointer;
   transition-duration: 0.2s;
 }
@@ -109,7 +110,7 @@ p {
 
 img {
   border-radius: 10%;
-  width: 10vw;
+  width: 12vw;
   transition-duration: 0.3s;
 }
 
