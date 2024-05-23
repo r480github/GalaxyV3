@@ -1,4 +1,3 @@
-// library.js
 const searchInput = document.getElementById("search");
 const userCards = document.querySelectorAll(".user-cards a");
 
@@ -26,4 +25,4 @@ function opencloak() {
   win.document.body.style.margin = "0";
   win.document.body.style.padding = "0";
   win.document.body.appendChild(iframe);
-}
+} 
