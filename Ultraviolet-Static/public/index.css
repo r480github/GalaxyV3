@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
-  font-family: "Inter", sans-serif;
   margin: 0;
   background-color: #22223b;
   display: flex;
@@ -9,29 +9,28 @@ body {
   flex-direction: column;
   min-height: 100vh;
   display: flex;
-  animation: transitionIn 3s;
-
 }
 .flex-center {
   display: flex;
   justify-content: center;
 }
+h1 {
+  margin-top: 120px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  animation: sliderdown 2.3s;
+  animation-fill-mode: forwards;
 
-.logo-wrapper h1 {
-  position: absolute;
-  color: #f2e9e4;
-  font-size: 7em;
 }
-.box { 
+.box {
   position: absolute;
+  animation: slider 2.5s;
+  animation-fill-mode: forwards;
 }
 ul {
-  margin-top: 200px;
   display: flex;
   justify-content: center;
   margin-right: 45px;
-
-
 }
 li {
   color: #9a8c98;
@@ -40,12 +39,13 @@ li {
   font-size: 2.3em;
   cursor: pointer;
   transition-duration: 0.2s;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 li:hover {
   transform: translateY(-6px);
 }
-
 
 #uv-frame {
   border: none;
@@ -91,63 +91,25 @@ h1 {
   position: absolute;
   color: #f2e9e4;
   font-size: 7em;
-
 }
 #uv-address {
   padding: 5px;
   border: 1px solid #ccc;
+  width: 30%;
   border-radius: 5px;
   font-size: 14px;
   height: 48px;
-  width: 10%;
   background: none;
   padding: 0px 17px;
   border: 1px solid rgb(255, 255, 255, 0.2);
   outline: none;
   color: #fff;
   margin-top: 400px;
-}
 
+}
 #uv-address:focus {
   animation: expand 1s forwards;
 }
 #uv-address:not(focus) {
-  animation: shrink 0.5s forwards;
-}
-
-
-
-
-@keyframes expand {
-  from {
-    width: 10%;
-  }
-
-  to {
-    width: 50%;
-  }
-
-}
-@keyframes shrink {
-  from {
-    width: 50%;
-  }
-
-  to {
-    width: 10%;
-  }
-
-}
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: rotateX(0);
-
-
-  }
+  animation: shrink 1s forwards;
 }
