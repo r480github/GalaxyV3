@@ -28,15 +28,15 @@ npm start
 #
 ##### Home screen  
 
-![Home](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Home](img/home.png)
 #
 ##### Games  
 
-![Games](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Games](img/game.png)
 #
 ##### Proxy  
 
-![Proxy](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Proxy](img/proxy.png)
 
 ## Credits
 
