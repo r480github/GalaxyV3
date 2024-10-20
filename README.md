@@ -13,7 +13,7 @@ https://obliged-catie-r480github-993cdcb3.koyeb.app/
 
 ## Run Galaxy Locally 🚀
 ##### Make sure you're in the Galaxy directory
-# 
+<br> 
 ##### Install the new module  
 ```bash
 npm install ./Ultraviolet-Static  cd my-project
@@ -25,7 +25,7 @@ npm start
 
     
 ## A look inside👀
-#
+<br>
 ##### Home screen  
 
 ![Home](img/home.png)
