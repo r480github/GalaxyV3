@@ -27,6 +27,7 @@ npm start
     
 ## A look inside👀
 <br>
+
 ##### Home screen  
 
 ![Home](img/home.png)
