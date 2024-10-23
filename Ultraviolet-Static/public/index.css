@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
+  cursor: none;
   margin: 0;
   background-color: #22223b;
   display: flex;
@@ -37,7 +38,6 @@ li {
   margin: 2.5vw;
   list-style-type: none;
   font-size: 2.3em;
-  cursor: pointer;
   transition-duration: 0.2s;
   font-family: "Inter", sans-serif;
   font-weight: 300;
@@ -71,7 +71,6 @@ li:hover {
 #uv-register-sw {
   color: white;
   background: #555555;
-  cursor: pointer;
   outline: none;
   border: none;
   border-radius: 6px;
@@ -93,6 +92,7 @@ h1 {
   font-size: 7em;
 }
 #uv-address {
+  cursor: none;
   padding: 5px;
   border: 1px solid #ccc;
   width: 30%;
@@ -103,13 +103,45 @@ h1 {
   padding: 0px 17px;
   border: 1px solid rgb(255, 255, 255, 0.2);
   outline: none;
-  color: #fff;
+  color: white;
   margin-top: 400px;
 
 }
 #uv-address:focus {
+  cursor: none;
+
   animation: expand 1s forwards;
 }
 #uv-address:not(focus) {
+  cursor: none;
+
   animation: shrink 1s forwards;
+}
+.cursor {
+  z-index: 100;
+}
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  size: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: #C9ADA7;
+}
+
+.cursor-dot-outline {
+  size: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #9A8C98;
 }
