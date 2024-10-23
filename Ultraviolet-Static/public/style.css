@@ -12,12 +12,14 @@ body {
 }
 
 h1 {
+  background: -webkit-linear-gradient(white, #4a4e69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-top: -20%;
   position: absolute;
-  color: #f2e9e4;
   font-size: 7em;
   font-family: "Noto Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .box {
