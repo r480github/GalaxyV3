@@ -22,6 +22,7 @@ input {
   border-radius: 30px;
 }
 #search {
+  cursor:none;
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -53,7 +54,7 @@ input {
 }
 
 h1 {
-  animation: disappear 1s;
+  animation: disappear 0.9s;
   animation-fill-mode: forwards;
   margin-top: -20%;
   margin-right: 20px;
@@ -66,7 +67,7 @@ h1 {
 
 .box {
   margin-top: 10vh;
-  animation: slider 2.3s;
+  animation: slider 1s ease-in-out;
   animation-fill-mode: forwards;
   position: absolute;
   height: 1px;
@@ -106,6 +107,7 @@ li:hover {
 }
 
 a {
+  cursor: none;
   margin: 15px;
   text-decoration: none;
   font-family: "Noto Sans", sans-serif;

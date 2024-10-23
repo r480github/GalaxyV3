@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
+  z-index: -100;
   cursor: none;
   margin: 0;
   background-color: #22223b;
@@ -19,13 +20,13 @@ h1 {
   margin-top: 120px;
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
-  animation: sliderdown 2.3s;
+  animation: sliderdown 1s ease-in-out;
   animation-fill-mode: forwards;
 
 }
 .box {
   position: absolute;
-  animation: slider 2.5s;
+  animation: slider 1s ease-in-out;
   animation-fill-mode: forwards;
 }
 ul {
@@ -48,12 +49,13 @@ li:hover {
 }
 
 #uv-frame {
+  z-index: 100;
   border: none;
   position: absolute;
-  top: 0;
+  top: 5vh;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   background-color: white;
 }
 
@@ -108,17 +110,13 @@ h1 {
 
 }
 #uv-address:focus {
-  cursor: none;
-
-  animation: expand 1s forwards;
+  animation: expand 0.5s forwards;
 }
 #uv-address:not(focus) {
-  cursor: none;
-
-  animation: shrink 1s forwards;
+  animation: shrink 0.3s forwards;
 }
 .cursor {
-  z-index: 100;
+  z-index: 1;
 }
 .cursor-dot,
 .cursor-dot-outline {
