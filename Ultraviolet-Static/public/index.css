@@ -3,7 +3,6 @@
 
 body {
   z-index: -100;
-  cursor: none;
   margin: 0;
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   display: flex;
@@ -97,7 +96,6 @@ h1 {
   font-size: 7em;
 }
 #uv-address {
-  cursor: none;
   padding: 5px;
   border: 1px solid #ccc;
   width: 30%;
@@ -117,32 +115,4 @@ h1 {
 }
 #uv-address:not(focus) {
   animation: shrink 0.3s forwards;
-}
-.cursor {
-  z-index: 1;
-}
-.cursor-dot,
-.cursor-dot-outline {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.cursor-dot {
-  size: 8px;
-  width: 8px;
-  height: 8px;
-  background-color: #C9ADA7;
-}
-
-.cursor-dot-outline {
-  size: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: #9A8C98;
 }

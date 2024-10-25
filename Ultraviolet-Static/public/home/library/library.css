@@ -138,30 +138,3 @@ img:hover {
   justify-content: center;
   flex-direction: row;
 }
-.cursor-dot,
-.cursor-dot-outline {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.cursor-dot {
-  z-index: 1;
-  size: 8px;
-  width: 8px;
-  height: 8px;
-  background-color: #C9ADA7;
-}
-
-.cursor-dot-outline {
-  z-index: 1;
-  size: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: #9A8C98;
-}

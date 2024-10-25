@@ -11,130 +11,201 @@ function opencloak() {
 
   }
   
-  var cursor = {
-    delay: 8,
-    _x: 0,
-    _y: 0,
-    endX: (window.innerWidth / 2),
-    endY: (window.innerHeight / 2),
-    cursorVisible: true,
-    cursorEnlarged: false,
-    $dot: document.querySelector('.cursor-dot'),
-    $outline: document.querySelector('.cursor-dot-outline'),
-    
-    init: function() {
-        // Set up element sizes
-        this.dotSize = this.$dot.offsetWidth;
-        this.outlineSize = this.$outline.offsetWidth;
-        
-        this.setupEventListeners();
-        this.animateDotOutline();
-    },
-    
- //     updateCursor: function(e) {
- //         var self = this;
-        
- //         console.log(e)
-        
- //         // Show the cursor
- //         self.cursorVisible = true;
- //         self.toggleCursorVisibility();
- 
- //         // Position the dot
- //         self.endX = e.pageX;
- //         self.endY = e.pageY;
- //         self.$dot.style.top = self.endY + 'px';
- //         self.$dot.style.left = self.endX + 'px';
- //     },
-    
-    setupEventListeners: function() {
-        var self = this;
-        
-        // Anchor hovering
-        document.querySelectorAll('a').forEach(function(el) {
-            el.addEventListener('mouseover', function() {
-                self.cursorEnlarged = true;
-                self.toggleCursorSize();
-            });
-            el.addEventListener('mouseout', function() {
-                self.cursorEnlarged = false;
-                self.toggleCursorSize();
-            });
-        });
-        
-        // Click events
-        document.addEventListener('mousedown', function() {
-            self.cursorEnlarged = true;
-            self.toggleCursorSize();
-        });
-        document.addEventListener('mouseup', function() {
-            self.cursorEnlarged = false;
-            self.toggleCursorSize();
-        });
+  const cursor = document.getElementById("cursor");
+  const amount = 20;
+  const sineDots = Math.floor(amount * 0.3);
+  const width = 26;
+  const idleTimeout = 150;
+  let lastFrame = 0;
+  let mousePosition = {x: 0, y: 0};
+  let dots = [];
+  let timeoutID;
+  let idle = false;
+  let hoverButton;
+  let hoverTL;
   
+  class HoverButton {
+      constructor(id) {
+          this.hovered = false;
+          this.animatingHover = false;
+          this.forceOut = false;
+          this.timing = 0.65;
+          this.el = document.getElementById(id);
+          this.bg = this.el.getElementsByClassName("bg")[0];
+          this.el.addEventListener("mouseenter", this.onMouseEnter);
+          this.el.addEventListener("mouseleave", this.onMouseLeave);
+      }
   
-        document.addEventListener('mousemove', function(e) {
-            // Show the cursor
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
- 
-            // Position the dot
-            self.endX = e.pageX;
-            self.endY = e.pageY;
-            self.$dot.style.top = self.endY + 'px';
-            self.$dot.style.left = self.endX + 'px';
-        });
-        
-        // Hide/show cursor
-        document.addEventListener('mouseenter', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 1;
-            self.$outline.style.opacity = 1;
-        });
-        
-        document.addEventListener('mouseleave', function(e) {
-            self.cursorVisible = true;
-            self.toggleCursorVisibility();
-            self.$dot.style.opacity = 0;
-            self.$outline.style.opacity = 0;
-        });
-    },
-    
-    animateDotOutline: function() {
-        var self = this;
-        
-        self._x += (self.endX - self._x) / self.delay;
-        self._y += (self.endY - self._y) / self.delay;
-        self.$outline.style.top = self._y + 'px';
-        self.$outline.style.left = self._x + 'px';
-        
-        requestAnimationFrame(this.animateDotOutline.bind(self));
-    },
-    
-    toggleCursorSize: function() {
-        var self = this;
-        
-        if (self.cursorEnlarged) {
-            self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
-            self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-        } else {
-            self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
-            self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
-        }
-    },
-    
-    toggleCursorVisibility: function() {
-        var self = this;
-        
-        if (self.cursorVisible) {
-            self.$dot.style.opacity = 1;
-            self.$outline.style.opacity = 1;
-        } else {
-            self.$dot.style.opacity = 0;
-            self.$outline.style.opacity = 0;
-        }
-    }
- }
- 
- cursor.init();
+      onMouseEnter = () => {
+          this.hoverInAnim();
+      };
+  
+      hoverInAnim = () => {
+          if (!this.hovered) {
+              this.hovered = true;
+              this.animatingHover = true;
+              this.forceOut = false;
+              TweenMax.fromTo(
+                  this.bg,
+                  this.timing,
+                  {x: "-112%"},
+                  {
+                      x: "-12%",
+                      ease: Power3.easeOut,
+                      onComplete: () => {
+                          this.animatingHover = false;
+                          if (this.forceOut) {
+                              this.foceOut = false;
+                              this.hoverOutAnim();
+                          }
+                      }
+                  }
+              );
+          }
+      };
+  
+      onMouseLeave = () => {
+          if (!this.animatingHover) {
+              this.hoverOutAnim();
+          } else {
+              this.forceOut = true;
+          }
+      };
+  
+      hoverOutAnim = () => {
+          this.hovered = false;
+          TweenMax.to(this.bg, this.timing, {
+              x: "100%",
+              ease: Power3.easeOut,
+              onComplete: () => {
+              }
+          });
+      };
+  }
+  
+  class Dot {
+      constructor(index = 0) {
+          this.index = index;
+          this.anglespeed = 0.05;
+          this.x = 0;
+          this.y = 0;
+          this.scale = 1 - 0.05 * index;
+          this.range = width / 2 - width / 2 * this.scale + 2;
+          this.limit = width * 0.75 * this.scale;
+          this.element = document.createElement("span");
+          TweenMax.set(this.element, {scale: this.scale});
+          cursor.appendChild(this.element);
+      }
+  
+      lock() {
+          this.lockX = this.x;
+          this.lockY = this.y;
+          this.angleX = Math.PI * 2 * Math.random();
+          this.angleY = Math.PI * 2 * Math.random();
+      }
+  
+      draw(delta) {
+          if (!idle || this.index <= sineDots) {
+              TweenMax.set(this.element, {x: this.x, y: this.y});
+          } else {
+              this.angleX += this.anglespeed;
+              this.angleY += this.anglespeed;
+              this.y = this.lockY + Math.sin(this.angleY) * this.range;
+              this.x = this.lockX + Math.sin(this.angleX) * this.range;
+              TweenMax.set(this.element, {x: this.x, y: this.y});
+          }
+      }
+  }
+  
+  class Circle {
+      constructor(id) {
+          const el = document.getElementById(id);
+          const parent = el.parentElement;
+          parent.removeChild(el);
+          const chars = el.innerText.split("");
+          chars.push(" ");
+          for (let i = 0; i < chars.length; i++) {
+              const span = document.createElement("span");
+              span.innerText = chars[i];
+              span.className = `char${i + 1}`;
+              parent.appendChild(span);
+          }
+      }
+  }
+  
+  function init() {
+      window.addEventListener("mousemove", onMouseMove);
+      window.addEventListener("touchmove", onTouchMove);
+      hoverButton = new HoverButton("button");
+      // eslint-disable-next-line no-new
+      new Circle("circle-content");
+      lastFrame += new Date();
+      buildDots();
+      render();
+  }
+  
+  /*function limit(value, min, max) {
+      return Math.min(Math.max(min, value), max);
+  }*/
+  
+  function startIdleTimer() {
+      timeoutID = setTimeout(goInactive, idleTimeout);
+      idle = false;
+  }
+  
+  function resetIdleTimer() {
+      clearTimeout(timeoutID);
+      startIdleTimer();
+  }
+  
+  function goInactive() {
+      idle = true;
+      for (let dot of dots) {
+          dot.lock();
+      }
+  }
+  
+  function buildDots() {
+      for (let i = 0; i < amount; i++) {
+          let dot = new Dot(i);
+          dots.push(dot);
+      }
+  }
+  
+  const onMouseMove = event => {
+      mousePosition.x = event.clientX - width / 2;
+      mousePosition.y = event.clientY - width / 2;
+      resetIdleTimer();
+  };
+  
+  const onTouchMove = () => {
+      mousePosition.x = event.touches[0].clientX - width / 2;
+      mousePosition.y = event.touches[0].clientY - width / 2;
+      resetIdleTimer();
+  };
+  
+  const render = timestamp => {
+      const delta = timestamp - lastFrame;
+      positionCursor(delta);
+      lastFrame = timestamp;
+      requestAnimationFrame(render);
+  };
+  
+  const positionCursor = delta => {
+      let x = mousePosition.x;
+      let y = mousePosition.y;
+      dots.forEach((dot, index, dots) => {
+          let nextDot = dots[index + 1] || dots[0];
+          dot.x = x;
+          dot.y = y;
+          dot.draw(delta);
+          if (!idle || index <= sineDots) {
+              const dx = (nextDot.x - dot.x) * 0.35;
+              const dy = (nextDot.y - dot.y) * 0.35;
+              x += dx;
+              y += dy;
+          }
+      });
+  };
+  
+  init();

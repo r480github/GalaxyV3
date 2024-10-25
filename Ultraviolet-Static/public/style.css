@@ -8,7 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   animation: transitionIn 2.3s;
-  cursor: none;
 }
 
 h1 {
@@ -41,7 +40,6 @@ li {
 }
 
 li:hover {
-  cursor: none;        
   transform: translateY(-6px);
 }
 
@@ -55,32 +53,4 @@ li:hover {
     opacity: 1;
     transform: rotateX(0);
   }
-}
-.cursor {
-  z-index: 100;
-}
-.cursor-dot,
-.cursor-dot-outline {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.cursor-dot {
-  size: 8px;
-  width: 8px;
-  height: 8px;
-  background-color: #C9ADA7;
-}
-
-.cursor-dot-outline {
-  size: 40px;
-  width: 40px;
-  height: 40px;
-  background-color: #9A8C98;
 }

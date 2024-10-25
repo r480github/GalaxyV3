@@ -1,9 +1,33 @@
 <!DOCTYPE html>
-<div class="cursor">
-  <div class="cursor-dot-outline"></div>
-  <div class="cursor-dot"></div>
-</div>
 <html>
+  <link rel="stylesheet" href="../cursor.css" />
+
+  <!-- partial:index.partial.html -->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+        <feColorMatrix
+          in="blur"
+          mode="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15"
+          result="goo"
+        />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
+  <div class="container" id="button" class="HoverButton"></div>
+
+  <div class="stamp" id="circle-content">
+    <div class="circle"></div>
+  </div>
+
+  <div id="cursor" class="Cursor"></div>
+  <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="../script.js"></script>
+
   <head>
     <meta charset="utf-8" />
     <meta
@@ -66,4 +90,3 @@
     <iframe style="display: none" id="uv-frame"></iframe>
   </div>
 </body>
-
