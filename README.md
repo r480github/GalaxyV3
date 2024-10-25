@@ -44,5 +44,6 @@ npm start
 
  
  - [Titanium Networks awsome proxy](https://github.com/titaniumnetwork-dev/Ultraviolet)
+ - [Custom Cursor Idea](https://github.com/titaniumnetwork-dev/Ultraviolet)
  - [da best dev ever](https://github.com/r480github)
 
