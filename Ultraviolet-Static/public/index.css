@@ -54,10 +54,10 @@ li:hover {
   z-index: 100;
   border: none;
   position: absolute;
-  top: 5vh;
+  top: 0;
   left: 0;
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
   background-color: white;
 }
 

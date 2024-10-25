@@ -21,7 +21,7 @@ svg {
   mix-blend-mode: difference;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: -10;
   -webkit-filter: url("#goo");
   filter: url("#goo");
 }
