@@ -4,7 +4,7 @@ Browse the internet with no restrictions
 
 ## About Galaxy📑
 
-Galaxy is a minimalistic open source proxy that is capable of evading internet censorship. It also includes a vast collection of games that will continuously expand as the site grows.
+Galaxy is a minimalistic open source proxy that is capable of evading internet censorship. Galaxy uses Ultraviolet v.3.2.7; the fastest and lastest version. It also includes a vast collection of games that will continuously expand as the site grows. 
 
 ## Demo 🏴󠁺󠁡󠁦󠁳󠁿
 

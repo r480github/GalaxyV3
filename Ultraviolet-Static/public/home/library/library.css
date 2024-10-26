@@ -97,6 +97,7 @@ li:hover {
 }
 
 .user-cards {
+  z-index: 0;
   width: 100vw;
   opacity: 0;
   animation: appear 2s;
@@ -134,6 +135,7 @@ img:hover {
 }
 
 .cardname {
+  z-index: 0;
   display: flex;
   justify-content: center;
   flex-direction: row;
