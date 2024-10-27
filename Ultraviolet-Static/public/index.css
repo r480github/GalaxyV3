@@ -24,7 +24,6 @@ h1 {
   font-weight: 100;
   animation: sliderdown 1s ease-in-out;
   animation-fill-mode: forwards;
-
 }
 .box {
   position: absolute;
@@ -108,7 +107,6 @@ h1 {
   outline: none;
   color: white;
   margin-top: 400px;
-
 }
 #uv-address:focus {
   animation: expand 0.5s forwards;
