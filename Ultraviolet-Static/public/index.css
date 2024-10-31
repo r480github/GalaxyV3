@@ -11,6 +11,10 @@ body {
   min-height: 100vh;
   display: flex;
 }
+svg {
+  display: none;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
