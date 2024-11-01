@@ -1,50 +1,14 @@
-<link rel="stylesheet" href="cursor.css" />
-
-<!-- partial:index.partial.html -->
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
-  <defs>
-    <filter id="goo">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-      <feColorMatrix
-        in="blur"
-        mode="matrix"
-        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15"
-        result="goo"
-      />
-      <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-    </filter>
-  </defs>
-</svg>
-<div class="container" id="button" class="HoverButton"></div>
-
-<div class="stamp" id="circle-content">
-  <div class="circle"></div>
-</div>
-
-<div id="cursor" class="Cursor"></div>
-<!-- partial -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-<script src="script.js"></script>
-
-
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js'></script><script  src="./script.js"></script>
-
-<!--CursorEnd-->
 <html lang="en">
-  <!--Cursor-->
   <title>Galaxy</title>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="background.css" />
-  <link rel="stylesheet" href="cursor.css" />
+  <script src="resources/script.js"></script>
+  <link rel="stylesheet" href="resources/style.css" />
+  <link rel="stylesheet" href="resources/background.css" />
 
   <h1>Galaxy</h1>
   <div class="box">
-    <li class="li2" onclick="window.location.href='home/';">Proxy</li>
-    <li class="li1" onclick="window.location.href='home/library/';">Games</li>
+    <li class="li2" onclick="window.location.href='p.html';">Proxy</li>
+    <li class="li1" onclick="window.location.href='g/g.html';">Games</li>
     <li class="li3" onclick="opencloak()">Cloak</li>
-    
   </div>
 </html>
 <!--https://coolors.co/22223b-4a4e69-9a8c98-c9ada7-f2e9e4 !-->
