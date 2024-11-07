@@ -71,7 +71,6 @@ li:hover {
   transform: translateY(-6px);
 }
 .search-bar {
-  opacity: 0;
   animation: appear 2s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
@@ -108,7 +107,6 @@ li:hover {
 }
 
 .game {
-  opacity: 0;
   animation: appear 2s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
