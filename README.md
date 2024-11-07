@@ -1,29 +1,56 @@
-<h2>Rizz Proxy - A modern web proxy</h2>
+# Galaxy🪐
 
-<h3>Features:</h3>
+Browse the internet with no restrictions
 
--4,000 games
+## About Galaxy📑
 
--Uses ultraviolet, a fast and secure proxy
+Galaxy is a minimalistic open source proxy that is capable of evading internet censorship. Galaxy uses Ultraviolet v.3.2.7; the fastest and lastest version. It also includes a vast collection of games that will continuously expand as the site grows. 
 
--Clean UI
+## Demo 🏴󠁺󠁡󠁦󠁳󠁿
 
--Developer console (I used eruda https://github.com/liriliri/eruda)
+https://obliged-catie-r480github-993cdcb3.koyeb.app/
 
--Browser with multiple tabs, back/forwards arrows, reload button, search/url bar, cloak in about:blank page in new tab, and fullscreen
+## Run Galaxy Locally 🚀
 
-[![Deploy to Koyeb](https://camo.githubusercontent.com/86721113f7f1649ceda6caf7ee264dbe44ce51f3f963c97c0d023de58f30d0f8/68747470733a2f2f62696e6261736862616e616e612e6769746875622e696f2f6465706c6f792d627574746f6e732f627574746f6e732f72656d6164652f6b6f7965622e737667)](https://app.koyeb.com/deploy?name=rizzproxy&type=git&repository=BradleyLikesCoding%2FRizzProxy&branch=main&builder=buildpack&regions=was&env%5B%5D=&ports=8080%3Bhttp%3B%2F)
+##### Make sure you're in the Galaxy directory
 
-<h3>NOTE: Default port is 8080, you may have to change it with an environment variable depending on how you are hosting Rizz Proxy.</h3>
- 
-<h3>How to deploy to a server:</h3>
+<br>
 
-1: Clone the repository on your server (run "git clone https://github.com/BradleyLikesCoding/Rizz-Proxy")
+##### Install the new module
 
-2: Go to the directory Rizz Proxy is stored in (run "cd Rizz-Proxy")
+```bash
+npm install ./Ultraviolet-Static  cd my-project
+```
 
-3: Install the nodejs packages (run "npm i")
+##### Start
 
-4: Start the server (run "PORT=8080 npm start" or "$env:PORT=8080; npm start" depending on your server - Note: Edit the number to change the port it is hosted on)
+```bash
+npm start
+```
 
-5: You have successfully deployed Rizz Proxy! 
+## A look inside👀
+
+<br>
+
+##### Home screen
+
+![Home](img/home.png)
+
+#
+
+##### Games
+
+![Games](img/game.png)
+
+#
+
+##### Proxy
+
+![Proxy](img/proxy.png)
+
+## Credits
+
+- [Titanium Networks awsome proxy](https://github.com/titaniumnetwork-dev/Ultraviolet)
+- [Custom Cursor](https://codepen.io/mendieta/full/WgvENJ)
+- [Background Animatino](https://codepen.io/alphardex/pen/RwrVoeL)
+- [da best dev ever](https://github.com/r480github)
