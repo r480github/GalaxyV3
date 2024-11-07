@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <!-- partial:index.partial.html -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Galaxy</title>
+    <meta
+      name="description"
+      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
+    />
+    <meta
+      name="keywords"
+      content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#434c5e"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="stylesheet" href="resources/index.css" />
+    <link rel="stylesheet" href="resources/aniation.css" />
+    <script src="baremux/index.js" defer></script>
+    <script src="epoxy/index.js" defer></script>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="resources/script.js" defer></script>
+
+  </head>
+</html>
+<body>
+  <div class="flex-center">
+    <div class="box">
+      <ul>
+        <li class="li2" onclick="window.location.href='../';">Home</li>
+        <li class="li1" onclick="window.location.href='g/g.html';">Games</li>
+        <li class="li3" onclick="opencloak()">Cloak</li>
+      </ul>
+    </div>
+    <h1>Galaxy</h1>
+  </div>
+
+  <div class="flex-center desc left-margin"></div>
+
+  <form id="uv-form" class="flex-center">
+    <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/>
+    <input id="uv-address" type="text" placeholder="Search the web freely" />
+  </form>
+  <div class="desc left-margin">
+    <p id="uv-error"></p>
+    <pre id="uv-error-code"></pre>
+  </div>
+  <div>
+    <iframe style="display: none" id="uv-frame"></iframe>
+  </div>
+</body>
