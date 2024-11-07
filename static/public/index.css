@@ -11,26 +11,97 @@ html, body {
   margin: 0;
 }
 
-.search-box {
+.search-bar {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  border: none;
+  font-size: 20px;
+  margin-bottom: 2vh;
+  padding: 1vh;
+  transition-property: padding 0.5s, margin 0.5s;
+  background-color: rgb(29, 30, 34);
+  color: rgb(255, 255, 255);
+  transition: background-color 0.5s;
+}
+
+.search-bar:focus {
+  background-color: rgb(47, 50, 61);
+}
+
+.pages {
+  margin-bottom: 1vh;
+}
+
+.switch-page {
+  margin: 2vh;
+  cursor: pointer;
+}
+
+.game-container {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 0;
+}
+
+.game-row {
+  display: block;
+  margin: 0;
+  height: 16vw;
+}
+
+.game {
+  display: inline-block;
+  width: 14vw;
+  padding: 5px;
+  margin: 1vw;
+  background-color: black;
+  border-radius: 10px;
+  height: 14vw;
+  overflow: hidden;
+  transition: margin 0.5s, width 0.5s, height 0.5s;
+}
+
+.game:hover {
+  margin: 0;
+  width: 16vw;
+  height: 16vw;
+}
+
+.game-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.game-image-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 65%;
+  cursor: pointer;
+}
+
+.game-title { 
+  font-size: 1.25vw;
+  padding: 0.25vw;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  color: white;
+}
+
+.main-div {
   text-align: center;
   height: calc(100vh - 80px);
   margin: 0;
-}
-
-#uv-address {
-  text-align: center;
-  width: 35vw;
-  height: 60px;
-  font-size: 24px;
-  border: none;
-  background-color: rgb(29, 30, 34);
-  color: rgb(255, 255, 255);
-  border-radius: 24px;
-  transition: border-radius 0.5s;
-}
-
-#uv-address:focus {
-  border-radius: 4px;
+  overflow-y: scroll;
 }
 
 .title {
@@ -38,17 +109,9 @@ html, body {
   font-weight: 400;
   font-style: normal;
   font-size: 75px;
+  padding: 20px;
   margin: 0;
-}
-
-.subtitle {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
-  margin-bottom: 15px;
-  font-size: 25px;
+  padding-bottom: 0;
 }
 
 @keyframes show-proxy-div {
@@ -75,10 +138,6 @@ html, body {
   }
 }
 
-#proxy-div {
-  transition: background-color 0.5s;
-}
-
 .hide-proxy-div {
   display: none;
   position: fixed;
@@ -90,7 +149,7 @@ html, body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: white;
   animation-name: hide-proxy-div;
   animation-duration: 0.5s;
   z-index: 10;
@@ -113,48 +172,8 @@ html, body {
   z-index: 10;
 }
 
-.tab {
-  margin: 0;
-  padding: 0;
+#uv-frame {
+  height: 100vh;
   width: 100vw;
-  height: calc(100vh - 40px);
   border: none;
-  background-color: inherit;
-  display: none;
-}
-
-#proxy-nav-bar {
-  height: 45px;
-  background-color: rgb(49, 50, 64);
-  color: white;
-}
-
-.tabBarTab {
-  background-color: rgb(49, 50, 64);
-  margin-top: 45px;
-  margin-left: 5px;
-  height: 45px;
-  border-radius: 8px;
-  float: left; 
-  padding: 8px;
-  transition-property: margin-top, background-color;
-  transition-duration: 0.25s;
-}
-
-#newTab {
-  background-color: rgb(49, 50, 64);
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  height: 35px;
-  width: 35px;
-  border-radius: 8px;
-  float: left; 
-  padding: 0px;
-  cursor: pointer;
-}
-
-#tabBarTabs {
-  margin: 0;
-  padding: 0;
 }
