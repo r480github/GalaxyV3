@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body,
+html {
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  height: 500vh;
+  overflow-x: hidden;
+  overflow-y: scroll; /* Ensure scrolling is enabled */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer 10+ */
+
+}
+body::-webkit-scrollbar {
+  display: none;  /* For Chrome, Safari, and Opera */
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  background: -webkit-linear-gradient(white, #4a4e69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: disappear 0.9s;
+  animation-fill-mode: forwards;
+  margin-top: -20%;
+  margin-right: 20px;
+  position: absolute;
+  font-size: 7em;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+}
+
+.box {
+  margin-top: 10vh;
+  animation: slider 1s ease-in-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  height: 1px;
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+li {
+  cursor: pointer;
+  color: #9a8c98;
+  margin: 2.5vw;
+  list-style-type: none;
+  font-size: 2.3em;
+  transition-duration: 0.2s;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+li:hover {
+  transform: translateY(-6px);
+}
+.search-bar {
+  opacity: 0;
+  animation: appear 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  margin-left: 16vw;
+  margin-bottom: 10vh;
+  animation-fill-mode: forwards;
+  height: 40px;
+  width: 50%;
+  border-radius: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 48px;
+  width: 50%;
+  background: none;
+  padding: 0px 17px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  outline: none;
+  color: #fff;
+}
+
+.main-div {
+  margin-top: -80vh;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 7.5vw;
+}
+
+.game-row {
+  display: flex;
+  margin: 0;
+  height: 16vw;
+}
+
+.game {
+  opacity: 0;
+  animation: appear 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14vw;
+  padding: 5px;
+  margin: 1vw;
+  border-radius: 10px;
+  height: 14vw;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.game:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+.game-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.game-image-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 65%;
+  cursor: pointer;
+}
+
+.game-title {
+  font-size: 1.25vw;
+  padding: 0.25vw;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  color: white;
+}
+
+@keyframes show-proxy-div {
+  from {
+    bottom: -100vh;
+    top: 100vh;
+  }
+  to {
+    bottom: 0;
+    top: 0;
+  }
+}
+
+@keyframes hide-proxy-div {
+  from {
+    bottom: 0;
+    top: 0;
+  }
+  to {
+    bottom: -100vh;
+    top: 100vh;
+  }
+}
+
+.hide-proxy-div {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  animation-name: hide-proxy-div;
+  animation-duration: 0.5s;
+  z-index: 10;
+}
+
+.show-proxy-div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  animation-name: show-proxy-div;
+  animation-duration: 0.5s;
+  z-index: 10;
+}
+
+#uv-frame {
+  height: 100vh;
+  width: 100vw;
+  border: none;
+}
