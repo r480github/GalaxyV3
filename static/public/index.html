@@ -1,66 +1,41 @@
-<html lang="en">
-  <title>Galaxy</title>
-  <script src="resources/script.js"></script>
-  <link rel="stylesheet" href="resources/style.css" />
-  <link rel="stylesheet" href="resources/background.css" />
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="../resources/aniation.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="index.css" />
+    <script src="/baremux/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/register-sw.js"></script>
+    <script src="openGame.js"></script>
+    <script src="/global/all.js"></script>
+  </head>
 
-  <h1>Galaxy</h1>
-  <div class="box">
-    <li class="li2" onclick="window.location.href='p.html';">Proxy</li>
-    <li class="li1" onclick="window.location.href='games/index.html';">Games</li>
-    <li class="li3" onclick="opencloak()">Cloak</li>
-  </div>
+  <body>
+    <div class="nav">
+      <div class="header">
+        <h1>Galaxy</h1>
+      </div>
+      <ul class="box">
+        <li class="li2" onclick="window.location.href='../';">Home</li>
+        <li class="li1">Games</li>
+        <li class="li3" onclick="opencloak()">Cloak</li>
+      </ul>
+    </div>
+    <div class="main-div">
+      <input type="text" placeholder="Search" id="games-search-bar" class="w3-input w3-round-large search-bar" oninput="searchGames(this)"/>
+      <div id="proxy-div" class="hide-proxy-div">
+        <iframe id="uv-frame"></iframe>
+      </div>
+      <div id="games-container"></div>
+      <script src="loadGames.js"></script>
+    </div>
+  </body>
 </html>
-<!--https://coolors.co/22223b-4a4e69-9a8c98-c9ada7-f2e9e4 !-->
-<div class="stars">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-</div>
