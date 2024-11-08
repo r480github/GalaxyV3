@@ -1,55 +1,56 @@
-# nano.
+# Galaxy🪐
 
-A minimalist web proxy built to be simple yet powerful.
+Browse the internet with no restrictions
 
-Winner of the 2024 Proxathon.
+## About Galaxy📑
 
-## Features
+Galaxy is a minimalistic open source proxy that is capable of evading internet censorship. Galaxy uses Ultraviolet v.3.2.7; the fastest and lastest version. It also includes a vast collection of games that will continuously expand as the site grows. 
 
--   Minimal design
--   Easy to use
--   Tabbed interface
--   Support for many popular sites
+## Demo 🏴󠁺󠁡󠁦󠁳󠁿
 
-## Setup
+https://obliged-catie-r480github-993cdcb3.koyeb.app/
 
-> [!TIP]
-> Run `pnpm install` to install the required dependencies.
+## Run Galaxy Locally 🚀
 
-**Start**
+##### Make sure you're in the Galaxy directory
 
-Run `pnpm start` to start the server. If no build folder is found, the app will build before starting.
+<br>
 
-**Build**
+##### Install the new module
 
-Run `pnpm run build` to build the app for production into the `dist` folder.
+```bash
+npm install ./Ultraviolet-Static  cd my-project
+```
 
-**Build Static**
+##### Start
 
-Run `pnpm run build-static` to build the app for production into the `dist` folder. This is for static hosting on Github Pages etc. Make sure to change the Wisp server in `/index.html` to an external one.
+```bash
+npm start
+```
 
-**Development**
+## A look inside👀
 
-Run `pnpm run dev` to run the app in development mode.
+<br>
 
-## Developers
+##### Home screen
 
-[Leaflet](https://github.com/leafletdev)
+![Home](img/home.png)
 
-[Nebelung](https://github.com/Nebelung-Dev)
+#
+
+##### Games
+
+![Games](img/game.png)
+
+#
+
+##### Proxy
+
+![Proxy](img/proxy.png)
 
 ## Credits
 
-Ultraviolet - Titanium Network
-
-dreamland.js - MercuryWorkshop
-
-chemicaljs - Nebelung
-
-Tailwind CSS - Tailwind Labs
-
-Icons - Feather Icons & Material Symbols
-
-## License
-
-nano uses the AGPL-3.0 license.
+- [Titanium Networks awsome proxy](https://github.com/titaniumnetwork-dev/Ultraviolet)
+- [Custom Cursor](https://codepen.io/mendieta/full/WgvENJ)
+- [Background Animatino](https://codepen.io/alphardex/pen/RwrVoeL)
+- [da best dev ever](https://github.com/r480github)

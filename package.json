@@ -1,40 +1,34 @@
 {
-    "name": "nano",
-    "description": "A minimalist web proxy built to be simple yet powerful.",
-    "contributors": [
-        "Leaflet",
-        "Nebelung"
-    ],
-    "version": "1.0.0",
-    "license": "AGPL-3.0-only",
-    "type": "module",
-    "scripts": {
-        "start": "node index.js",
-        "build": "vite build",
-        "build-static": "vite build && node build.js",
-        "dev": "vite dev",
-        "preview": "vite preview",
-        "update": "npx npm-check-updates -u && pnpm i",
-        "revert": "git reset HEAD --hard && git clean -fd"
-    },
-    "dependencies": {
-        "chemicaljs": "^2.3.1",
-        "dreamland": "^0.0.24",
-        "dreamland-router": "https://github.com/mercuryworkshop/dreamland-router",
-        "express": "^4.19.2",
-        "rollup-plugin-typescript2": "^0.36.0",
-        "sortablejs": "^1.15.2",
-        "vite-plugin-dreamland": "^1.2.1"
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.4.20",
-        "postcss": "^8.4.42",
-        "prettier": "^3.3.3",
-        "tailwindcss": "^3.4.10",
-        "vite": "^5.4.2"
-    },
-    "engines": {
-        "node": ">=20.11.0"
-    },
-    "packageManager": "pnpm@10.0.0-alpha.0+sha512.856941ef22665d2f3e41c04e8d86ed757ef057fb2bc35011698bfa988ef5817cc1cdd28bb883e7f23f0568c75de5544d4750211d4276b9ba6d55369eb207a549"
+  "name": "rizzproxy",
+  "version": "1.0.0",
+  "description": "Rizz Proxy",
+  "type": "module",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "proxy"
+  ],
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@mercuryworkshop/bare-mux": "^2.0.9",
+    "@mercuryworkshop/epoxy-transport": "^2.1.11",
+    "@titaniumnetwork-dev/ultraviolet": "^3.2.7",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "ultraviolet-static": "file:static",
+    "wisp-server-node": "^1.1.7",
+    "ws": "^8.18.0",
+    "express-http-proxy": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4"
+  }
 }

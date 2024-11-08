@@ -7,44 +7,8 @@ import { baremuxPath } from "@mercuryworkshop/bare-mux/node";
 import { join } from "node:path";
 import { hostname } from "node:os";
 import wisp from "wisp-server-node"
-import session from "express-session";
-import crypto from 'crypto';
-import config from "./config.js";
-import proxy from "express-http-proxy";
-import bodyParser from "body-parser";
 
 const app = express();
-
-app.use("/image/", proxy("https://images.crazygames.com", {proxyReqPathResolver: req => {
-  return(req.originalUrl.slice(6));
-}}));
-
-app.use(session({
-    cookie: { maxAge: 1000 * 60 * 60 },
-    resave: false,
-    secret: crypto.randomBytes(32).toString('hex')
-}));
-
-var jsonParser = bodyParser.json();
-
-if(config.requireLogin) {
-app.use(jsonParser, function(req, res, next) {
-  if (req.path == "/login") {
-    if(req.body.password == config.password) {
-      req.session.loggedin = true;
-      res.status(200);
-      res.send();
-    } else {
-      res.status(401);
-      res.send();
-    }
-  } else if (req.session.loggedin) {
-    next();
-  } else {
-    res.sendFile(join(publicPath, "login.html"));
-  }
-});
-}
 // Load our publicPath first and prioritize it over UV.
 app.use(express.static(publicPath));
 // Load vendor files last.
@@ -66,7 +30,6 @@ server.on("request", (req, res) => {
   res.setHeader("Cross-Origin-Embedder-Policy", "require-corp");
   app(req, res);
 });
-
 server.on("upgrade", (req, socket, head) => {
   if (req.url.endsWith("/wisp/"))
     wisp.routeRequest(req, socket, head);
@@ -102,4 +65,6 @@ function shutdown() {
   process.exit(0);
 }
 
-server.listen(port, "0.0.0.0");
+server.listen({
+  port,
+});
