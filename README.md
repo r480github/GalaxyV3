@@ -1,29 +1,56 @@
-<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Ultraviolet-Static/main/public/uv.png" height="200"></p>
+# Galaxy🪐
 
-<h1 align="center">Ultraviolet-App</h1>
+Browse the internet with no restrictions
 
-The deployable all-in-one bundle for [Ultraviolet](https://github.com/titaniumnetwork-dev/Ultraviolet), a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!
+## About Galaxy📑
 
-## Deployment
+Galaxy is a minimalistic open source proxy that is capable of evading internet censorship. Galaxy uses Ultraviolet v.3.2.7; the fastest and lastest version. It also includes a vast collection of games that will continuously expand as the site grows. 
 
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Run-on-Replit)
-[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-on-Railway)
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Remix-on-Glitch)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-to-Koyeb)
+## Demo 🏴󠁺󠁡󠁦󠁳󠁿
 
-If you are deploying to an alternative service or to a server, refer to [Deploy via terminal](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-via-terminal).
+https://obliged-catie-r480github-993cdcb3.koyeb.app/
 
-Additional information such as [customizing your frontend](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Customizing-your-frontend) can be found on the [wiki](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki).
+## Run Galaxy Locally 🚀
 
-Support and updates can be found in our [Discord Server](discord.gg/unblock).
+##### Make sure you're in the Galaxy directory
 
-> [!IMPORTANT]  
-> Until deployed on a domain with a valid SSL certificate, Firefox will not be able to load the site. Use chromium for testing on localhost
+<br>
 
-### HTTP Transport
+##### Install the new module
 
-The example uses [EpoxyTransport](https://github.com/MercuryWorkshop/EpoxyTransport) to fetch proxied data encrypted.
+```bash
+npm install ./Ultraviolet-Static  cd my-project
+```
 
-You may also want to use [CurlTransport](https://github.com/MercuryWorkshop/CurlTransport), a different way of fetching encrypted data, or [Bare-Client](https://github.com/MercuryWorkshop/Bare-as-module3), the legacy (unencrypted!) transport.
+##### Start
 
-See the [bare-mux](https://github.com/MercuryWorkshop/bare-mux) documentation for more information.
+```bash
+npm start
+```
+
+## A look inside👀
+
+<br>
+
+##### Home screen
+
+![Home](img/home.png)
+
+#
+
+##### Games
+
+![Games](img/game.png)
+
+#
+
+##### Proxy
+
+![Proxy](img/proxy.png)
+
+## Credits
+
+- [Titanium Networks awsome proxy](https://github.com/titaniumnetwork-dev/Ultraviolet)
+- [Custom Cursor](https://codepen.io/mendieta/full/WgvENJ)
+- [Background Animatino](https://codepen.io/alphardex/pen/RwrVoeL)
+- [da best dev ever](https://github.com/r480github)

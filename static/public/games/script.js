@@ -1,21 +1,3 @@
-function opencloak() {
-  var win = window.open();
-  var url = "g.html";
-  var iframe = win.document.createElement("iframe");
-  iframe.style.width = "100%";
-  iframe.style.height = "100%";
-  iframe.src = url;
-  win.document.body.style.overflow = "hidden";
-  win.document.body.style.margin = "-10";
-  win.document.body.style.padding = "-10";
-  win.document.body.appendChild(iframe);
-}
-function scrollToTop() {
-  window.scrollTo({ top: -10, behavior: "smooth" });
-}
-window.onload = function () {
-  scrollToTop();
-};
 var gamesJson = [];
 var searchedGamesJson = [];
 var currentPage = 0;
@@ -26,12 +8,12 @@ const pageSize = 200;
 
 function getGameHTML(game) {
   return (`
-  <div class="game" onclick="openGame('${game.url}')">
+  <div class="game" onclick="openGame('${game["url"]}')">
     <div class="game-image-container">
-      <img class="game-image" src="images/${game.image}">
+      <img class="game-image" src="img/${game["image"]}">
     </div>
     <p class="game-title">
-      ${game.name}
+      ${game["name"]}
     </p>
   </div>
   `);
@@ -76,3 +58,4 @@ function scrollToTopOfGames() {
 }
 
 loadGames();
+
