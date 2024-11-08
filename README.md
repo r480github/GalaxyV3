@@ -1,29 +1,29 @@
-<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Ultraviolet-Static/main/public/uv.png" height="200"></p>
+<h2>Rizz Proxy - A modern web proxy</h2>
 
-<h1 align="center">Ultraviolet-App</h1>
+<h3>Features:</h3>
 
-The deployable all-in-one bundle for [Ultraviolet](https://github.com/titaniumnetwork-dev/Ultraviolet), a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!
+-4,000 games
 
-## Deployment
+-Uses ultraviolet, a fast and secure proxy
 
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Run-on-Replit)
-[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-on-Railway)
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Remix-on-Glitch)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-to-Koyeb)
+-Clean UI
 
-If you are deploying to an alternative service or to a server, refer to [Deploy via terminal](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-via-terminal).
+-Developer console (I used eruda https://github.com/liriliri/eruda)
 
-Additional information such as [customizing your frontend](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Customizing-your-frontend) can be found on the [wiki](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki).
+-Browser with multiple tabs, back/forwards arrows, reload button, search/url bar, cloak in about:blank page in new tab, and fullscreen
 
-Support and updates can be found in our [Discord Server](discord.gg/unblock).
+[![Deploy to Koyeb](https://camo.githubusercontent.com/86721113f7f1649ceda6caf7ee264dbe44ce51f3f963c97c0d023de58f30d0f8/68747470733a2f2f62696e6261736862616e616e612e6769746875622e696f2f6465706c6f792d627574746f6e732f627574746f6e732f72656d6164652f6b6f7965622e737667)](https://app.koyeb.com/deploy?name=rizzproxy&type=git&repository=BradleyLikesCoding%2FRizzProxy&branch=main&builder=buildpack&regions=was&env%5B%5D=&ports=8080%3Bhttp%3B%2F)
 
-> [!IMPORTANT]  
-> Until deployed on a domain with a valid SSL certificate, Firefox will not be able to load the site. Use chromium for testing on localhost
+<h3>NOTE: Default port is 8080, you may have to change it with an environment variable depending on how you are hosting Rizz Proxy.</h3>
+ 
+<h3>How to deploy to a server:</h3>
 
-### HTTP Transport
+1: Clone the repository on your server (run "git clone https://github.com/BradleyLikesCoding/Rizz-Proxy")
 
-The example uses [EpoxyTransport](https://github.com/MercuryWorkshop/EpoxyTransport) to fetch proxied data encrypted.
+2: Go to the directory Rizz Proxy is stored in (run "cd Rizz-Proxy")
 
-You may also want to use [CurlTransport](https://github.com/MercuryWorkshop/CurlTransport), a different way of fetching encrypted data, or [Bare-Client](https://github.com/MercuryWorkshop/Bare-as-module3), the legacy (unencrypted!) transport.
+3: Install the nodejs packages (run "npm i")
 
-See the [bare-mux](https://github.com/MercuryWorkshop/bare-mux) documentation for more information.
+4: Start the server (run "PORT=8080 npm start" or "$env:PORT=8080; npm start" depending on your server - Note: Edit the number to change the port it is hosted on)
+
+5: You have successfully deployed Rizz Proxy! 
