@@ -1,29 +1,55 @@
-<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Ultraviolet-Static/main/public/uv.png" height="200"></p>
+# nano.
 
-<h1 align="center">Ultraviolet-App</h1>
+A minimalist web proxy built to be simple yet powerful.
 
-The deployable all-in-one bundle for [Ultraviolet](https://github.com/titaniumnetwork-dev/Ultraviolet), a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!
+Winner of the 2024 Proxathon.
 
-## Deployment
+## Features
 
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Run-on-Replit)
-[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-on-Railway)
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Remix-on-Glitch)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-to-Koyeb)
+-   Minimal design
+-   Easy to use
+-   Tabbed interface
+-   Support for many popular sites
 
-If you are deploying to an alternative service or to a server, refer to [Deploy via terminal](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-via-terminal).
+## Setup
 
-Additional information such as [customizing your frontend](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Customizing-your-frontend) can be found on the [wiki](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki).
+> [!TIP]
+> Run `pnpm install` to install the required dependencies.
 
-Support and updates can be found in our [Discord Server](discord.gg/unblock).
+**Start**
 
-> [!IMPORTANT]  
-> Until deployed on a domain with a valid SSL certificate, Firefox will not be able to load the site. Use chromium for testing on localhost
+Run `pnpm start` to start the server. If no build folder is found, the app will build before starting.
 
-### HTTP Transport
+**Build**
 
-The example uses [EpoxyTransport](https://github.com/MercuryWorkshop/EpoxyTransport) to fetch proxied data encrypted.
+Run `pnpm run build` to build the app for production into the `dist` folder.
 
-You may also want to use [CurlTransport](https://github.com/MercuryWorkshop/CurlTransport), a different way of fetching encrypted data, or [Bare-Client](https://github.com/MercuryWorkshop/Bare-as-module3), the legacy (unencrypted!) transport.
+**Build Static**
 
-See the [bare-mux](https://github.com/MercuryWorkshop/bare-mux) documentation for more information.
+Run `pnpm run build-static` to build the app for production into the `dist` folder. This is for static hosting on Github Pages etc. Make sure to change the Wisp server in `/index.html` to an external one.
+
+**Development**
+
+Run `pnpm run dev` to run the app in development mode.
+
+## Developers
+
+[Leaflet](https://github.com/leafletdev)
+
+[Nebelung](https://github.com/Nebelung-Dev)
+
+## Credits
+
+Ultraviolet - Titanium Network
+
+dreamland.js - MercuryWorkshop
+
+chemicaljs - Nebelung
+
+Tailwind CSS - Tailwind Labs
+
+Icons - Feather Icons & Material Symbols
+
+## License
+
+nano uses the AGPL-3.0 license.
