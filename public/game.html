@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Home</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://ssl.gstatic.com/classroom/favicon.png"
-    />
-    <link rel="stylesheet" href="assets/styles/games.css" />
-    <link rel="stylesheet" href="assets/styles/animation.css" />
-    <script src="/chemical.js"></script>
-    <script src="/chemical.components.js"></script>
-  </head>
-
-  <body>
-    <div class="nav">
-      <div class="header">
-        <h1>Galaxy</h1>
-      </div>
-      <ul class="box">
-        <li class="li2" onclick="window.location.href='../';">Home</li>
-        <li class="li1">Games</li>
-        <li class="li3" onclick="opencloak()">Cloak</li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
+  <link rel="stylesheet" href="assets/styles/games.css" />
+  <link rel="stylesheet" href="assets/styles/animation.css" />
+  <script src="assets/js/script.js"></script>
+  <script src="/chemical.js"></script>
+  <script src="/chemical.components.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <div class="header">
+      <h1>Galaxy</h1>
     </div>
-
-    <div class="appTitle">
-    </div>
-
-    <div class="games"></div>
-
-    <script src="/assets/js/games.js"></script>
-  </body>
+    <ul class="box">
+      <li class="li2" onclick="window.location.href='../';">Home</li>
+      <li class="li1">Games</li>
+      <li class="li3" onclick="opencloak()">Cloak</li>
+    </ul>
+  </div>
+  <div class="main-div">
+    <input type="text" id="search" placeholder="Search games...">
+  </div>
+  <div class="games"></div>
+  <script src="/assets/js/games.js"></script>
+</body>
 </html>

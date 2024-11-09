@@ -25,3 +25,17 @@ fetch("/assets/json/games.json")
       appsContainer.appendChild(gameElement);
     });
   });
+  document.getElementById('search').addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    const games = document.querySelectorAll('.game');
+  
+    games.forEach(game => {
+      const gameName = game.querySelector('h3').textContent.toLowerCase();
+      if (gameName.includes(query)) {
+        game.style.display = 'flex';
+      } else {
+        game.style.display = 'none';
+      }
+    });
+  });
+  

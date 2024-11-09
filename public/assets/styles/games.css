@@ -10,6 +10,8 @@ html {
   overflow-y: scroll; /* Ensure scrolling is enabled */
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none;  /* For Internet Explorer 10+ */
+  height: 500vh;
+
 
 }
 body::-webkit-scrollbar {
@@ -71,45 +73,80 @@ li {
 li:hover {
   transform: translateY(-6px);
 }
-
-.game {
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   transition: all 0.2s ease-in-out;
-   cursor: pointer;
-   margin-top: 5vh;
+.main-div {
+  margin-top: -80vh;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 7.5vw;
 }
 
+#search {
+  opacity: 0;
+  animation: appear 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  margin-left: 16vw;
+  animation-fill-mode: forwards;
+  height: 40px;
+  width: 50%;
+  border-radius: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 48px;
+  width: 50%;
+  background: none;
+  padding: 0px 17px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  outline: none;
+  color: #fff;
+}
+
+.games {
+  margin-top: -85vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.game {
+  opacity: 0;
+  animation: appear 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-top: 5vh;
+  width: 250px; /* Adjust the width as necessary */
+  display: flex; /* Ensure the display property is set correctly */
+  flex-direction: column; /* Stack the image and title vertically */
+}
 .game:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(105, 11, 255, 0.5);
   transform: scale(1.1);
 }
 
+
 .game img {
-   margin: 0px;
-   padding: 0px;
-   width: 250px;
-   height: auto;
-   object-fit: contain;
-   border-radius: 20px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
 }
 
 .game h3 {
-   font-size: 1.25vw;
-   padding: 0.25vw;
-   margin: 0;
-   font-family: "Poppins", sans-serif;
-   font-weight: 400;
-   font-style: normal;
-   cursor: pointer;
-   color: white;
- }
-
-.games {
-   margin-top: -75vh;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 2vw;
-   justify-content: center;
+  font-size: 1.25vw;
+  padding: 0.25vw;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
 }
