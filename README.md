@@ -1,6 +1,6 @@
 # Galaxy🪐
 
-Browse the internet with no restrictions
+~Browse the internet with no restrictions
 
 ## About Galaxy📑
 
