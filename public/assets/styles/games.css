@@ -104,6 +104,8 @@ li:hover {
 }
 
 .games {
+  padding-left: 5vw;
+  padding-right: 5vw;
   margin-top: -85vh;
   display: flex;
   flex-wrap: wrap;
