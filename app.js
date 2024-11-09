@@ -31,6 +31,6 @@ app.use((req, res) => {
 });
 
 listen(port, () => {
-    console.log(`Bolt listening on port ${port}`);
+    console.log(`Galaxy is listening on port ${port}`);
 });
 

@@ -1,7 +1,7 @@
 {
-  "name": "boltunblocker",
-  "version": "1.5.0",
-  "description": "One of the fastest and feature-packed web proxies ever!",
+  "name": "galaxy",
+  "version": "3.0.0",
+  "description": "A minimalistic Proxy",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
