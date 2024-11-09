@@ -1,29 +1,64 @@
-<p align="center"><img src="https://raw.githubusercontent.com/titaniumnetwork-dev/Ultraviolet-Static/main/public/uv.png" height="200"></p>
+<h1>
+  <b>
+    How it Works
+  </b>
+</h1>
+<p>
+  Bolt uses <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">Ultraviolet</a>, a proxy backend provided from Titanium Network. Ultraviolet v3 is a hyperfast proxy service that beats out every other service. However, Ultraviolet's sucessor, <a href="https://github.com/MercuryWorkshop/scramjet">Scramjet</a>, is in the works. Once Scramjet is ready for production, Bolt will use both Ultraviolet and Scramjet to optimize performance and speed.
+</p>
+<h1>
+  <b>
+    Why Bolt is Better than other Proxies
+  </b>
+</h1>
+<p>
+  If you have used proxy sites such as <a href="https://github.com/UseInterstellar/Interstellar">Interstellar</a> before, you know that they are not very fast or powerful. This is becuase sites like Interstellar use outdated proxy services such as Ultraviolet <b><i>v2</i></b> and <a href="https://github.com/NebulaServices/Dynamic">Dynamic</a>. Ultraviolet v2 is outdated and uses Bare, which is old and not secure. Dynamic is very slow, and does not support many sites.
+</p>
+<h1>
+  <b>
+    Supported Sites
+  </b>
+</h1>
+<p>
+  Because Bolt is so powerful, it supports many popular sites. Some sites that it support are:
 
-<h1 align="center">Ultraviolet-App</h1>
+  -<b>GeForce NOW</b><br>
+  -<b>Now.gg</b><br>
+  -<b>Discord</b><br>
+  -<b>Youtube</b><br>
+  -<b>TikTok</b><br>
+</p>
+<h1>
+  <b>
+    Usage
+  </b>
+</h1>
+<p>
+  To use Bolt, you must deploy it. You <b><i>CANNOT</i></b> deploy to services such as <br><br>
+  -Vercel<br>
+  -Netlify<br>
+  -Github Pages<br>
+  -StackBlitz<br><br>
+  because they either do not support Wisp, service workers, or are static.<br>
 
-The deployable all-in-one bundle for [Ultraviolet](https://github.com/titaniumnetwork-dev/Ultraviolet), a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!
-
-## Deployment
-
-[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Run-on-Replit)
-[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-on-Railway)
-[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Remix-on-Glitch)
-[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-to-Koyeb)
-
-If you are deploying to an alternative service or to a server, refer to [Deploy via terminal](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Deploy-via-terminal).
-
-Additional information such as [customizing your frontend](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki/Customizing-your-frontend) can be found on the [wiki](https://github.com/titaniumnetwork-dev/Ultraviolet-App/wiki).
-
-Support and updates can be found in our [Discord Server](discord.gg/unblock).
-
-> [!IMPORTANT]  
-> Until deployed on a domain with a valid SSL certificate, Firefox will not be able to load the site. Use chromium for testing on localhost
-
-### HTTP Transport
-
-The example uses [EpoxyTransport](https://github.com/MercuryWorkshop/EpoxyTransport) to fetch proxied data encrypted.
-
-You may also want to use [CurlTransport](https://github.com/MercuryWorkshop/CurlTransport), a different way of fetching encrypted data, or [Bare-Client](https://github.com/MercuryWorkshop/Bare-as-module3), the legacy (unencrypted!) transport.
-
-See the [bare-mux](https://github.com/MercuryWorkshop/bare-mux) documentation for more information.
+  You CAN deploy to:<br><br>
+  -Render<br>
+  -Codeanywhere<br>
+  -Gitpod<br>
+  -Koyeb<br>
+  -CodeSandbox<br>
+  -Github Codespaces<br>
+  -Railway<br>
+</p>
+<h1>
+  <b>
+    Local Usage
+  </b>
+</h1>
+<p>
+  This is a Node JS application with npm packages. You must first run:<br>
+  <b>npm i</b><br>
+  then run
+  <br><b>npm start</b><br>
+  You should have a local Bolt on <b>localhost:8080</b>!
+</p>

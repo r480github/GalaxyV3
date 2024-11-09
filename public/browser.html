@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+    <script src="/baremux/index.js"></script>
+    <script src="/epoxy/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/sw.js"></script>
+    <script src="https://unpkg.com/@rubynetwork/rammerhead-browser" defer></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <script type="text/javascript" src="/assets/particles/particles.js"></script>
+    <script type="text/javascript" src="/assets/particles/app.js"></script>
+    <div class="loading">
+        <h1 id="loading">LOADING</h1>
+    </div>
+    <iframe src="" frameborder="0" id="frame">
+
+    </iframe>
+
+    <script>
+        document.getElementById("frame").src = localStorage.getItem("url");
+    </script>
+</body>
+
+</html>
