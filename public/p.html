@@ -1,60 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <!-- partial:index.partial.html -->
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Galaxy</title>
-    <meta
-      name="description"
-      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
-    />
-    <meta
-      name="keywords"
-      content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#434c5e"
-    />
-    <meta name="googlebot" content="index, follow, snippet" />
-    <link rel="stylesheet" href="assets/styles/index.css" />
-    <link rel="stylesheet" href="assets/styles/animation.css" />
-    <script src="/baremux/index.js"></script>
-    <script src="/epoxy/index.js"></script>
-    <script src="/uv/uv.bundle.js"></script>
-    <script src="/uv/uv.config.js"></script>
-    <script src="/sw.js"></script>
-    <script src="assets/js/script.js" defer></script>
+<html lang="en">
 
-  </head>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
+  <link rel="stylesheet" href="/assets/styles/main.css" />
+
+  <script src="/baremux/index.js"></script>
+  <script src="/epoxy/index.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="sw.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="https://unpkg.com/@rubynetwork/rammerhead-browser" defer></script>
+</head>
+
 <body>
-  <div class="flex-center">
-    <div class="box">
-      <ul>
-        <li class="li2" onclick="window.location.href='../';">Home</li>
-        <li class="li1" onclick="window.location.href='games/index.html';">Games</li>
-        <li class="li3" onclick="opencloak()">Cloak</li>
-      </ul>
-    </div>
-    <h1>Galaxy</h1>
+  <div id="particles-js"></div>
+  <script type="text/javascript" src="/assets/particles/particles.js"></script>
+  <script type="text/javascript" src="/assets/particles/app.js"></script>
+
+  <div class="nav">
+    <a id="home" href="/index.html">
+      Bolt
+    </a>
+
+    <h1 id="time">
+
+    </h1>
+
+    <a id="link" href="/apps.html">
+      <img id="texting" src="https://cdn.icon-icons.com/icons2/3374/PNG/512/apps_icon_211558.png"> Apps
+    </a>
+
+    <a id="link" href="/games.html">
+      <img id="controller" src="https://iconape.com/wp-content/png_logo_vector/gamepad.png">Games
+    </a>
+
+    <a id="link" href="/settings.html">
+      <img id="cog" src="https://static-00.iconduck.com/assets.00/settings-icon-1964x2048-8nigtrtt.png"> Settings
+    </a>
   </div>
-
-
-  <form id="form" class="flex-center">
+  <div class="title">
+    <h1 id="title">Bolt</h1>
+  </div>
+  <form id="form">
     <input id="input" placeholder="Search the Web Freely..." />
   </form>
-  <div class="desc left-margin">
-    <p id="uv-error"></p>
-    <pre id="uv-error-code"></pre>
+  <div id="extras">
+    <h1 class="etext" id="discord">Join the Discord Server!</h1>
   </div>
+  <script>
+    document.getElementById("extras").addEventListener("mouseover", function () {
+      document.getElementById("discord").textContent = "https://discord.gg/68DEPPKtw6";
+    });
+    document.getElementById("extras").addEventListener("mouseout", function () {
+      document.getElementById("discord").textContent = "Join the Discord Server!";
+    });
+  </script>
+
+
   <script src="assets/js/main.js"></script>
-  <div>
-    <iframe style="display: none" id="uv-frame"></iframe>
-  </div>
+  <script src="assets/js/time.js"></script>
 </body>
+
+</html>
