@@ -43,26 +43,34 @@
       <img id="cog" src="https://static-00.iconduck.com/assets.00/settings-icon-1964x2048-8nigtrtt.png"> Settings
     </a>
   </div>
-  <div class="title">
-    <h1 id="title">Bolt</h1>
+  <div class="appTitle">
+    <h1 id="appTitle">Settings</h1>
   </div>
-  <form id="form">
-    <input id="input" placeholder="Search the Web Freely..." />
-  </form>
-  <div id="extras">
-    <h1 class="etext" id="discord">Join the Discord Server!</h1>
+  <div class="settings">
+    <div class="settings-item" id="proxy">
+      <h1 id="proxytitle">Proxy</h1>
+      <select id="proxy-select">
+        <option value="uv">Ultraviolet</option>
+        <option value="rammerhead">Rammerhead</option>
+      </select>
+    </div>
+
+    <div class="settings-item" id="wisp">
+      <h1 id="proxytitle">Wisp</h1>
+      <select id="wisp-select">
+        <option value="default">Default</option>
+        <option value="tp">Third-Party</option>
+      </select>
+    </div>
+
+    <div class="settings-item" id="cloaking">
+      <h1 id="proxytitle">Cloaking</h1>
+      <button id="ab">Open in about:blank</button>
+    </div>
   </div>
-  <script>
-    document.getElementById("extras").addEventListener("mouseover", function () {
-      document.getElementById("discord").textContent = "https://discord.gg/68DEPPKtw6";
-    });
-    document.getElementById("extras").addEventListener("mouseout", function () {
-      document.getElementById("discord").textContent = "Join the Discord Server!";
-    });
-  </script>
 
 
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/settings.js"></script>
   <script src="/assets/js/time.js"></script>
 </body>
 

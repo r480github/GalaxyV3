@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: UV-in-one-url
-    runtime: node
-    buildCommand: "npm run build"
-    startCommand: "npm start"
-    plan: free
