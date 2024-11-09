@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+import { Command } from 'commander';
+import { startServer } from './http.js';
+import { logLevel } from './rammerhead.js';
+
+interface Flags {
+    port: string,
+    host: string,
+    logLevel: logLevel
+    reverseProxy: boolean
+}
+
+interface Results {
+    flags: Flags
+}
+
+const defaults: Results = {
+    flags: {
+        port: '8080',
+        host: '0.0.0.0',
+        logLevel: "debug",
+        reverseProxy: false
+    }
+}
+
+
+const program = new Command();
+const results = defaults;
+program.name('@rubynetwork/rammerhead');
+program.description('Easily start a standalone Rammerhead server');
+program.option('-ho --host <string>', 'Host to listen on', '0.0.0.0');
+program.option('-p, --port <string>', 'Port to listen on', '8080');
+program.option('-l, --loglevel <string>', 'Change the log level (see: documentation)', 'debug');
+program.option('-rp --reverseproxy', 'Whether or not this server is behind a reverse proxy', false);
+program.parse(process.argv);
+results.flags = program.opts();
+
+startServer({
+    port: parseInt(results.flags.port) || 8080,
+    host: results.flags.host,
+    logLevel: results.flags.logLevel || 'debug',
+    reverseProxy: results.flags.reverseProxy || false
+})
