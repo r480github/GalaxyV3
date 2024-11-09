@@ -3,12 +3,13 @@
     <head>
         <script src="/uv/uv.bundle.js"></script>
         <script src="/uv/uv.config.js"></script>
-        <script src="/baremux/index.js"></script>
 
         <script>
         if ("serviceWorker" in navigator) {
-            window.addEventListener("load", async () => {
-                await navigator.serviceWorker.register("/uv/sw.js");
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("/uv/sw.js", {
+                    scope: __uv$config.prefix,
+                });
             });
         }
         </script>
@@ -18,11 +19,6 @@
     <body>
         <input type="text" id="urlInput" placeholder="Enter URL here">
         <button id="searchButton">Search Text</button>
-        <select id="switcher">
-            <option value="">--Please Choose an Option--</option>
-            <option value="epoxy">Epoxy</option>
-            <option value="bare">Bare</option>
-        </select>
 
         <iframe id="iframeWindow" class="iframeWindow"></iframe>
     </body>

@@ -1,7 +1,7 @@
-// This file overwrites the stock UV config.js
-
+/*global Ultraviolet*/
 self.__uv$config = {
-    prefix: "/uv/service/",
+    prefix: "/uv/",
+    bare: "/b/",
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: "/uv/uv.handler.js",
