@@ -1,0 +1,29 @@
+
+.game {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+
+.game img {
+   margin: 0px;
+   padding: 0px;
+   width: 250px;
+   height: auto;
+   object-fit: contain;
+   border-radius: 20px;
+}
+
+.game h3 {
+   margin: 0;
+   font-size: 25px;
+}
+
+.games {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
