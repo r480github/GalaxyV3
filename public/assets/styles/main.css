@@ -1,0 +1,497 @@
+* {
+    --primary: #000000;
+    --secondary: #ffffff;
+    --font: #ffffff;
+}
+
+@font-face {
+    font-family: "font";
+    /*a name to be used later*/
+    src: url("../fonts/font.otf");
+    /*URL to font*/
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+body {
+    font-family: "font";
+    background-color: var(--primary);
+}
+
+.title {
+    color: rgb(0, 149, 255);
+    margin: auto;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 0 0 50px rgb(0, 162, 255);
+    height: 200px;
+    margin-top: -20px;
+}
+
+.appTitle {
+    color: rgb(0, 149, 255);
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 0 50px rgb(0, 162, 255);
+    height: 200px;
+    margin-top: -20px;
+}
+
+#input {
+    width: 750px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    color: var(--font);
+    font-family: "font";
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    margin-inline: auto;
+}
+
+#input:focus {
+    box-shadow: 0 0 50px rgb(0, 162, 255);
+}
+
+#frame {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10000;
+    text-shadow: 0 0 40px rgb(0, 153, 255);
+
+}
+
+#loading {
+    color: rgb(0, 153, 255);
+    font-size: 100px;
+    z-index: -10000;
+}
+
+#extras {
+    width: 750px;
+    height: 100px;
+    background-color: var(--primary);
+    color: rgb(0, 153, 255);
+    text-shadow: 0 0 40px rgb(0, 153, 255);
+    box-shadow: 0 0 40px rgb(0, 153, 255);
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+#extras:hover {
+    text-shadow: 0 0 70px rgb(255, 255, 255);
+    box-shadow: 0 0 50px rgb(255, 255, 255);
+    color: white;
+}
+
+.bar {
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+}
+
+#logo {
+    color: rgb(0, 162, 255);
+    font-size: 35px;
+    text-shadow: 0 0 10px rgb(0, 153, 255);
+    margin-top: 0px;
+    margin-left: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.controls {
+    background-color: #000000;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 19px;
+}
+
+#firsttab {
+    background-color: #000000;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    width: 200px;
+    height: 40px;
+    top: 10px;
+    left: 40px;
+    border-radius: 8px;
+}
+
+#ftabtxt {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 3px;
+    text-overflow: ellipsis;
+}
+
+#tab {
+    display: flex;
+    background-color: #000000;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    top: 10px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+#tabTxt {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 3px;
+    text-overflow: ellipsis;
+}
+
+
+#logo:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+#newTabButton {
+    background-color: #000000;
+    margin-top: -35px;
+    margin-left: 193vh;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 153, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#newTab {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    line-height: 1;
+    margin-top: 17px;
+}
+
+#newTabButton:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 245px;
+    overflow-x: auto;
+    max-width: calc(100% - 80px);
+    /* Adjust as needed */
+}
+
+#x {
+    position: absolute;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: 160px;
+    transition: all 0.1s ease-in-out;
+}
+
+#x:hover {
+    color: #0099ff;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+#tab.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#tab.active #tabTxt {
+    color: #000000;
+}
+
+#tab.active #x {
+    color: #000000;
+}
+
+#firsttab.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#firsttab.active #ftabtxt {
+    color: #000000;
+}
+
+.nav {
+    background-color: var(--primary);
+    box-shadow: #0099ff 0px 0px 50px;
+    border-radius: 20px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+#home {
+    color: #0099ff;
+    text-shadow: #0099ff 0px 0px 10px;
+    font-size: 60px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    margin-left: 5vh;
+    /* Add spacing to the right of home */
+}
+
+#home:hover {
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 10px;
+}
+
+#link {
+    color: var(--font);
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-right: 20px;
+    display: flex;
+}
+
+#link:hover {
+    color: #0099ff;
+    text-shadow: #0099ff 0px 0px 10px;
+}
+
+#cog {
+    width: 20px;
+    height: 20px;
+    filter: brightness(100) drop-shadow(0 0 10px rgba(0, 153, 255, 0.8));
+    margin: auto;
+    margin-right: 10px;
+}
+
+
+#controller {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(0, 153, 255, 0.8));
+    margin: auto;
+    margin-right: 10px;
+}
+
+#texting {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(0, 153, 255, 0.8));
+    margin: auto;
+    margin-right: 10px;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.app {
+    background-color: var(--primary);
+    box-shadow: 0 0 30px rgba(0, 153, 255, 0.8);
+    border-radius: 20px;
+    color: var(--secondary);
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.app:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+.app img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.app h3 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game {
+    background-color: var(--primary);
+    box-shadow: 0 0 30px rgba(0, 153, 255, 0.8);
+    border-radius: 20px;
+    color: var(--secondary);
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.game:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+.game img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.game h3 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#time {
+    color: var(--font);
+    font-size: 30px;
+    margin: auto;
+    margin-right: 21vh;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-item {
+    background-color: var(--primary);
+    box-shadow: 0 0 30px rgba(0, 153, 255, 0.8);
+    border-radius: 20px;
+    color: var(--secondary);
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 40px;
+}
+
+#proxy-select {
+    width: 200px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    color: var(--primary);
+    font-family: "font";
+    background-color: var(--secondary);
+}
+
+#transport-select {
+    width: 200px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    color: var(--primary);
+    font-family: "font";
+    background-color: var(--secondary);
+}
+
+#proxytitle {
+    color: var(--font);
+    font-size: 60px;
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Fortnite",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Fortnite_F_lettermark_logo.png",
+        "url": "https://play.geforcenow.com/games?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a&lang=en_US&asset-id=01_a49f2653-e1a4-4d6f-88fb-14e46aef1b8f"
+    },
+    {
+        "name": "Bloons TD Battles 2",
+        "image": "https://cdn.now.gg/apps-content/com.ninjakiwi.bloonstdbattles2/icon/bloons-td-battles-2.png",
+        "url": "https://play.geforcenow.com/games?game-id=d3b8fd6f-cad3-4779-94c3-b4617714de0c&lang=en_US&asset-id=01_4ec603c9-981d-494f-8837-491c23acfd51"
+    },
+    {
+        "name": "Agar.io",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Agar.io_Logo.png",
+        "url": "https://www.agar.io"
+    },
+    {
+        "name": "Diep.io",
+        "image": "https://upload.wikimedia.org/wikipedia/en/e/e2/Diepio_mobile_logo.webp",
+        "url": "https://www.diep.io"
+    },
+    {
+        "name": "Kour.io",
+        "image": "https://pbs.twimg.com/profile_images/1800737015878541312/7y6FAFPx_400x400.jpg",
+        "url": "https://www.kour.io"
+    },
+    {
+        "name": "Minecraft 1.8.8",
+        "image": "https://feedback.minecraft.net/hc/theming_assets/01HZH4GFS6HZFCFWQPVZT51JSB",
+        "url": "https://eaglercraft.com/mc/1.8.8/"
+    },
+    {
+        "name": "Kirka.io",
+        "image": "https://dbl-static.usercontent.prism.gg/icons/800396101072060467/245186906839579853fb34dbe528b5f3.png?size=256",
+        "url": "https://kirka.io/"
+    },
+    {
+        "name": "Shell Shockers",
+        "image": "https://cdn-images.threadless.com/~tms/bluewizard/products/1617669/original-1621960642-2ac607f273a319bd81ac2f36de28fac5.png?v=3&d=g6NvcHOWk6R0cmltksLCgJOmcmVzaXplkIOld2lkdGjLQI8gAAAAAACmaGVpZ2h0y0CPIAAAAAAAqGFsbG93X3VwwpOvY2FudmFzX2NlbnRlcmVkks0EsM0EsIGqYmFja2dyb3VuZKZmZmZmZmaTpnJlc2l6ZZHNAyCAk69jYW52YXNfY2VudGVyZWSTzQMgzQMgpyNmZmZmZmaAk6ZlbmNvZGWSo2pwZ1WApWZvcmNlwqlvbmx5X21ldGHC&f=mp",
+        "url": "https://shellshock.io/"
+    },
+    {
+        "name": "Yorg3.io",
+        "image": "https://pbs.twimg.com/profile_images/1183036031966306305/grhjs1rc_400x400.png",
+        "url": "https://yorg3.io/"
+    },
+    {
+        "name": "Taming.io",
+        "image": "https://play-lh.googleusercontent.com/EoY1Ey67rMjTHXIUqZCL3m4Ad4Of8BQr7tUHIcHWkM4YEiMugylaTPBNPAZQ6J8jumI=w480-h960-rw",
+        "url": "https://www.taming.io"
+    }
+]
