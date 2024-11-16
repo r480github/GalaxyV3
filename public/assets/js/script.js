@@ -9,6 +9,8 @@ function opencloak() {
    win.document.body.style.margin = "-10";
    win.document.body.style.padding = "-10";
    win.document.body.appendChild(iframe);
+   window.location.href = "https://www.google.com";
+
  }
  function scrollToTop() {
    window.scrollTo({ top: 0, behavior: "smooth" });
