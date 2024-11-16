@@ -1,64 +1,67 @@
-<h1>
-  <b>
-    How it Works
-  </b>
-</h1>
-<p>
-  Bolt uses <a href="https://github.com/titaniumnetwork-dev/Ultraviolet">Ultraviolet</a>, a proxy backend provided from Titanium Network. Ultraviolet v3 is a hyperfast proxy service that beats out every other service. However, Ultraviolet's sucessor, <a href="https://github.com/MercuryWorkshop/scramjet">Scramjet</a>, is in the works. Once Scramjet is ready for production, Bolt will use both Ultraviolet and Scramjet to optimize performance and speed.
-</p>
-<h1>
-  <b>
-    Why Bolt is Better than other Proxies
-  </b>
-</h1>
-<p>
-  If you have used proxy sites such as <a href="https://github.com/UseInterstellar/Interstellar">Interstellar</a> before, you know that they are not very fast or powerful. This is becuase sites like Interstellar use outdated proxy services such as Ultraviolet <b><i>v2</i></b> and <a href="https://github.com/NebulaServices/Dynamic">Dynamic</a>. Ultraviolet v2 is outdated and uses Bare, which is old and not secure. Dynamic is very slow, and does not support many sites.
-</p>
-<h1>
-  <b>
-    Supported Sites
-  </b>
-</h1>
-<p>
-  Because Bolt is so powerful, it supports many popular sites. Some sites that it support are:
+# Galaxy🪐
 
-  -<b>GeForce NOW</b><br>
-  -<b>Now.gg</b><br>
-  -<b>Discord</b><br>
-  -<b>Youtube</b><br>
-  -<b>TikTok</b><br>
-</p>
-<h1>
-  <b>
-    Usage
-  </b>
-</h1>
-<p>
-  To use Bolt, you must deploy it. You <b><i>CANNOT</i></b> deploy to services such as <br><br>
-  -Vercel<br>
-  -Netlify<br>
-  -Github Pages<br>
-  -StackBlitz<br><br>
-  because they either do not support Wisp, service workers, or are static.<br>
+~Browse the internet with no restrictions
 
-  You CAN deploy to:<br><br>
-  -Render<br>
-  -Codeanywhere<br>
-  -Gitpod<br>
-  -Koyeb<br>
-  -CodeSandbox<br>
-  -Github Codespaces<br>
-  -Railway<br>
-</p>
-<h1>
-  <b>
-    Local Usage
-  </b>
-</h1>
-<p>
-  This is a Node JS application with npm packages. You must first run:<br>
-  <b>npm i</b><br>
-  then run
-  <br><b>npm start</b><br>
-  You should have a local Bolt on <b>localhost:8080</b>!
-</p>
+## About Galaxy📑
+
+Galaxy is a minimalistic open source proxy that is capable of evading internet censorship. Galaxy uses Ultraviolet V3; the fastest and lastest version. It also includes a vast collection of games that will continuously expand as the site grows. 
+
+## Demo 🏴󠁺󠁡󠁦󠁳󠁿
+
+#### https://gentle-indigo-fox.icu/
+
+## Run Galaxy Locally 🚀
+
+##### Install Galaxy
+```bash
+git install https://github.com/r480github/GalaxyV3.git
+cd GalaxyV3
+```
+
+
+<br>
+
+##### Install dependencies
+
+```bash
+npm i  
+```
+
+##### Start
+
+```bash
+npm start
+```
+#### NOTE: The dafault port for Galaxy is 8080. You can visit it by typing localhost:8080/ into a web browser
+<br>
+
+## You can also deploy Galaxy on Koyeb(For Free)
+[![Deploy to Koyeb](https://camo.githubusercontent.com/86721113f7f1649ceda6caf7ee264dbe44ce51f3f963c97c0d023de58f30d0f8/68747470733a2f2f62696e6261736862616e616e612e6769746875622e696f2f6465706c6f792d627574746f6e732f627574746f6e732f72656d6164652f6b6f7965622e737667)](https://app.koyeb.com/deploy?name=galaxyv3&type=git&repository=r480github%2FGalaxyV3&branch=master&builder=buildpack&regions=was&env%5B%5D=&ports=8080%3Bhttp%3B%2F)
+<br>
+<br>
+
+## A look inside👀
+
+<br>
+
+### Home screen
+
+![Home](img/home.png)
+
+#
+
+### Games
+
+![Games](img/game.png)
+
+#
+
+### Proxy
+
+![Proxy](img/proxy.png)
+
+## Credits
+
+- [Titanium Network's awsome proxy](https://github.com/titaniumnetwork-dev/Ultraviolet)
+- [Background Animatino](https://codepen.io/alphardex/pen/RwrVoeL)
+- [da best dev ever](https://github.com/r480github)
