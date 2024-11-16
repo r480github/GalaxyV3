@@ -1,0 +1,24 @@
+[
+   {
+      "name": "Discord",
+      "url": "https://discord.com/app",
+      "image": "Discord.webp"
+    },
+  
+    {
+      "name": "TikTok",
+      "url": "https://TikTok.com",
+      "image": "TikTok.webp"
+    },
+    {
+      "name": "GeForce Now",
+      "url": "https://play.geforcenow.com/mall/#/loginwall",
+      "image": "geforce.webp"
+    } ,
+    {
+      "name": "Github",
+      "url": "https://github.com",
+      "image": "github.webp"
+    } 
+
+]

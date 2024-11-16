@@ -39,7 +39,7 @@ h1 {
   margin-top: -20%;
   margin-right: 20px;
   position: absolute;
-  font-size: 7em;
+  font-size: 1vw;
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
 }
@@ -144,7 +144,7 @@ li:hover {
 }
 
 .game h3 {
-  font-size: 1.25vw;
+  font-size: 1.5em;
   padding: 0.25vw;
   margin: 0;
   font-family: "Poppins", sans-serif;

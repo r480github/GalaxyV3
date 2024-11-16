@@ -1,4 +1,4 @@
-fetch("/assets/json/games.json")
+fetch("/assets/json/p.json")
   .then((response) => response.json())
   .then((games) => {
     const appsContainer = document.querySelector(".games");
@@ -8,8 +8,7 @@ fetch("/assets/json/games.json")
       gameElement.className = "game";
 
       gameElement.innerHTML = `
-                <img src="/img/${game.image}" alt="${game.name}">
-        <h3>${game.name}</h3>
+        <img src="/img/${game.image}" alt="${game.name}">
       `;
 
       gameElement.addEventListener("click", async () => {
@@ -38,17 +37,17 @@ fetch("/assets/json/games.json")
       appsContainer.appendChild(gameElement);
     });
   });
-  document.getElementById('search').addEventListener('input', function() {
-    const query = this.value.toLowerCase();
-    const games = document.querySelectorAll('.game');
   
-    games.forEach(game => {
-      const gameName = game.querySelector('h3').textContent.toLowerCase();
-      if (gameName.includes(query)) {
-        game.style.display = 'flex';
-      } else {
-        game.style.display = 'none';
-      }
-    });
+document.getElementById('search').addEventListener('input', function() {
+  const query = this.value.toLowerCase();
+  const games = document.querySelectorAll('.game');
+  
+  games.forEach(game => {
+    const gameName = game.querySelector('img').alt.toLowerCase();
+    if (gameName.includes(query)) {
+      game.style.display = 'flex';
+    } else {
+      game.style.display = 'none';
+    }
   });
-  
+});

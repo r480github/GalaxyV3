@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Home</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ssl.gstatic.com/classroom/favicon.png"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <title>Home</title>
-  <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
-  <link rel="stylesheet" href="/assets/styles/main.css" />
-  <link rel="stylesheet" href="/assets/styles/animation.css" />
-  <script src="assets/js/script.js"></script>
-  <script src="/chemical.js"></script>
-  <script src="/chemical.components.js"></script>
-</head>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/animation.css" />
+    <script src="/baremux/index.js"></script>
+    <script src="/epoxy/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/sw.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+  </head>
 
-<body>
-  <style>
-    body {
-      background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-    }
-  </style>
-  <div class="flex-center">
-    <div class="box">
-      <ul>
-        <li class="li2" onclick="window.location.href='../';">Home</li>
-        <li class="li1" onclick="window.location.href='game.html';">Games</li>
-        <li class="li3" onclick="opencloak()">Cloak</li>
-      </ul>
+  <body>
+    <div class="flex-center">
+      <div class="box">
+        <ul>
+          <li class="li2" onclick="window.location.href='../';">Home</li>
+          <li class="li1" onclick="window.location.href='game.html';">Games</li>
+          <li class="li3" onclick="opencloak()">Cloak</li>
+        </ul>
+      </div>
+      <h1>Galaxy</h1>
     </div>
-    <h1>Galaxy</h1>
-  
-  </div>
-  <form id="form" class="flex-center">
-    <input id="input" placeholder="Search the Web Freely..." />
-  </form>
-
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/time.js"></script>
-</body>
+    <form id="form" class="flex-center">
+      <input id="input" placeholder="Search the Web Freely..." />
+    </form>
+    <div class="games"></div>
+    <script src="assets/js/p.js"></script>  
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
+<style>
+  body {
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  }
+</style>
+
+
+

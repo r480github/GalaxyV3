@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ssl.gstatic.com/classroom/favicon.png"
+    />
     <link rel="stylesheet" href="/assets/styles/main.css" />
-    <script src="/chemical.js"></script>
-    <script src="/chemical.components.js"></script>
-</head>
+    <script src="/baremux/index.js"></script>
+    <script src="/epoxy/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <link rel="prefetch" href="/scram/scramjet.worker.js" />
+    <link rel="prefetch" href="/scram/scramjet.shared.js" />
+    <script src="/assets/js/main.js"></script>
+    <script src="/sw.js"></script>
+    <script
+      src="https://unpkg.com/@rubynetwork/rammerhead-browser"
+      defer
+    ></script>
+  </head>
+  <style>
+    body {
+      background-color: #000000;
+    }
+  </style>
 
-<body>
-    <style>
-        body {
-            background-color: #000000;
-        }
-    </style>
+  <body>
     <div id="particles-js"></div>
-    <script type="text/javascript" src="/assets/particles/particles.js"></script>
+    <script
+      type="text/javascript"
+      src="/assets/particles/particles.js"
+    ></script>
     <script type="text/javascript" src="/assets/particles/app.js"></script>
-    <div class="loading " >
-        <h1 id="loading">LOADING</h1>
+    <div class="loading">
+      <h1 id="loading">LOADING</h1>
     </div>
-    <iframe src="" frameborder="0" id="frame">
-
-    </iframe>
+    <iframe src="" frameborder="0" id="frame"> </iframe>
 
     <script>
-        document.getElementById("frame").src = localStorage.getItem("url");
+      document.getElementById("frame").src = localStorage.getItem("url");
     </script>
-</body>
-
+  </body>
 </html>

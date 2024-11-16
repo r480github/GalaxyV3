@@ -19,7 +19,7 @@
    }
  
    to {
-     transform: translateY(0vh);
+     transform: translateY(-20vh);
      transform: scale(1.2);
    }
  
@@ -61,21 +61,21 @@
  
  @keyframes expand {
    from {
-     width: 30%;
+     width: 45%;
    }
  
    to {
-     width: 60%;
+     width: 70%;
    }
  }
  
  @keyframes shrink {
    from {
-     width: 60%;
+     width: 70%;
    }
  
    to {
-     width: 30%;
+     width: 45%;
    }
  }
  

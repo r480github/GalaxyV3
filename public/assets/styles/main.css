@@ -16,7 +16,7 @@ body {
   display: flex;
   overflow-x: hidden;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 150vh;
   min-width: 100vw;
   display: flex;
 }
@@ -66,7 +66,6 @@ h1 {
 input {
   padding: 5px;
   border: 1px solid #ccc;
-  width: 100vw;
   border-radius: 5px;
   font-size: 14px;
   height: 48px;
@@ -75,7 +74,8 @@ input {
   border: 1px solid rgb(255, 255, 255, 0.2);
   outline: none;
   color: white;
-  margin-top: 50vh;
+  margin-top: 40vh;
+  margin-bottom: 90vh;
 }
 input:focus {
   animation: expand 0.5s forwards;
@@ -110,4 +110,42 @@ input:not(focus) {
   font-weight: 150;
   font-size: 15vh;
   z-index: -10000;
+}
+.games {
+  padding-left: 25vw;
+  padding-right: 25vw;
+  margin-top: -85vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.game {
+  opacity: 0;
+  animation: appear 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-top: 5vh;
+  width: 190px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.game:hover {
+  box-shadow: 0 0 30px rgba(105, 11, 255, 0.5);
+  transform: scale(1.1);
+}
+.game img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
 }

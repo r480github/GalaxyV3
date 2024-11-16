@@ -1,103 +1,104 @@
 [
-  {
-    "name": "1v1.lol",
-    "url": "https://1v1.lol",
-    "image": "1v1.jpg"
-  },
-
-  {
-    "name": "78 Hour Rain",
-    "url": "https://html-classic.itch.zone/html/2937814/78HourRain_Webv1/index.html",
-    "image": "78.webp"
-  },
-  {
-    "name": "A Dance OF Fire And Ice",
-    "url": "w8.snokido.com/games/unity-webgl/dance-fire-and-ice/index.html",
-    "image": "adfi.png"
-  },
-
-  {
-    "name": "BloonsTD",
-    "url": "https://games.crazygames.com/en_US/bloons-tower-defense/index.html?v=1.309",
-    "image": "bltd.png"
-  },
-  {
-    "name": "Cluster Rush",
-    "url": "clusterrush.io/game/cluster-rush/",
-    "image": "cluster.jpg"
-  },
-  {
-    "name": "Cookie Clicker",
-    "url": "https://welldeef.github.io/",
-    "image": "cookie.jpg"
-  },
-
-  {
-    "name": "Dreader",
-    "url": "kdata1.com/2020/10/2811226/?key=y8&value=default",
-    "image": "dreader.webp"
-  },
-
-  {
-    "name": "eagtek(Minecraft)",
-    "url": "https://lite.3kh0.net/projects/minecraft/",
-    "image": "eagtek.jpg"
-  },
-
-  {
-    "name": "ev.io",
-    "url": "https://ev.io/",
-    "image": "ev.jpg"
-  },
-  {
-    "name": "Fite.lol",
-    "url": "https://fite.lol/",
-    "image": "fite.webp"
-  },
-  {
-    "name": "Moto X3M",
-    "url": "moto-x3m.net/main.html",
-    "image": "moto.jpg"
-  },
-
-  {
-    "name": "Paper.io",
-    "url": "paper.io",
-    "image": "paperio.jpg"
-  },
-
-  {
-    "name": "PolyTrack",
-    "url": "games.crazygames.com/en_US/polytrack/index.html?v=1.309",
-    "image": "polytrack.jpg"
-  },
-
-  {
-    "name": "Space Waves",
-    "url": "https://games.crazygames.com/en_US/space-waves/index.html",
-    "image": "spacewaves.jpeg"
-  },
-  {
-    "name": "Stickman Dragon Fight",
-    "url": "bitlifeonline.github.io/stickman-dragon-fight/",
-    "image": "stickman.jpg"
-  },
-
-  {
-    "name": "SuperHot",
-    "url": "https://games.crazygames.com/en_US/super-hot/index.html?v=1.309",
-    "image": "superhot.jpg"
-  },
-
-  {
-    "name": "Venge.io",
-    "url": "https://venge.io/",
-    "image": "venge.webp"
-  } ,
-  {
-    "name": "Vex 4",
-    "url": "https://html5.gamedistribution.com/80e6a5ae477f4d4fbcd1ea293d10087d/",
-    "image": "vex4.jpeg"
-  }
-
-]
+    {
+      "name": "1v1.lol",
+      "url": "https://1v1.lol",
+      "image": "1v1.jpg"
+    },
+  
+    {
+      "name": "78 Hour Rain",
+      "url": "https://html-classic.itch.zone/html/2937814/78HourRain_Webv1/index.html",
+      "image": "78.webp"
+    },
+    {
+      "name": "ADOFAI",
+      "url": "https://w8.snokido.com/games/unity-webgl/dance-fire-and-ice/index.html",
+      "image": "adfi.png"
+    },
+  
+    {
+      "name": "BloonsTD",
+      "url": "https://games.crazygames.com/en_US/bloons-tower-defense/index.html?v=1.309",
+      "image": "bltd.png"
+    },
+    {
+      "name": "Cluster Rush",
+      "url": "https://clusterrush.io/game/cluster-rush/",
+      "image": "cluster.jpg"
+    },
+    {
+      "name": "Cookie Clicker",
+      "url": "https://welldeef.github.io/",
+      "image": "cookie.jpg"
+    },
+  
+    {
+      "name": "Dreader",
+      "url": "https://kdata1.com/2020/10/2811226/?key=y8&value=default",
+      "image": "dreader.webp"
+    },
+  
+    {
+      "name": "eagtek(Minecraft)",
+      "url": "https://lite.3kh0.net/projects/minecraft/",
+      "image": "eagtek.jpg"
+    },
+  
+    {
+      "name": "ev.io",
+      "url": "https://ev.io/",
+      "image": "ev.jpg"
+    },
+    {
+      "name": "Fite.lol",
+      "url": "https://fite.lol/",
+      "image": "fite.webp"
+    },
+    {
+      "name": "Moto X3M",
+      "url": "https://moto-x3m.net/main.html",
+      "image": "moto.jpg"
+    },
+  
+    {
+      "name": "Paper.io",
+      "url": "https://paper.io",
+      "image": "paperio.jpg"
+    },
+  
+    {
+      "name": "PolyTrack",
+      "url": "https://games.crazygames.com/en_US/polytrack/index.html?v=1.309",
+      "image": "polytrack.jpg"
+    },
+  
+    {
+      "name": "Space Waves",
+      "url": "https://games.crazygames.com/en_US/space-waves/index.html",
+      "image": "spacewaves.jpeg"
+    },
+    {
+      "name": "Stickman Warriors",
+      "url": "https://bitlifeonline.github.io/stickman-dragon-fight/",
+      "image": "stickman.jpg"
+    },
+  
+    {
+      "name": "SuperHot",
+      "url": "https://games.crazygames.com/en_US/super-hot/index.html?v=1.309",
+      "image": "superhot.jpg"
+    },
+  
+    {
+      "name": "Venge.io",
+      "url": "https://venge.io/",
+      "image": "venge.webp"
+    } ,
+    {
+      "name": "Vex 4",
+      "url": "https://html5.gamedistribution.com/80e6a5ae477f4d4fbcd1ea293d10087d/",
+      "image": "vex4.jpeg"
+    }
+  
+  ]
+  
