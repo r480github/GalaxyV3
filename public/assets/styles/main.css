@@ -74,7 +74,7 @@ input {
   border: 1px solid rgb(255, 255, 255, 0.2);
   outline: none;
   color: white;
-  margin-top: 40vh;
+  margin-top: 60vh;
   margin-bottom: 90vh;
 }
 input:focus {
@@ -112,8 +112,8 @@ input:not(focus) {
   z-index: -10000;
 }
 .games {
-  padding-left: 25vw;
-  padding-right: 25vw;
+  padding-left: 18vw;
+  padding-right: 18vw;
   margin-top: -85vh;
   display: flex;
   flex-wrap: wrap;
