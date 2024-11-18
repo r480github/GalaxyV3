@@ -9,7 +9,7 @@ function opencloak() {
   win.document.body.style.margin = "-10";
   win.document.body.style.padding = "-10";
   win.document.body.appendChild(iframe);
-  window.location.href = "https://www.google.com";
+  window.location.href = "https://classroom.google.com/";
 }
 
 function scrollToTop() {
