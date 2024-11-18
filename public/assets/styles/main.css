@@ -11,6 +11,7 @@
 }
 
 body {
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   z-index: -100;
   margin: 0;
   display: flex;
@@ -53,9 +54,15 @@ li {
   transition-duration: 0.2s;
   font-family: "Inter", sans-serif;
   font-weight: 300;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
+
 li:hover {
   transform: translateY(-6px);
+  color: #f2e9e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 h1 {
   position: absolute;
@@ -96,8 +103,8 @@ input:not(focus) {
 .loading {
   height: 100vh;
   width: 100vw;
-  position: absolute;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: -10000;
@@ -111,6 +118,14 @@ input:not(focus) {
   font-weight: 150;
   font-size: 15vh;
   z-index: -10000;
+}
+#loadingMessage {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.2em;
 }
 .games {
   padding-left: 18vw;
@@ -149,4 +164,32 @@ input:not(focus) {
   height: auto;
   object-fit: contain;
   border-radius: 10px;
+}
+/* New media queries for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4em;
+    margin-top: 60px;
+    margin-bottom: 5vh;
+  }
+
+  input {
+    margin-top: 20%;
+    margin-bottom: 50vh;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3em;
+    margin-top: 40px;
+    margin-bottom: 2vh;
+  }
+
+  input {
+    margin-top: 15%;
+    margin-bottom: 30vh;
+    width: 90%;
+  }
 }

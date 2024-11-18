@@ -38,10 +38,15 @@ li {
   transition-duration: 0.2s;
   font-family: "Inter", sans-serif;
   font-weight: 300;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 li:hover {
   transform: translateY(-6px);
+  color: #f2e9e4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes transitionIn {
