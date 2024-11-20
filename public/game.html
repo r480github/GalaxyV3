@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ssl.gstatic.com/classroom/favicon.png"
+    />
     <link rel="stylesheet" href="assets/styles/games.css" />
     <link rel="stylesheet" href="assets/styles/animation.css" />
     <script src="/baremux/index.js"></script>
@@ -14,23 +18,26 @@
     <script src="/sw.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="assets/js/games.js"></script>
-</head>
-<body onload="checkAlert()">
+  </head>
+  <body onload="checkAlert()">
     <div class="nav">
-        <ul class="box">
-            <li class="li2" onclick="window.location.href='../';">Home</li>
-            <li class="li1">Games</li>
-            <li class="li3" onclick="opencloak()">Cloak</li>
-        </ul>
+      <ul class="box">
+        <li class="li2" onclick="window.location.href='../';">Home</li>
+        <li class="li1">Games</li>
+        <li class="li3" onclick="opencloak()">Cloak</li>
+      </ul>
     </div>
     <div class="main-div">
-        <input type="text" id="search" placeholder="Search games..." />
+      <input type="text" id="search" placeholder="Search games..." />
     </div>
     <div class="games"></div>
     <div id="customAlert" class="alertBox">
-        <div class="alertContent">
-            <p id="alertMessage">Games might take some time to load depending on your system specs and server status</p>
-        </div>
+      <div class="alertContent">
+        <p id="alertMessage">
+          Games might take some time to load depending on your system specs and
+          server status
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

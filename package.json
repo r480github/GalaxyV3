@@ -9,8 +9,7 @@
   "scripts": {
     "start": "node app.js"
   },
-  "author": "Donut Dev",
-  "license": "MIT",
+  "author": "r480",
   "dependencies": {
     "@mercuryworkshop/bare-mux": "^2.1.6",
     "@mercuryworkshop/epoxy-transport": "^2.1.26",
