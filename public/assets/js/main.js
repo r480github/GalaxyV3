@@ -31,6 +31,18 @@ async function init() {
     } catch (error) {
         console.error("Error setting up BareMux transport:", error);
     }
+    if (!localStorage.getItem("proxy")) {
+        localStorage.setItem("proxy", "uv");
+    }
+    try {
+        await registerSW();
+        console.log("Registering service worker...");
+    } catch (err) {
+        err.textContent = err.toString();
+        throw err;
+    }
+    var url = input.value;
+
 }
 init();
 

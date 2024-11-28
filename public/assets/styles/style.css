@@ -3,11 +3,12 @@
 
 body {
   z-index: -1;
-  background-color: #22223b;
+  animation: transitionIn 2.3s;
+}
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: transitionIn 2.3s;
 }
 
 h1 {
@@ -19,6 +20,23 @@ h1 {
   font-size: 7em;
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
+}
+img {
+  opacity: 0;
+  position: absolute;
+  top: 88vh;
+  width: 100vw;
+}
+@media (min-width: 430px) {
+  img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 430px) {
+  img {
+    opacity: 0;
+  }
 }
 
 .box {

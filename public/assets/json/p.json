@@ -1,24 +1,29 @@
 [
-   {
-      "name": "Discord",
-      "url": "https://discord.com/app",
-      "image": "Discord.webp"
-    },
-  
-    {
-      "name": "TikTok",
-      "url": "https://TikTok.com",
-      "image": "TikTok.webp"
-    },
-    {
-      "name": "GeForce Now",
-      "url": "https://play.geforcenow.com/mall/#/loginwall",
-      "image": "Geforce.webp"
-    } ,
-    {
-      "name": "Github",
-      "url": "https://github.com",
-      "image": "GitHub.webp"
-    } 
+  {
+    "name": "Plex TV",
+    "url": "https://watch.plex.tv/",
+    "image": "plex.jpg"
+  },
 
+  {
+    "name": "Discord",
+    "url": "https://discord.com/app",
+    "image": "Discord.webp"
+  },
+
+  {
+    "name": "TikTok",
+    "url": "https://TikTok.com",
+    "image": "TikTok.webp"
+  },
+  {
+    "name": "GeForce Now",
+    "url": "https://play.geforcenow.com/mall/#/loginwall",
+    "image": "Geforce.webp"
+  },
+  {
+    "name": "Github",
+    "url": "https://github.com",
+    "image": "GitHub.webp"
+  }
 ]

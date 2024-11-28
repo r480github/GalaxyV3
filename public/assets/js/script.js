@@ -1,6 +1,6 @@
 function opencloak() {
   var win = window.open();
-  var url = "index.html";
+  var url = "/";
   var iframe = win.document.createElement("iframe");
   iframe.style.width = "100%";
   iframe.style.height = "100%";
@@ -20,47 +20,59 @@ window.onload = function () {
   scrollToTop();
 };
 
-function showAlert(message = 'Games might take some time to load depending on your system specs and server status', width = '90%', maxWidth = '800px', padding = '40px') {
-  const alertBox = document.getElementById('customAlert');
-  document.getElementById('alertMessage').textContent = message;
-  alertBox.style.display = 'flex';
+function showAlert(
+  message = "Games might take some time to load depending on your system specs and server status",
+  width = "90%",
+  maxWidth = "800px",
+  padding = "40px"
+) {
+  const alertBox = document.getElementById("customAlert");
+  document.getElementById("alertMessage").textContent = message;
+  alertBox.style.display = "flex";
 
-  const alertContent = alertBox.querySelector('.alertContent');
+  const alertContent = alertBox.querySelector(".alertContent");
   alertContent.style.width = width;
   alertContent.style.maxWidth = maxWidth;
   alertContent.style.padding = padding;
 
-  window.addEventListener('click', closeOnOutsideClick);
+  window.addEventListener("click", closeOnOutsideClick);
 
-  document.addEventListener('keydown', closeOnEscape);
+  document.addEventListener("keydown", closeOnEscape);
 }
 
 function closeAlert() {
-  document.getElementById('customAlert').style.display = 'none';
+  document.getElementById("customAlert").style.display = "none";
 
-  window.removeEventListener('click', closeOnOutsideClick);
+  window.removeEventListener("click", closeOnOutsideClick);
 
-  document.removeEventListener('keydown', closeOnEscape);
+  document.removeEventListener("keydown", closeOnEscape);
 }
 
 function closeOnOutsideClick(event) {
-  const alertBox = document.getElementById('customAlert');
+  const alertBox = document.getElementById("customAlert");
   if (event.target === alertBox) {
-      closeAlert();
+    closeAlert();
   }
 }
 
 function closeOnEscape(event) {
-  if (event.key === 'Escape') {
-      closeAlert();
+  if (event.key === "Escape") {
+    closeAlert();
   }
 }
 
 function checkAlert() {
   if (!sessionStorage.getItem("alertDisplayed")) {
-      showAlert();
-      sessionStorage.setItem("alertDisplayed", "true");
+    showAlert();
+    sessionStorage.setItem("alertDisplayed", "true");
   }
 }
 
 checkAlert();
+function forcereload() {
+  if (!sessionStorage.getItem("reloaded")) {
+    console.log("Page is reloading for the first time.");
+    sessionStorage.setItem("reloaded", "true");
+    location.reload();
+  }
+}

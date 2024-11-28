@@ -6,11 +6,9 @@ body {
   z-index: -100;
   margin: 0;
   display: flex;
-  overflow-x: hidden;
-  overflow-y: hidden;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: auto;
   display: flex;
 }
 .container {
