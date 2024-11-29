@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ssl.gstatic.com/classroom/favicon.png"
+    />
+    <link rel="stylesheet" href="assets/styles/uv.css" />
+    <link rel="stylesheet" href="assets/styles/particle.css" />
+    <script src="/baremux/index.js"></script>
+    <script src="/epoxy/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/sw.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script
+      src="https://unpkg.com/@rubynetwork/rammerhead-browser"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div class="nav">
+      <a onclick="back()">Back</a>
+      <a onclick="reload()">Reload</a>
+      <a onclick="forward()">Forward</a>
+      <a onclick="window.location.href='p.html';">Exit</a>
+    </div>
+    <div class="bg-animation">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="stars4"></div>
+    </div>
+    <div class="container">
+      <div id="hide" class="loadingthing">
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+      </div>
+    </div>
+    <div class="loading">
+      <h1 id="loading">LOADING</h1>
+      <p id="loadingMessage">
+        Some sites/games may take a while to load. Hang Tight!
+      </p>
+    </div>
+    <iframe src="" frameborder="0" id="frame"></iframe>
+    <script>
+      document.getElementById("frame").src = localStorage.getItem("url");
+      function reload() {
+        var iframe = document.getElementById("frame");
+        iframe.contentWindow.location.reload();
+      }
+      function back() {
+        var iframe = document.getElementById("frame");
+        if (iframe.contentWindow.history.length > 1) {
+          iframe.contentWindow.history.back();
+        }
+      }
+      function forward() {
+        var iframe = document.getElementById("frame");
+        if (iframe.contentWindow.history.length > 1) {
+          iframe.contentWindow.history.forward();
+        }
+      }
+    </script>
+  </body>
+</html>

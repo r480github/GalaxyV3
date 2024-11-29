@@ -100,12 +100,12 @@ if (form && input) {
         async function uvEncode() {
             url = __uv$config.prefix + __uv$config.encodeUrl(url);
             localStorage.setItem("url", url);
-            window.location.href = "/browser.html";
+            window.location.href = "/search.html";
         }
         async function sjEncode() {
             url = "/scram/service/" + encodeURIComponent(url);
             localStorage.setItem("url", url);
-            window.location.href = "/browser.html";
+            window.location.href = "/search.html";
         }
     });
 
