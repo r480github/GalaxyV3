@@ -178,7 +178,7 @@ a:hover {
 }
 #loadingMessage {
   position: fixed;
-  top: 10vh;
+  top: 1vh;
   left: 10px;
   color: white;
   font-family: "Noto Sans", sans-serif;

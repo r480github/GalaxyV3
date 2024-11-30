@@ -17,12 +17,24 @@
         <li class="li1" onclick="window.location.href='game.html';">Games</li>
         <li class="li3" onclick="opencloak()">Cloak</li>
       </div>
-      <div class="bg-animation">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
-    </div>
+      <!--BACKGROUNDS-->
+      <canvas id="canvas"></canvas>
+
+      <script src="assets/js/starback.js"></script>
+      <script>
+        const canvas = document.getElementById("canvas");
+        const starback = new Starback(canvas, {
+          width: document.body.clientWidth,
+          height: document.body.clientHeight,
+          type: "dot",
+          quantity: 150,
+          direction: 255,
+          backgroundColor: ["#0d1d31", "#0c0d13"],
+          randomOpacity: true,
+          starSize: [0, 1],
+          showFps: true
+        });
+      </script>
       <div class="stars">
         <div class="star"></div>
         <div class="star"></div>

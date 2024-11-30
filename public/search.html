@@ -29,12 +29,6 @@
       <a onclick="forward()">Forward</a>
       <a onclick="window.location.href='p.html';">Exit</a>
     </div>
-    <div class="bg-animation">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <div id="stars4"></div>
-    </div>
     <div class="container">
       <div id="hide" class="loadingthing">
         <div class="dot dot1"></div>
@@ -68,5 +62,22 @@
         }
       }
     </script>
+        <canvas id="canvas"></canvas>
+        <script src="assets/js/starback.js"></script>
+        <script>
+          const canvas = document.getElementById("canvas");
+          const starback = new Starback(canvas, {
+            width: document.body.clientWidth,
+            height: document.body.clientHeight,
+            type: "dot",
+            quantity: 150,
+            direction: 255,
+            backgroundColor: ["#0d1d31", "#0c0d13"],
+            randomOpacity: true,
+            starSize: [0, 1],
+            showFps: true,
+          });
+        </script>
+    
   </body>
 </html>
