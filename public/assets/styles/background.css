@@ -9,12 +9,25 @@ body {
 .stars {
   z-index: -10;
   position: fixed;
-  bottom: 110px;
-  left: 100vw;
+  top: -100px;
   width: 100%;
   height: 120%;
   transform: rotate(-45deg);
 }
+@media only screen and (min-width: 900px) {
+  .stars {
+    left: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .stars {
+    left: 100vw;
+  }
+
+}
+
 
 .star {
   --primary-color: #00ffff;
