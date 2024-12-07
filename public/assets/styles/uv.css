@@ -11,6 +11,7 @@ body {
   min-width: auto;
   display: flex;
   overflow: hidden;
+  height: 100vh;
 }
 .container {
   z-index: -1000;
@@ -136,7 +137,7 @@ a {
   cursor: pointer;
   color: #9a8c98;
   list-style-type: none;
-  font-size: 2vh;
+  font-size: 15px;
   font-family: "Inter", sans-serif;
   font-weight: 300;
   transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
@@ -149,10 +150,10 @@ a:hover {
 }
 #frame {
   position: absolute;
-  top: 3vh;
+  top: 15px;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 97vh;
   border-radius: 0;
 }
 
@@ -185,8 +186,6 @@ a:hover {
   font-size: 1.2em;
 }
 .games {
-  padding-left: 14vw;
-  padding-right: 14vw;
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;
@@ -204,7 +203,7 @@ a:hover {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   margin-top: 5vh;
-  max-width: 163px;
+  width: 163px;
   display: flex;
   flex-direction: column;
 }
@@ -215,8 +214,14 @@ a:hover {
 .game img {
   margin: 0px;
   padding: 0px;
-  width: 163px;
+  max-width: 163px;
   object-fit: contain;
   border-radius: 10px;
 }
-  
+
+/* Hide h1 on mobile devices */
+@media (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+}

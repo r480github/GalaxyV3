@@ -6,8 +6,8 @@ function opencloak() {
   iframe.style.height = "100%";
   iframe.src = url;
   win.document.body.style.overflow = "hidden";
-  win.document.body.style.margin = "-10";
-  win.document.body.style.padding = "-10";
+  win.document.body.style.margin = "-2";
+  win.document.body.style.padding = "-2";
   win.document.body.appendChild(iframe);
   window.location.href = "https://classroom.google.com/";
 }

@@ -24,7 +24,7 @@ h1 {
 img {
   opacity: 0;
   position: absolute;
-  top: 88vh;
+  top: 90vh;
   width: 100vw;
 }
 @media (min-width: 430px) {
