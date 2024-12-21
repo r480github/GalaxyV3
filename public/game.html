@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <title>Home</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="assets/styles/games.css" />
     <link rel="stylesheet" href="assets/styles/animation.css" />
     <link rel="stylesheet" href="assets/styles/particle.css" />
+    <link rel="stylesheet" href="assets/styles/nav.css" />
     <script src="/baremux/index.js"></script>
     <script src="/epoxy/index.js"></script>
     <script src="/uv/uv.bundle.js"></script>
@@ -18,15 +20,46 @@
     <script src="assets/js/script.js"></script>
     <script src="/sw.js"></script>
     <script src="/assets/js/main.js"></script>
-    <script src="assets/js/games.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="assets/js/setting.js"></script>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="navbar__menu">
+        <div class="navbar__item">
+          <a href="index.html" class="navbar__link"
+            ><i data-feather="home"></i><span>Home</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="p.html" class="navbar__link"
+            ><ion-icon size="large" name="search-outline"></ion-icon><span>Proxy</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link"
+            ><ion-icon size="large" name="game-controller-outline"></ion-icon> <span>Games</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="app.html" class="navbar__link"
+            ><ion-icon size="large" name="apps-outline"></ion-icon><span>Apps</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="https://discord.gg/6wQTrrfNcr" class="navbar__link"
+            ><i data-feather="help-circle"></i><span>Help</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="setting.html" class="navbar__link"
+            ><i data-feather="settings"></i><span>Settings</span></a
+          >
+        </div>
+      </div>
+    </nav>
     <div class="nav">
-      <ul class="box">
-        <li class="li2" onclick="window.location.href='../';">Home</li>
-        <li class="li1">Games</li>
-        <li class="li3" onclick="opencloak()">Cloak</li>
-      </ul>
+      <div class="main"></div>
     </div>
     <div class="main-div">
       <input type="text" id="search" placeholder="Search games..." />
@@ -42,5 +75,17 @@
       </div>
       -->
     </div>
+    <script src="assets/js/games.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/script.js"></script>
+    <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+  ></script>
+
   </body>
 </html>

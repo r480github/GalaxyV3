@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/setting.css" />
+    <link rel="stylesheet" href="assets/styles/particle.css" />
+    <link rel="stylesheet" href="assets/styles/nav.css" />
+    <link rel="stylesheet" href="assets/styles/btn.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/setting.js"></script>
+
+    <meta charset="UTF-8" />
+    <title>Home</title>
+  </head>
+  <body onload="forcereload();">
+    <nav class="navbar">
+      <div class="navbar__menu">
+        <div class="navbar__item">
+          <a href="index.html" class="navbar__link"
+            ><i data-feather="home"></i><span>Home</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="p.html" class="navbar__link"
+            ><ion-icon size="large" name="search-outline"></ion-icon
+            ><span>Proxy</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="game.html" class="navbar__link"
+            ><ion-icon size="large" name="game-controller-outline"></ion-icon>
+            <span>Games</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="app.html" class="navbar__link"
+            ><ion-icon size="large" name="apps-outline"></ion-icon
+            ><span>Apps</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="https://discord.gg/6wQTrrfNcr" class="navbar__link"
+            ><i data-feather="help-circle"></i><span>Help</span></a
+          >
+        </div>
+        <div class="navbar__item">
+          <a href="#" class="navbar__link"
+            ><i data-feather="settings"></i><span>Settings</span></a
+          >
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <h1>Settings</h1>
+      <section class="cloneable">
+        <div class="cards">
+          <div
+            class="card"
+            data-cursor="Automatically launches about:blank when opening Galaxy <br> preventing the website from appearing in your history"
+          >
+            <p>Auto Cloak</p>
+            <input
+              type="checkbox"
+              id="toggle"
+              data-on="ON"
+              data-off="OFF"
+              role="switch"
+              class="circle"
+              checked
+            />
+            <script>
+              document.getElementById("toggle").checked =
+                localStorage.getItem("autoAB") === "true";
+              document
+                .getElementById("toggle")
+                .addEventListener("change", function () {
+                  localStorage.setItem("autoAB", this.checked);
+                });
+            </script>
+          </div>
+          <div class="card" data-cursor="Open tab in About:Blank">
+            <p>Launch Cloak</p>
+            <li onclick="opencloak()">Launch</li>
+          </div>
+          <div
+            class="card"
+            data-cursor="Prevents GoGuardian from closing the tab by launching <br>  'Changes you made may not be saved' prompt"
+          >
+            <p>Anti-Close</p>
+            <input type="checkbox" role="switch" class="circle" id="myToggle" />
+            <script>
+              const myToggle = document.getElementById("myToggle");
+              myToggle.checked = localStorage.getItem("toggleState") === "true";
+              myToggle.addEventListener("change", () => {
+                localStorage.setItem("toggleState", myToggle.checked);
+              });
+            </script>
+          </div>
+        </div>
+        <div class="cursor">
+          <p></p>
+        </div>
+      </section>
+    </div>
+    <!--BACKGROUNDS-->
+    <canvas id="canvas"></canvas>
+
+    <script src="assets/js/starback.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: "dot",
+        quantity: 150,
+        direction: 255,
+        backgroundColor: ["#0d1d31", "#0c0d13"],
+        randomOpacity: true,
+        starSize: [0, 1],
+        showFps: true,
+      });
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </body>
+</html>

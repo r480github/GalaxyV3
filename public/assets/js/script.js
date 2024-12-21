@@ -1,3 +1,4 @@
+feather.replace()
 function opencloak() {
   var win = window.open();
   var url = "/";

@@ -9,7 +9,6 @@ html {
   overflow-y: scroll; /* Ensure scrolling is enabled */
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For Internet Explorer 10+ */
-  height: auto;
 }
 body::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
@@ -48,42 +47,8 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 
-.box {
-  margin-top: 10vh;
-  animation: slider 1s ease-in-out;
-  animation-fill-mode: forwards;
-  height: 1px;
-  display: flex;
-  align-items: center;
-  margin-right: 80px;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
-}
-li {
-  cursor: pointer;
-  color: #9a8c98;
-  margin: 2.5vw;
-  list-style-type: none;
-  font-size: 2.3em;
-  transition-duration: 0.2s;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-li:hover {
-  transform: translateY(-6px);
-  color: #f2e9e4;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 .main-div {
-  margin-top: -80vh;
+  margin-top: -90vh;
   width: 100vw;
   height: 100vh;
   margin-left: 7.5vw;
@@ -92,7 +57,6 @@ li:hover {
 #search {
   opacity: 0;
   animation: appear 1s;
-  animation-delay: 1s;
   animation-fill-mode: forwards;
   margin-left: 16vw;
   animation-fill-mode: forwards;
@@ -113,8 +77,8 @@ li:hover {
 }
 
 .games {
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 8vw;
+  padding-right: 7vw;
   margin-top: -85vh;
   display: flex;
   flex-wrap: wrap;
@@ -123,14 +87,12 @@ li:hover {
 
 .game {
   opacity: 0;
-  animation: appear 1s;
-  animation-delay: 0.3s;
+  animation: appear 0.4s;
   animation-fill-mode: forwards;
   align-items: center;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  margin-top: 5vh;
-  width: 220px;
+  width: 14%;
   display: flex;
   flex-direction: column;
 }
@@ -149,7 +111,7 @@ li:hover {
 }
 
 .game h3 {
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 0.25vw;
   margin: 0;
   font-family: "Poppins", sans-serif;

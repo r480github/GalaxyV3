@@ -61,7 +61,9 @@ body {
   justify-content: center;
 }
 h1 {
-  position: relative;
+  position: absolute;
+  font-size: 15vh;
+  margin-bottom: 10vh;
   background: -webkit-linear-gradient(white, #4a4e69);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -69,6 +71,7 @@ h1 {
   font-weight: 100;
   animation: sliderdown 1s ease-in-out;
   animation-fill-mode: forwards;
+  
 }
 .box {
   position: absolute;
@@ -99,12 +102,6 @@ li:hover {
   color: #f2e9e4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-h1 {
-  position: absolute;
-  color: #f2e9e4;
-  font-size: 7em;
-  margin-bottom: 10vh;
-}
 
 input {
   padding: 5px;
@@ -132,7 +129,7 @@ input:not(focus) {
   display: flex;
   justify-content: center;
 }
-a {
+.navbtn {
   cursor: pointer;
   color: #9a8c98;
   list-style-type: none;
@@ -238,4 +235,3 @@ a:hover {
     display: none;
   }
 }
-

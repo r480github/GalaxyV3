@@ -1,0 +1,112 @@
+.circle {
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  --c: #333;
+  appearance: none;
+  position: relative;
+  box-sizing: content-box;
+  font-size: 3em;
+  height: 1em;
+  aspect-ratio: 2;
+  border: max(1px, 0.025em) solid var(--c);
+  border-radius: 1em;
+  background:
+    linear-gradient(#0003, #0000) 85% 50% / 23% 10%,
+    linear-gradient(#777 0 0) 85% 50% / 23% 10%,
+    linear-gradient(#0002 0 0),
+    var(--c)
+    ;
+  background-repeat: no-repeat;
+  box-shadow: 
+    0.05em 0.05em 0.1em #0002,
+    inset 0 0 0.05em -0.025em #fff5, 
+    inset 0 0 0.2em #0002;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0.5em;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+      radial-gradient(circle at 50% 50%, var(--c) calc(0.17em - 1px), #0000 0.17em),
+      radial-gradient(circle at 53% 53%, var(--c) 0.1em, #0000 0.18em),
+      #eee;
+    box-shadow: 
+      inset 0 0 0.04em #0003,
+      inset 0.015em 0.015em 0.05em #0004
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    height: 90%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid #0000;
+    top: 50%;
+    left: 0.5em;
+    transform: translate(-50%, -50%);
+    transition: left 0.3s;
+    background: 
+      radial-gradient(at 30% 30%, #ffffff08, #0002)
+      var(--c);
+    box-shadow: 
+      max(1px, 0.05em) max(1px, 0.05em) 0.05em #0002,
+      inset 0 0 max(1px, 0.05em) -0.04em #fff;
+  }
+  
+  &:checked {
+    &::after {
+      left: calc(100% - 0.5em);
+    }
+  }
+  
+  &[disabled] {
+    opacity: 0.25;
+  }
+}
+.circle:hover {
+  box-shadow: 0 0 30px rgba(217, 205, 237, 0.5);
+
+}
+@media print {
+  .circle {
+    &, &::before, &::after {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .circle {
+    &, &::before, &::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
+
+
+li {
+  cursor: pointer;
+  color: #9a8c98;
+  list-style-type: none;
+  font-size: 3vh;
+  transition-duration: 0.2s;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #fff5;
+}
+li:hover {
+  color: #f2e9e4;
+  box-shadow: 0 0 30px rgba(217, 205, 237, 0.5);
+  transform: scale(1.1);
+}

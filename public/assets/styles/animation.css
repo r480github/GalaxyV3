@@ -1,81 +1,150 @@
 @keyframes transitionIn {
-   from {
-     opacity: 0;
-     transform: rotateX(-10deg);
-   }
- 
-   to {
-     opacity: 1;
-     transform: rotateX(0);
- 
- 
-   }
- }
- 
- 
- @keyframes slider {
-   from {
-     transform: translateY(40vh);
-   }
- 
-   to {
-     transform: translateY(-20vh);
-     transform: scale(1.2);
-   }
- 
- }
- @keyframes sliderdown {
-   from {
-     transform: translateY(0vh);
- 
-   }
- 
-   to {
-     transform: translateY(10vh);
- 
-   }
- 
- }
- 
- @keyframes disappear {
-   from {
-     opacity: 1;
-   }
- 
-   to {
-     opacity: 0;
-     visibility: hidden;
-   }
- 
- }
- 
- @keyframes appear {
-   from {
-     opacity: 0;
-   }
- 
-   to {
-     opacity: 1;
-   }
- }
- 
- @keyframes expand {
-   from {
-     width: 45%;
-   }
- 
-   to {
-     width: 70%;
-   }
- }
- 
- @keyframes shrink {
-   from {
-     width: 70%;
-   }
- 
-   to {
-     width: 45%;
-   }
- }
- 
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+
+
+  }
+}
+
+
+@keyframes slider {
+  from {
+    transform: translateY(40vh);
+  }
+
+  to {
+    transform: translateY(-20vh);
+    transform: scale(1.2);
+  }
+
+}
+@keyframes sliderdown {
+  from {
+    transform: translateY(0vh);
+
+  }
+
+  to {
+    transform: translateY(10vh);
+
+  }
+
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  from {
+    width: 45%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes shrink {
+  from {
+    width: 70%;
+  }
+
+  to {
+    width: 45%;
+  }
+}
+@property --pos-x {
+  syntax: "<percentage>";
+  initial-value: 11.14%;
+  inherits: false;
+}
+@property --pos-y {
+  syntax: "<percentage>";
+  initial-value: 140%;
+  inherits: false;
+}
+@property --spread-x {
+  syntax: "<percentage>";
+  initial-value: 150%;
+  inherits: false;
+}
+@property --spread-y {
+  syntax: "<percentage>";
+  initial-value: 180.06%;
+  inherits: false;
+}
+@property --color-1 {
+  syntax: "<color>";
+  initial-value: #222222;
+  inherits: false;
+}
+@property --color-2 {
+  syntax: "<color>";
+  initial-value: #2b2b2b;
+  inherits: false;
+}
+@property --color-3 {
+  syntax: "<color>";
+  initial-value: #121112;
+  inherits: false;
+}
+@property --color-4 {
+  syntax: "<color>";
+  initial-value: #242328;
+  inherits: false;
+}
+@property --color-5 {
+  syntax: "<color>";
+  initial-value: #27252B;
+  inherits: false;
+}
+@property --stop-1 {
+  syntax: "<percentage>";
+  initial-value: 37.35%;
+  inherits: false;
+}
+@property --stop-2 {
+  syntax: "<percentage>";
+  initial-value: 61.36%;
+  inherits: false;
+}
+@property --stop-3 {
+  syntax: "<percentage>";
+  initial-value: 78.42%;
+  inherits: false;
+}
+@property --stop-4 {
+  syntax: "<percentage>";
+  initial-value: 89.52%;
+  inherits: false;
+}
+@property --stop-5 {
+  syntax: "<percentage>";
+  initial-value: 100%;
+  inherits: false;
+}

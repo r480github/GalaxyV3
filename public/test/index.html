@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<!--------- Osmo [https://osmo.supply/] --------->
+<input
+type="checkbox"
+id="toggle"
+data-on="ON"
+data-off="OFF"
+role="switch"
+class="circle"
+checked
+/>
+<script>
+document.getElementById("toggle").checked =
+  localStorage.getItem("autoAB") === "true";
+document
+  .getElementById("toggle")
+  .addEventListener("change", function () {
+    localStorage.setItem("autoAB", this.checked);
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>

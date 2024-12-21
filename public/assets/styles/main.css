@@ -3,7 +3,6 @@
 
 body {
   z-index: -1;
-  animation: transitionIn 2.3s;
 }
 .main {
   display: flex;
@@ -12,12 +11,12 @@ body {
 }
 
 h1 {
+  z-index: 10000000;
   background: -webkit-linear-gradient(white, #4a4e69);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: -40vh;
   position: absolute;
-  font-size: 7em;
+  font-size: 8vw;
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
 }
@@ -38,7 +37,26 @@ img {
     opacity: 0;
   }
 }
-
+.cd__main{
+ min-height: 720px;
+}
+body {
+margin: 0;
+padding: 0;
+height: 100vh;
+width: 100%;
+}
+.menu ul {
+display: flex;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+margin-left: -80px;
+}
+li {
+list-style: none;
+}
 .box {
   position: absolute;
   height: 1px;
@@ -47,7 +65,7 @@ img {
   width: auto;
   height: auto;
 }
-li {
+.a {
   cursor: pointer;
   color: #9a8c98;
   margin: 2.5vw;
@@ -61,7 +79,7 @@ li {
   border-radius: 5px;
 }
 
-li:hover {
+.a:hover {
   transform: translateY(-6px);
   color: #f2e9e4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -78,3 +96,53 @@ li:hover {
     transform: rotateX(0);
   }
 }
+button {
+  margin-top: 20vh;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.641);
+  border-radius: 11px;
+  border: none;
+  padding: 16px 32px;
+  min-width: 120px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: radial-gradient(
+    var(--spread-x) var(--spread-y) at var(--pos-x) var(--pos-y),
+    var(--color-1) var(--stop-1),
+    var(--color-2) var(--stop-2),
+    var(--color-3) var(--stop-3),
+    var(--color-4) var(--stop-4),
+    var(--color-5) var(--stop-5)
+  );
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: --pos-x 0.5s, --pos-y 0.5s, --spread-x 0.5s, --spread-y 0.5s,
+    --color-1 0.5s, --color-2 0.5s, --color-3 0.5s, --color-4 0.5s,
+    --color-5 0.5s, --stop-1 0.5s, --stop-2 0.5s, --stop-3 0.5s, --stop-4 0.5s,
+    --stop-5 0.5s;
+}
+
+button:hover {
+  --pos-x: 0%;
+  --pos-y: 91.51%;
+  --spread-x: 120.24%;
+  --spread-y: 103.18%;
+  --color-1: #121112;
+  --color-2: #242328;
+  --color-3: #27252B;
+  --color-4: #131215;
+  --color-5: #201e24;
+  --stop-1: 0%;
+  --stop-2: 8.8%;
+  --stop-3: 21.44%;
+  --stop-4: 71.34%;
+  --stop-5: 85.76%;
+}
+

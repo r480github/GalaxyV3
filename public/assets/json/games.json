@@ -7,12 +7,12 @@
   {
     "name": "Poki",
     "url": "https://poki.com/",
-    "image": "y8.jpg"
+    "image": "poki.webp"
   },
   {
     "name": "Y8 Games",
     "url": "https://www.y8.com/",
-    "image": "poki.webp"
+    "image": "y8.jpg"
   },
 
   {
@@ -71,6 +71,12 @@
     "image": "fite.webp"
   },
   {
+    "name": "Madalin Stunt Cars",
+    "url": "https://madalinstuntcars2.io/game/",
+    "image": "madalin.jpg"
+  },
+
+  {
     "name": "Moto X3M",
     "url": "https://moto-x3m.net/main.html",
     "image": "moto.jpg"
@@ -78,7 +84,7 @@
 
   {
     "name": "Paper.io",
-    "url": "https://paper.io",
+    "url": "https://paper-io.com/",
     "image": "paperio.jpg"
   },
 
@@ -86,6 +92,11 @@
     "name": "PolyTrack",
     "url": "https://coolubg.github.io/coolubg-list/polytrack/polytrack-0.3.1/index.html",
     "image": "polytrack.jpg"
+  },
+  {
+    "name": "Two Player Tag",
+    "url": "https://games.construct.net/39/5545/embed.html?uid=0&o=1",
+    "image": "tpt.avif"
   },
 
   {
