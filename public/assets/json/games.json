@@ -1,21 +1,5 @@
 [
   {
-    "name": "Crazy Games",
-    "url": "https://crazygames.com",
-    "image": "crazygames.avif"
-  },
-  {
-    "name": "Poki",
-    "url": "https://poki.com/",
-    "image": "poki.webp"
-  },
-  {
-    "name": "Y8 Games",
-    "url": "https://www.y8.com/",
-    "image": "y8.jpg"
-  },
-
-  {
     "name": "1v1.lol",
     "url": "https://1v1.lol",
     "image": "1v1.jpg"

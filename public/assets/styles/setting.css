@@ -48,12 +48,14 @@ h1 {
   flex-direction: column;
   align-items: center;
   border: 2px solid black;
-  width: 30vh;
-  height: 20vh;
+  width: 40vh;
+  height: 28vh;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
-
+.card p{
+  font-size: 4vh;
+}
 .card:hover {
   transform: scale(1.05);
 }
@@ -79,9 +81,7 @@ h1 {
 
 body:has( [data-cursor]:hover ) .cursor { opacity: 1; }
 p {
-  background: -webkit-linear-gradient(white, #4a4e69);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(159, 157, 157);
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
 

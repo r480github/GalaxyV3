@@ -1,0 +1,57 @@
+[
+  {
+    "name": "AniCrush",
+    "url": "https://anicrush.to/",
+    "image": "anicrush.png"
+  },
+
+  {
+    "name": "Crazy Games",
+    "url": "https://crazygames.com",
+    "image": "crazygames.avif"
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.com/app",
+    "image": "Discord.webp"
+  },
+
+  {
+    "name": "Github",
+    "url": "https://github.com",
+    "image": "GitHub.webp"
+  },
+
+  {
+    "name": "GeForce Now",
+    "url": "https://play.geforcenow.com/mall/#/loginwall",
+    "image": "Geforce.webp"
+  },
+
+  {
+    "name": "Poki",
+    "url": "https://poki.com/",
+    "image": "poki.webp"
+  },
+  {
+    "name": "AutoEmbed",
+    "url": "https://watch.autoembed.cc/",
+    "image": "404.png"
+  },
+  {
+    "name": "NovaFork",
+    "url": "https://novafork.com/",
+    "image": "novafork.jpg"
+  },
+
+  {
+    "name": "TikTok",
+    "url": "https://TikTok.com",
+    "image": "TikTok.webp"
+  },
+  {
+    "name": "Y8 Games",
+    "url": "https://www.y8.com/",
+    "image": "y8.jpg"
+  }
+]

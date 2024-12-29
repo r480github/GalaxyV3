@@ -1,15 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Maitree:wght@200;300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   z-index: -1;
 }
-.main {
+.center {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-
 h1 {
   z-index: 10000000;
   background: -webkit-linear-gradient(white, #4a4e69);
@@ -19,6 +17,8 @@ h1 {
   font-size: 8vw;
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
+  left: 40vw;
+
 }
 img {
   opacity: 0;
