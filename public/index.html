@@ -152,5 +152,17 @@
       type="module"
       src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script>
+      window.addEventListener('load', function() {
+        const toggleState = localStorage.getItem('toggleState') === 'true';
+        if (toggleState) {
+          window.addEventListener('beforeunload', function (e) {
+            e.preventDefault();
+            e.returnValue = '';
+          });
+        }
+      });
+    </script>
+    
   </body>
 </html>

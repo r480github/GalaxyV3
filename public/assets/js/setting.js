@@ -155,8 +155,8 @@ function ABCloak(redirectToEducationalSite) {
 if (localStorage.getItem("autoAB") == "true") {
   ABCloak(true);
 }
+
 window.addEventListener('beforeunload', function (e) {
-  // If the toggle is on, show the confirmation dialog
   if (myToggle.checked) {
     e.preventDefault();
     e.returnValue = '';
