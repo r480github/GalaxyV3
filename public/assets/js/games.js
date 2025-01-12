@@ -8,7 +8,7 @@ fetch("/assets/json/games.json")
       gameElement.className = "game";
 
       gameElement.innerHTML = `
-                <img src="/img/${game.image}" alt="${game.name}" class="cards" <div class="card" data-cursor="${game.name}"></div>
+                <img src="/img/${game.image}" alt="${game.name}" class="cards" data-cursor="${game.name}">
                         <h3>${game.name}</h3>
 
       `;
