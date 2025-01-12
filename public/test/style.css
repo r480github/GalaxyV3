@@ -17,17 +17,6 @@ body {
   align-items: center;
 }
 
-h1 {
-  margin-top: -60vh;;
-  z-index: 10000000;
-  background: -webkit-linear-gradient(white, #4a4e69);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  font-size: 8vw;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 100;
-}
 .cloneable {
   padding: var(--container-padding);
   justify-content: center;
@@ -48,27 +37,25 @@ h1 {
   flex-direction: column;
   align-items: center;
   border: 2px solid black;
-  width: 16vw;
-  height: 300px;
+  width: 38vh;
+  height: 25vh;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
-
-.card:hover {
-  transform: scale(1.05);
+.card p {
+  font-size: 4vh;
 }
-
 .cursor {
   z-index: 1000;
   background-color: var(--color-primary);
   opacity: 0;
   pointer-events: none;
   color: var(--color-light);
-  border-radius: .25em;
-  padding: .3em .75em .4em;
+  border-radius: 0.25em;
+  padding: 0.3em 0.75em 0.4em;
   font-size: 1.15em;
   line-height: 1.5;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
   position: fixed;
   inset: 0% auto auto 0%;
 }
@@ -77,12 +64,11 @@ h1 {
   margin: 0px;
 }
 
-body:has( [data-cursor]:hover ) .cursor { opacity: 1; }
+body:has([data-cursor]:hover) .cursor {
+  opacity: 1;
+}
 p {
-  background: -webkit-linear-gradient(white, #4a4e69);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(159, 157, 157);
   font-family: "Poppins", sans-serif;
-  font-size: 3.5vh;
-
+  font-size: 3vh;
 }

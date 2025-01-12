@@ -15,11 +15,10 @@
     <link rel="stylesheet" href="assets/styles/nav.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/setting.js"></script>
     <meta charset="UTF-8" />
     <title>Home</title>
   </head>
-  <body onload="forcereload();">
+  <body>
     <nav class="navbar">
       <div class="navbar__menu">
         <div class="navbar__item">
@@ -63,13 +62,10 @@
     <div class="container fluid">
       <ul>
         <li></li>
-        <li
-          onclick="window.location.href='https://discord.gg/6wQTrrfNcr'"
-          style="font-size: 20vw"
-        >
+        <li onclick="window.location.href='https://discord.gg/6wQTrrfNcr'">
           .gg/Falcon
         </li>
-        <li>Flexible</li>
+        <li onclick="window.location.href='setting.html'">Flexible</li>
         <li onclick="window.location.href='p.html'">Secure</li>
         <li onclick="window.location.href='game.html'">Unlimited</li>
       </ul>
@@ -128,21 +124,6 @@
       <div class="star"></div>
       <div class="star"></div>
       <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
     </div>
 
     <img src="img/Mountain 2.png" alt="Mountain" />
@@ -153,16 +134,33 @@
       src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
     ></script>
     <script>
-      window.addEventListener('load', function() {
-        const toggleState = localStorage.getItem('toggleState') === 'true';
+      window.addEventListener("load", function () {
+        const toggleState = localStorage.getItem("toggleState") === "true";
         if (toggleState) {
-          window.addEventListener('beforeunload', function (e) {
+          window.addEventListener("beforeunload", function (e) {
             e.preventDefault();
-            e.returnValue = '';
+            e.returnValue = "";
           });
         }
       });
+      function checkAutoCloak() {
+            if (localStorage.getItem("autoAB") === null) {
+                localStorage.setItem("autoAB", "true");
+            }
+
+            document.getElementById("toggle").checked = localStorage.getItem("autoAB") === "true";
+
+            if (localStorage.getItem("autoAB") === "true") {
+                ABCloak(true);
+            }
+        }
+        window.onload = checkAutoCloak;
+        document.getElementById("toggle").addEventListener("change", function () {
+            localStorage.setItem("autoAB", this.checked);
+            ABCloak(this.checked);
+        });
+
     </script>
-    
+    <script src="assets/js/setting.js"></script>
   </body>
 </html>

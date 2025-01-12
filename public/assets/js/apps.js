@@ -8,8 +8,9 @@ fetch("/assets/json/apps.json")
       gameElement.className = "game";
 
       gameElement.innerHTML = `
-                <img src="/img/${game.image}" alt="${game.name}">
-        <h3>${game.name}</h3>
+                <img src="/img/${game.image}" alt="${game.name}" class="cards" <div class="card" data-cursor="${game.name}"></div>
+                        <h3>${game.name}</h3>
+
       `;
 
       gameElement.addEventListener("click", async () => {
@@ -51,4 +52,13 @@ fetch("/assets/json/apps.json")
       }
     });
   });
-  
+        function fixstuff() {
+            if (!sessionStorage.getItem('reloaded')) {
+                sessionStorage.setItem('reloaded', 'true');
+                location.reload();
+            } else {
+                sessionStorage.removeItem('reloaded');
+            }
+        }
+        window.onload = fixstuff;
+        window.addEventListener('pageshow', fixstuff);

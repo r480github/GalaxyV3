@@ -1,22 +1,30 @@
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-<!--------- Osmo [https://osmo.supply/] --------->
-<input
-type="checkbox"
-id="toggle"
-data-on="ON"
-data-off="OFF"
-role="switch"
-class="circle"
-checked
-/>
-<script>
-document.getElementById("toggle").checked =
-  localStorage.getItem("autoAB") === "true";
-document
-  .getElementById("toggle")
-  .addEventListener("change", function () {
-    localStorage.setItem("autoAB", this.checked);
-  });
-</script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ssl.gstatic.com/classroom/favicon.png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="script.js"></script>
+
+    <meta charset="UTF-8" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="main">
+      <section class="cloneable">
+        <img src="../img/1v1.jpg" class="cards" <div class="card" data-cursor="Open tab in About:Blank"></div>
+        >
+        <div class="cursor">
+          <p></p>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </body>
+</html>

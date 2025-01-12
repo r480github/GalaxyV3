@@ -14,18 +14,6 @@ async function init() {
             await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
             console.log("Using websocket transport " + "wisp url is: " + wispUrl);
         }
-        const scramjet = new ScramjetController({
-            prefix: "/scram/service/",
-            files: {
-                wasm: "/scram/scramjet.wasm.js",
-                worker: "/scram/scramjet.worker.js",
-                client: "/scram/scramjet.client.js",
-                shared: "/scram/scramjet.shared.js",
-                sync: "/scram/scramjet.sync.js"
-            },
-        });
-        window.sj = scramjet;
-        scramjet.init("../sjsw.js");
 
 
     } catch (error) {
@@ -85,25 +73,8 @@ if (form && input) {
         if (localStorage.getItem("proxy") == "uv") {
             uvEncode();
         }
-        else if (localStorage.getItem("proxy") == "sj") {
-            sjEncode();
-        }
-        else if (localStorage.getItem("proxy") == "rammerhead") {
-            rhEncode();
-        }
-
-
-        async function rhEncode() {
-            url = await RammerheadEncode(url);
-            window.location.href = "/" + url;
-        }
         async function uvEncode() {
             url = __uv$config.prefix + __uv$config.encodeUrl(url);
-            localStorage.setItem("url", url);
-            window.location.href = "/search.html";
-        }
-        async function sjEncode() {
-            url = "/scram/service/" + encodeURIComponent(url);
             localStorage.setItem("url", url);
             window.location.href = "/search.html";
         }

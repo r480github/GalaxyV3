@@ -76,13 +76,19 @@
               checked
             />
             <script>
-              document.getElementById("toggle").checked =
-                localStorage.getItem("autoAB") === "true";
-              document
-                .getElementById("toggle")
-                .addEventListener("change", function () {
-                  localStorage.setItem("autoAB", this.checked);
-                });
+    // Check if localStorage has a value for autoAB, if not set it to true
+    if (localStorage.getItem("autoAB") === null) {
+      localStorage.setItem("autoAB", "true");
+    }
+
+    // Set the checkbox based on localStorage value
+    document.getElementById("toggle").checked =
+      localStorage.getItem("autoAB") === "true";
+
+    // Update localStorage value when the checkbox is changed
+    document.getElementById("toggle").addEventListener("change", function () {
+      localStorage.setItem("autoAB", this.checked);
+    });
             </script>
           </div>
           <div class="card" data-cursor="Open tab in About:Blank">

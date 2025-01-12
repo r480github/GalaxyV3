@@ -108,5 +108,4 @@ li {
 li:hover {
   color: #f2e9e4;
   box-shadow: 0 0 30px rgba(217, 205, 237, 0.5);
-  transform: scale(1.1);
 }

@@ -19,17 +19,13 @@ body {
   }
 }
 
-
 @media only screen and (max-width: 900px) {
   .stars {
     left: 100vw;
   }
-
 }
-
-
 .star {
-  --primary-color: #00ffff;
+  --primary-color: #D8BFD8;
   --star-color: var(--primary-color);
   --star-tail-length: 6em;
   --star-tail-height: 2px;
@@ -45,11 +41,7 @@ body {
   background: linear-gradient(45deg, currentColor, transparent);
   border-radius: 50%;
   filter: drop-shadow(0 0 6px currentColor);
-  transform: translate3d(
-    100vw,
-    0,
-    0
-  ); 
+  transform: translate3d(100vw, 0, 0);
   animation: fall var(--fall-duration) var(--fall-delay) linear infinite,
     tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
 }
@@ -208,156 +200,7 @@ body {
   --fall-duration: 8.096s;
   --fall-delay: 9.926s;
 }
-.star:nth-child(26) {
-  --star-tail-length: 5.7em;
-  --top-offset: 27.27vh;
-  --fall-duration: 6.623s;
-  --fall-delay: 7.734s;
-}
-.star:nth-child(27) {
-  --star-tail-length: 7.43em;
-  --top-offset: 31.03vh;
-  --fall-duration: 7.907s;
-  --fall-delay: 4.343s;
-}
-.star:nth-child(28) {
-  --star-tail-length: 7.46em;
-  --top-offset: 33.43vh;
-  --fall-duration: 11.32s;
-  --fall-delay: 8.233s;
-}
-.star:nth-child(29) {
-  --star-tail-length: 6.16em;
-  --top-offset: 64.74vh;
-  --fall-duration: 6.491s;
-  --fall-delay: 7.739s;
-}
-.star:nth-child(30) {
-  --star-tail-length: 5.91em;
-  --top-offset: 36.79vh;
-  --fall-duration: 7.078s;
-  --fall-delay: 5.389s;
-}
-.star:nth-child(31) {
-  --star-tail-length: 7.5em;
-  --top-offset: 92.14vh;
-  --fall-duration: 10.133s;
-  --fall-delay: 3.256s;
-}
-.star:nth-child(32) {
-  --star-tail-length: 5.51em;
-  --top-offset: 55.72vh;
-  --fall-duration: 9.996s;
-  --fall-delay: 8.168s;
-}
-.star:nth-child(33) {
-  --star-tail-length: 5.92em;
-  --top-offset: 76.45vh;
-  --fall-duration: 9.387s;
-  --fall-delay: 9.484s;
-}
-.star:nth-child(34) {
-  --star-tail-length: 7.07em;
-  --top-offset: 34.62vh;
-  --fall-duration: 9.671s;
-  --fall-delay: 4.258s;
-}
-.star:nth-child(35) {
-  --star-tail-length: 6.87em;
-  --top-offset: 93.38vh;
-  --fall-duration: 10.714s;
-  --fall-delay: 0.428s;
-}
-.star:nth-child(36) {
-  --star-tail-length: 7.41em;
-  --top-offset: 25.32vh;
-  --fall-duration: 6.653s;
-  --fall-delay: 8.338s;
-}
-.star:nth-child(37) {
-  --star-tail-length: 6.2em;
-  --top-offset: 45.76vh;
-  --fall-duration: 8.188s;
-  --fall-delay: 5.363s;
-}
-.star:nth-child(38) {
-  --star-tail-length: 5.55em;
-  --top-offset: 79.25vh;
-  --fall-duration: 8.108s;
-  --fall-delay: 0.101s;
-}
-.star:nth-child(39) {
-  --star-tail-length: 6.69em;
-  --top-offset: 59.94vh;
-  --fall-duration: 9.903s;
-  --fall-delay: 5.134s;
-}
-.star:nth-child(40) {
-  --star-tail-length: 5.38em;
-  --top-offset: 57.59vh;
-  --fall-duration: 7.886s;
-  --fall-delay: 4.435s;
-}
-.star:nth-child(41) {
-  --star-tail-length: 6.1em;
-  --top-offset: 87.93vh;
-  --fall-duration: 8.431s;
-  --fall-delay: 1.045s;
-}
-.star:nth-child(42) {
-  --star-tail-length: 6.92em;
-  --top-offset: 46.87vh;
-  --fall-duration: 7.085s;
-  --fall-delay: 7.874s;
-}
-.star:nth-child(43) {
-  --star-tail-length: 6.6em;
-  --top-offset: 84.33vh;
-  --fall-duration: 9.818s;
-  --fall-delay: 4.621s;
-}
-.star:nth-child(44) {
-  --star-tail-length: 6.53em;
-  --top-offset: 12.5vh;
-  --fall-duration: 9.58s;
-  --fall-delay: 5.016s;
-}
-.star:nth-child(45) {
-  --star-tail-length: 5.79em;
-  --top-offset: 8.9vh;
-  --fall-duration: 7.895s;
-  --fall-delay: 0.371s;
-}
-.star:nth-child(46) {
-  --star-tail-length: 5.43em;
-  --top-offset: 11.31vh;
-  --fall-duration: 6.503s;
-  --fall-delay: 4.022s;
-}
-.star:nth-child(47) {
-  --star-tail-length: 5.88em;
-  --top-offset: 83.62vh;
-  --fall-duration: 11.462s;
-  --fall-delay: 0.888s;
-}
-.star:nth-child(48) {
-  --star-tail-length: 5.05em;
-  --top-offset: 97.51vh;
-  --fall-duration: 7.329s;
-  --fall-delay: 7.287s;
-}
-.star:nth-child(49) {
-  --star-tail-length: 6.4em;
-  --top-offset: 79.85vh;
-  --fall-duration: 7.619s;
-  --fall-delay: 9.856s;
-}
-.star:nth-child(50) {
-  --star-tail-length: 6.91em;
-  --top-offset: 17.5vh;
-  --fall-duration: 9.119s;
-  --fall-delay: 3.157s;
-}
+
 .star::before {
   transform: rotate(45deg);
 }

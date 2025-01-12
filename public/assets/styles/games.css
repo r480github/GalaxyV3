@@ -37,7 +37,6 @@ body::-webkit-scrollbar {
   font-size: 2.3em;
   font-family: "Inter", sans-serif;
   font-weight: 300;
-
 }
 
 .nav {
@@ -75,6 +74,36 @@ body::-webkit-scrollbar {
   outline: none;
   color: #fff;
 }
+.cursor {
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 0.25em;
+  padding: 0.3em 0.75em 0.4em;
+  font-size: 1.15em;
+  line-height: 1.5;
+  transition: opacity 0.2s;
+  position: fixed;
+  inset: 0% auto auto 0%;
+}
+
+.cursor p {
+  margin: 0px;
+}
+
+body:has([data-cursor]:hover) .cursor {
+  opacity: 1;
+}
+p {
+  font-size: 1.5em;
+  padding: 0.25vw;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
 
 .games {
   padding-left: 8vw;
@@ -97,25 +126,22 @@ body::-webkit-scrollbar {
   flex-direction: column;
 }
 .game:hover {
-  box-shadow: 0 0 30px rgba(105, 11, 255, 0.5);
   transform: scale(1.1);
 }
 
 .game img {
   margin: 0px;
   padding: 0px;
-  width: 100%; 
+  width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 5px;
 }
-
+.card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 .game h3 {
-  font-size: 1em;
-  padding: 0.25vw;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
+  opacity: 0;
+  font-size: 0;
 }
