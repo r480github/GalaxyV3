@@ -59,59 +59,24 @@ body::-webkit-scrollbar {
   animation-fill-mode: forwards;
   margin-left: 16vw;
   animation-fill-mode: forwards;
-  height: 40px;
-  width: 50%;
-  border-radius: 30px;
+  padding: 0px 17px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
   padding: 5px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
   height: 48px;
   width: 50%;
   background: none;
-  padding: 0px 17px;
-  border: 1px solid rgb(255, 255, 255, 0.2);
   outline: none;
   color: #fff;
 }
-.cursor {
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-  border-radius: 0.25em;
-  padding: 0.3em 0.75em 0.4em;
-  font-size: 1.15em;
-  line-height: 1.5;
-  transition: opacity 0.2s;
-  position: fixed;
-  inset: 0% auto auto 0%;
-}
-
-.cursor p {
-  margin: 0px;
-}
-
-body:has([data-cursor]:hover) .cursor {
-  opacity: 1;
-}
-p {
-  font-size: 1.5em;
-  padding: 0.25vw;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-}
-
 .games {
   padding-left: 8vw;
   padding-right: 7vw;
   margin-top: -85vh;
   display: flex;
   flex-wrap: wrap;
-  gap: 2vw;
+  gap: 1.3vw;
 }
 
 .game {
@@ -121,12 +86,13 @@ p {
   align-items: center;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  width: 14%;
+  width: 15%;
   display: flex;
   flex-direction: column;
 }
 .game:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
 
 .game img {
@@ -135,13 +101,28 @@ p {
   width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .card img:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 .game h3 {
+  z-index: 1;
+  margin-top: -3.5vh;
+  font-size: 2.7vh;
+  padding: 0.25vw;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #d8bfd8;
   opacity: 0;
-  font-size: 0;
+  transition-duration: 0.2s;
+}
+.game:hover h3 {
+  opacity: 1;
+}
+.game:hover img {
+  filter: brightness(0.8);
 }

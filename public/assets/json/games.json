@@ -80,6 +80,11 @@
     "url": "https://games.construct.net/39/5545/embed.html?uid=0&o=1",
     "image": "tpt.avif"
   },
+  {
+    "name": "Slope",
+    "url": "https://game3.glov3.me/uploads/game/html5/27315/",
+    "image": "slope.png"
+  },
 
   {
     "name": "Space Waves",
@@ -105,7 +110,7 @@
   },
   {
     "name": "Vex 4",
-    "url": "https://html5.gamedistribution.com/80e6a5ae477f4d4fbcd1ea293d10087d/",
+    "url": "https://htmlxm.github.io/h9/vex-4/",
     "image": "vex4.jpeg"
   }
 ]
