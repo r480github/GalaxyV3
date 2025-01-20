@@ -8,7 +8,7 @@ fetch("/assets/json/p.json")
       gameElement.className = "game";
 
       gameElement.innerHTML = `
-        <img src="/img/${game.image}" alt="${game.name}">
+        <img src="/img/${game.image}" alt="${game.name}" class="${game.class}">
       `;
 
       gameElement.addEventListener("click", async () => {
@@ -17,12 +17,7 @@ fetch("/assets/json/p.json")
           ute = __uv$config.prefix + __uv$config.encodeUrl(ute);
           localStorage.setItem("url", ute);
           window.location.href = "/search.html";
-        } else if (localStorage.getItem("proxy") == "sj") {
-          sjEncode();
-        } else if (localStorage.getItem("proxy") == "rammerhead") {
-          rhEncode();
-        }
-
+        } 
         async function rhEncode() {
           ute = await RammerheadEncode(ute);
           window.location.href = "/" + ute;

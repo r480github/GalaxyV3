@@ -2,28 +2,38 @@
   {
     "name": "Plex TV",
     "url": "https://watch.plex.tv/",
-    "image": "plex.jpg"
+    "image": "plex.jpg",
+    "class": "normal"
+
   },
 
   {
     "name": "Discord",
     "url": "https://discord.com/app",
-    "image": "Discord.webp"
+    "image": "Discord.webp", 
+    "class": "normal"
+
   },
 
   {
     "name": "TikTok",
     "url": "https://TikTok.com",
-    "image": "TikTok.webp"
+    "image": "TikTok.webp", 
+    "class": "normal"
+
   },
   {
     "name": "GeForce Now",
     "url": "https://play.geforcenow.com/mall/#/loginwall",
-    "image": "Geforce.webp"
+    "image": "Geforce.webp", 
+    "class": "normal"
+
   },
   {
     "name": "Github",
     "url": "https://github.com",
-    "image": "GitHub.webp"
-  }
+    "image": "GitHub.webp", 
+    "class": "normal"
+
+    }
 ]

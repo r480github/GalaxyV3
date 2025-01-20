@@ -23,7 +23,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="assets/js/setting.js"></script>
   </head>
+  
   <body>
+    
     <nav class="navbar">
       <div class="navbar__menu">
         <div class="navbar__item">
@@ -61,8 +63,28 @@
         </div>
       </div>
     </nav>
+    
     <div class="nav">
-      <div class="main"></div>
+      <div class="main">
+        <canvas id="canvas"></canvas>
+        <script src="assets/js/starback.js"></script>
+        <script>
+          const canvas = document.getElementById("canvas");
+          const starback = new Starback(canvas, {
+            width: document.body.clientWidth,
+            height: document.body.clientHeight,
+            type: "dot",
+            quantity: 150,
+            direction: 255,
+            backgroundColor: ["#0d1d31", "#0c0d13"],
+            randomOpacity: true,
+            starSize: [0, 1],
+            showFps: true,
+          });
+        </script>
+    
+      </div>
+      
     </div>
     <div class="main-div">
       <input type="text" id="search" placeholder="Search games..." />

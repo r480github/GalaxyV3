@@ -19,11 +19,7 @@ fetch("/assets/json/apps.json")
           ute = __uv$config.prefix + __uv$config.encodeUrl(ute);
           localStorage.setItem("url", ute);
           window.location.href = "/search.html";
-        } else if (localStorage.getItem("proxy") == "sj") {
-          sjEncode();
-        } else if (localStorage.getItem("proxy") == "rammerhead") {
-          rhEncode();
-        }
+        } 
 
         async function rhEncode() {
           ute = await RammerheadEncode(ute);

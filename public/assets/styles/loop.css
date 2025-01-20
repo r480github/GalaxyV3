@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
 .container {
+  z-index: 100000;
   --font-level: 8;
   opacity: 0;
   height: 100vh;

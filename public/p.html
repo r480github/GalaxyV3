@@ -8,15 +8,13 @@
       href="https://ssl.gstatic.com/classroom/favicon.png"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <link rel="stylesheet" href="assets/styles/uv.css" />
+    <link rel="stylesheet" href="assets/styles/uv.css" />
     <link rel="stylesheet" href="assets/styles/animation.css" />
     <link rel="stylesheet" href="assets/styles/particle.css" />
     <link rel="stylesheet" href="assets/styles/nav.css" />
-    <script src="/baremux/index.js"></script>
-    <script src="/epoxy/index.js"></script>
-    <script src="/uv/uv.bundle.js"></script>
-    <script src="/uv/uv.config.js"></script>
-    <script src="/sw.js"></script>
+    <script src="/uv/uv.bundle.js?v=10-02-2024"></script>
+    <script src="/uv/uv.config.js?v=10-02-2024"></script>
+    <script src="sw.js?v=10-02-2024"></script>
     <script src="/assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -34,8 +32,7 @@
           </div>
           <div class="navbar__item">
             <a href="" class="navbar__link"
-              ><ion-icon name="search-outline"></ion-icon
-              ><span>Proxy</span></a
+              ><ion-icon name="search-outline"></ion-icon><span>Proxy</span></a
             >
           </div>
           <div class="navbar__item">
@@ -46,23 +43,24 @@
           </div>
           <div class="navbar__item">
             <a href="app.html" class="navbar__link"
-              ><ion-icon name="apps-outline"></ion-icon
-              ><span>Apps</span></a
+              ><ion-icon name="apps-outline"></ion-icon><span>Apps</span></a
             >
           </div>
           <div class="navbar__item">
             <a href="https://discord.gg/6wQTrrfNcr" class="navbar__link"
-              ><ion-icon name="help-circle-outline"></ion-icon><span>Help</span></a
+              ><ion-icon name="help-circle-outline"></ion-icon
+              ><span>Help</span></a
             >
           </div>
           <div class="navbar__item">
             <a href="setting.html" class="navbar__link"
-              ><ion-icon name="settings-outline"></ion-icon><span>Settings</span></a
+              ><ion-icon name="settings-outline"></ion-icon
+              ><span>Settings</span></a
             >
           </div>
         </div>
       </nav>
-          <canvas id="canvas"></canvas>
+      <canvas id="canvas"></canvas>
       <script src="assets/js/starback.js"></script>
       <script>
         const canvas = document.getElementById("canvas");
@@ -90,28 +88,28 @@
       </div>
       <form id="form" class="flex-center">
         <input id="input" placeholder="Search the Web Freely..." />
+        <button id="searchButton">Search</button>
       </form>
       <div class="games"></div>
       <script src="assets/js/p.js"></script>
       <script src="assets/js/main.js"></script>
       <script src="https://unpkg.com/feather-icons"></script>
       <script src="assets/js/script.js"></script>
-          <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script>
-      window.addEventListener('load', function() {
-        const toggleState = localStorage.getItem('toggleState') === 'true';
-        if (toggleState) {
-          window.addEventListener('beforeunload', function (e) {
-            e.preventDefault();
-            e.returnValue = '';
-          });
-        }
-      });
-    </script>
-  
+      <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script>
+        window.addEventListener("load", function () {
+          const toggleState = localStorage.getItem("toggleState") === "true";
+          if (toggleState) {
+            window.addEventListener("beforeunload", function (e) {
+              e.preventDefault();
+              e.returnValue = "";
+            });
+          }
+        });
+      </script>
     </div>
   </body>
 </html>

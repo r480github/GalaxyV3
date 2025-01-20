@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Maitree:wght@200;300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Maitree:wght@200;300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   z-index: -1;
@@ -18,7 +18,6 @@ h1 {
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
   left: 40vw;
-
 }
 img {
   opacity: 0;
@@ -37,25 +36,25 @@ img {
     opacity: 0;
   }
 }
-.cd__main{
- min-height: 720px;
+.cd__main {
+  min-height: 720px;
 }
 body {
-margin: 0;
-padding: 0;
-height: 100vh;
-width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
 }
 .menu ul {
-display: flex;
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-margin-left: -80px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: -80px;
 }
 li {
-list-style: none;
+  list-style: none;
 }
 .box {
   position: absolute;
@@ -136,7 +135,7 @@ button:hover {
   --spread-y: 103.18%;
   --color-1: #121112;
   --color-2: #242328;
-  --color-3: #27252B;
+  --color-3: #27252b;
   --color-4: #131215;
   --color-5: #201e24;
   --stop-1: 0%;
@@ -145,4 +144,3 @@ button:hover {
   --stop-4: 71.34%;
   --stop-5: 85.76%;
 }
-

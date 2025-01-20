@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="assets/styles/animation.css" />
     <link rel="stylesheet" href="assets/styles/particle.css" />
     <link rel="stylesheet" href="assets/styles/nav.css" />
+    <script src="assets/js/starback.js"></script>
     <script src="/baremux/index.js"></script>
     <script src="/epoxy/index.js"></script>
     <script src="/uv/uv.bundle.js"></script>
     <script src="/uv/uv.config.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="/sw.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="assets/js/setting.js"></script>
@@ -61,6 +62,23 @@
         </div>
       </div>
     </nav>
+    <canvas id="canvas"></canvas>
+    <script src="assets/js/starback.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: "dot",
+        quantity: 150,
+        direction: 255,
+        backgroundColor: ["#0d1d31", "#0c0d13"],
+        randomOpacity: true,
+        starSize: [0, 1],
+        showFps: true,
+      });
+    </script>
+
     <div class="nav">
       <div class="main"></div>
     </div>
