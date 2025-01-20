@@ -14,10 +14,10 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  font-size: 8vw;
+  font-size: 10vw;
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
-  left: 40vw;
+  left: 35vw;
 }
 img {
   opacity: 0;
