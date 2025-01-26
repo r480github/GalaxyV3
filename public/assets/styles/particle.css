@@ -34,7 +34,7 @@ canvas {
 #hero .content h1 {
   text-align: center;
   font-size: clamp(2rem, 3vw, 8rem);
-  color: white;
+  color: rgb(58, 21, 21);
   width: clamp(300px, 70vw, 1500px);
   margin-bottom: 3rem;
   opacity: 0;
@@ -45,6 +45,7 @@ canvas {
   padding: 1rem;
   border-radius: 0.3rem;
   text-decoration: none;
+
 }
 .btn-light {
   background-color: transparent;
