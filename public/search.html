@@ -22,12 +22,28 @@
       defer
     ></script>
   </head>
-  <body>
+
+  <script>
+    function forcereload() {
+      if (document.cookie.indexOf("reloadedOnce=true") === -1) {
+        console.log("Page is reloading once.");
+        document.cookie = "reloadedOnce=true; path=/";
+        location.reload();
+      }
+    }
+    forcereload();
+  </script>
+  <body onload="forcereload();">
     <div class="nav">
       <a class="navbtn" class="searchbtn" onclick="back()">Back</a>
       <a class="navbtn" class="searchbtn" onclick="reload()">Reload</a>
       <a class="navbtn" class="searchbtn" onclick="forward()">Forward</a>
-      <a class="navbtn" class="searchbtn" onclick="window.location.href='p.html';">Exit</a>
+      <a
+        class="navbtn"
+        class="searchbtn"
+        onclick="window.location.href='p.html';"
+        >Exit</a
+      >
     </div>
     <div class="container">
       <div id="hide" class="loadingthing">
@@ -62,33 +78,32 @@
         }
       }
     </script>
-        <canvas id="canvas"></canvas>
-        <script src="assets/js/starback.js"></script>
-        <script>
-          const canvas = document.getElementById("canvas");
-          const starback = new Starback(canvas, {
-            width: document.body.clientWidth,
-            height: document.body.clientHeight,
-            type: "dot",
-            quantity: 150,
-            direction: 255,
-            backgroundColor: ["#0d1d31", "#0c0d13"],
-            randomOpacity: true,
-            starSize: [0, 1],
-            showFps: true,
+    <canvas id="canvas"></canvas>
+    <script src="assets/js/starback.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: "dot",
+        quantity: 150,
+        direction: 255,
+        backgroundColor: ["#0d1d31", "#0c0d13"],
+        randomOpacity: true,
+        starSize: [0, 1],
+        showFps: true,
+      });
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const toggleState = localStorage.getItem("toggleState") === "true";
+        if (toggleState) {
+          window.addEventListener("beforeunload", function (e) {
+            e.preventDefault();
+            e.returnValue = "";
           });
-        </script>
-      <script>
-        window.addEventListener('load', function() {
-          const toggleState = localStorage.getItem('toggleState') === 'true';
-          if (toggleState) {
-            window.addEventListener('beforeunload', function (e) {
-              e.preventDefault();
-              e.returnValue = '';
-            });
-          }
-        });
-      </script>
-    
+        }
+      });
+    </script>
   </body>
 </html>

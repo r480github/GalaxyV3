@@ -40,12 +40,12 @@ fetch("/assets/json/games.json")
     });
   });
   document.getElementById('search').addEventListener('input', function() {
-    const query = this.value.toLowerCase();
+    const searchitem = this.value.toLowerCase();
     const games = document.querySelectorAll('.game');
   
     games.forEach(game => {
       const gameName = game.querySelector('h3').textContent.toLowerCase();
-      if (gameName.includes(query)) {
+      if (gameName.includes(searchitem)) {
         game.style.display = 'flex';
       } else {
         game.style.display = 'none';

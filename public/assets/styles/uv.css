@@ -10,6 +10,7 @@ body {
   display: flex;
   overflow: hidden;
   height: 100vh;
+  width: 100vw;
 }
 .container {
   text-align: center;
@@ -123,11 +124,17 @@ input, button{
 }
 input {
   width: 50%;
+  border-right: 0px ;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 
 }
 button {
+  border-left: 0px ;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+
   cursor: pointer;
-  margin-left: 1vw;
   background-color: rgba(89, 89, 129, 0.432); 
 }
 .nav {
@@ -198,9 +205,9 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-right: 20vw;
-  padding-left: 20vw;
-  gap: 3vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  gap: 2vw;
 }
 
 .game {

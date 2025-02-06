@@ -15,6 +15,17 @@
     "url": "https://w8.snokido.com/games/unity-webgl/dance-fire-and-ice/index.html",
     "image": "adfi.png"
   },
+  {
+    "name": "Baldi's Basics",
+    "url": "https://en.gameslol.net/data/baldis-basics/index.html",
+    "image": ""
+  },
+
+  {
+    "name": "BitLife",
+    "url": "https://www.rapidwebapp.com/game/BitLife/index.html",
+    "image": ""
+  },
 
   {
     "name": "BloonsTD",
@@ -32,16 +43,21 @@
     "image": "cookie.jpg"
   },
   {
-    "name": "Dreader",
-    "url": "https://kdata1.com/2020/10/2811226/?key=y8&value=default",
-    "image": "dreader.webp"
+    "name": "Drift Hunters",
+    "url": "https://games.crazygames.com/en_US/drift-hunters/index.html?aaConfigcatTest=false&abconfigcatabhra=false&v=1.320",
+    "image": ""
   },
+
   {
     "name": "eagtek(Minecraft)",
     "url": "https://lite.3kh0.net/projects/minecraft/",
     "image": "eagtek.jpg"
   },
-
+  {
+    "name": "Resent Client",
+    "url": "https://resent4-0.vercel.app/",
+    "image": ""
+  },
   {
     "name": "ev.io",
     "url": "https://ev.io/",
@@ -52,6 +68,12 @@
     "url": "https://fite.lol/",
     "image": "fite.webp"
   },
+  {
+    "name": "Helix Jump",
+    "url": "https://games.crazygames.com/en_US/helix-jump/index.html?v=1.319",
+    "image": ""
+  },
+
   {
     "name": "Madalin Stunt Cars",
     "url": "https://madalinstuntcars2.io/game/",
@@ -84,6 +106,11 @@
     "name": "Slope",
     "url": "https://slope3dgame.com/data/v3v1/",
     "image": "slope.png"
+  },
+  {
+    "name": "Slice Master",
+    "url": "https://games.crazygames.com/en_US/slice-master/index.html?v=1.319/",
+    "image": ""
   },
 
   {

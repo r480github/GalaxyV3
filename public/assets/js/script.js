@@ -67,12 +67,5 @@ function checkAlert() {
     sessionStorage.setItem("alertDisplayed", "true");
   }
 }
-
 checkAlert();
-function forcereload() {
-  if (!sessionStorage.getItem("reloaded")) {
-    console.log("Page is reloading for the first time.");
-    sessionStorage.setItem("reloaded", "true");
-    location.reload();
-  }
-}
+

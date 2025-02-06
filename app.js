@@ -39,9 +39,9 @@ server.on("upgrade", (req, socket, head) => {
         socket.end();
 });
 
-let port = parseInt(process.env.PORT || "8080");
+let port = parseInt(process.env.PORT || "8000");
 
-if (isNaN(port)) port = 8080;
+if (isNaN(port)) port = 8000;
 
 server.on("listening", () => {
     const address = server.address();

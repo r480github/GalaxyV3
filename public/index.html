@@ -18,11 +18,11 @@
     <meta charset="UTF-8" />
     <title>Home</title>
   </head>
-  <body>
+  <body onload="forcereload()">
     <nav class="navbar">
       <div class="navbar__menu">
         <div class="navbar__item">
-          <a href="#" class="navbar__link"
+          <a onclick="forcereload()"  class="navbar__link"
             ><ion-icon name="home-outline"></ion-icon><span>Home</span></a
           >
         </div>
@@ -88,44 +88,6 @@
         showFps: true,
       });
     </script>
-    <div class="stars">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-    </div>
-
     <img src="img/Mountain 2.png" alt="Mountain" />
     <script type="module" src="assets/js/loop.js"></script>
     <script src="assets/js/script.js"></script>
@@ -144,23 +106,24 @@
         }
       });
       function checkAutoCloak() {
-            if (localStorage.getItem("autoAB") === null) {
-                localStorage.setItem("autoAB", "true");
-            }
-
-            document.getElementById("toggle").checked = localStorage.getItem("autoAB") === "true";
-
-            if (localStorage.getItem("autoAB") === "true") {
-                ABCloak(true);
-            }
+        if (localStorage.getItem("autoAB") === null) {
+          localStorage.setItem("autoAB", "true");
         }
-        window.onload = checkAutoCloak;
-        document.getElementById("toggle").addEventListener("change", function () {
-            localStorage.setItem("autoAB", this.checked);
-            ABCloak(this.checked);
-        });
 
-    </script>
+        document.getElementById("toggle").checked =
+          localStorage.getItem("autoAB") === "true";
+
+        if (localStorage.getItem("autoAB") === "true") {
+          ABCloak(true);
+        }
+      }
+      window.onload = checkAutoCloak;
+      document.getElementById("toggle").addEventListener("change", function () {
+        localStorage.setItem("autoAB", this.checked);
+        ABCloak(this.checked);
+      });
+    </script> 
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/setting.js"></script>
   </body>
 </html>
