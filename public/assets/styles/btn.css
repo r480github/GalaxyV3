@@ -109,3 +109,125 @@ li:hover {
   color: #f2e9e4;
   box-shadow: 0 0 30px rgba(217, 205, 237, 0.5);
 }
+
+
+/*Cool Button*/
+
+button {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.641);
+  border-radius: 11px;
+  border: none;
+  padding: 16px 32px;
+  min-width: 120px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: radial-gradient(
+    var(--spread-x) var(--spread-y) at var(--pos-x) var(--pos-y),
+    var(--color-1) var(--stop-1),
+    var(--color-2) var(--stop-2),
+    var(--color-3) var(--stop-3),
+    var(--color-4) var(--stop-4),
+    var(--color-5) var(--stop-5)
+  );
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: --pos-x 0.5s, --pos-y 0.5s, --spread-x 0.5s, --spread-y 0.5s,
+    --color-1 0.5s, --color-2 0.5s, --color-3 0.5s, --color-4 0.5s,
+    --color-5 0.5s, --stop-1 0.5s, --stop-2 0.5s, --stop-3 0.5s, --stop-4 0.5s,
+    --stop-5 0.5s;
+}
+
+button:hover {
+  --pos-x: 0%;
+  --pos-y: 91.51%;
+  --spread-x: 120.24%;
+  --spread-y: 103.18%;
+  --color-1: #121112;
+  --color-2: #242328;
+  --color-3: #27252b;
+  --color-4: #131215;
+  --color-5: #201e24;
+  --stop-1: 0%;
+  --stop-2: 8.8%;
+  --stop-3: 21.44%;
+  --stop-4: 71.34%;
+  --stop-5: 85.76%;
+}
+@property --pos-x {
+  syntax: "<percentage>";
+  initial-value: 11.14%;
+  inherits: false;
+}
+@property --pos-y {
+  syntax: "<percentage>";
+  initial-value: 140%;
+  inherits: false;
+}
+@property --spread-x {
+  syntax: "<percentage>";
+  initial-value: 150%;
+  inherits: false;
+}
+@property --spread-y {
+  syntax: "<percentage>";
+  initial-value: 180.06%;
+  inherits: false;
+}
+@property --color-1 {
+  syntax: "<color>";
+  initial-value: #222222;
+  inherits: false;
+}
+@property --color-2 {
+  syntax: "<color>";
+  initial-value: #2b2b2b;
+  inherits: false;
+}
+@property --color-3 {
+  syntax: "<color>";
+  initial-value: #121112;
+  inherits: false;
+}
+@property --color-4 {
+  syntax: "<color>";
+  initial-value: #242328;
+  inherits: false;
+}
+@property --color-5 {
+  syntax: "<color>";
+  initial-value: #27252B;
+  inherits: false;
+}
+@property --stop-1 {
+  syntax: "<percentage>";
+  initial-value: 37.35%;
+  inherits: false;
+}
+@property --stop-2 {
+  syntax: "<percentage>";
+  initial-value: 61.36%;
+  inherits: false;
+}
+@property --stop-3 {
+  syntax: "<percentage>";
+  initial-value: 78.42%;
+  inherits: false;
+}
+@property --stop-4 {
+  syntax: "<percentage>";
+  initial-value: 89.52%;
+  inherits: false;
+}
+@property --stop-5 {
+  syntax: "<percentage>";
+  initial-value: 100%;
+  inherits: false;
+}
