@@ -9,6 +9,7 @@ body {
   justify-content: center;
 }
 h1 {
+  opacity: 0;
   z-index: 10000000;
   background: -webkit-linear-gradient(white, #4a4e69);
   -webkit-background-clip: text;
@@ -18,6 +19,7 @@ h1 {
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
   left: 35vw;
+  animation: transitionIn 0.7s ease-out forwards;
 }
 img {
   opacity: 0;

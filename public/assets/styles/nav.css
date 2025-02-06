@@ -40,9 +40,32 @@
   transform: translate(0);
 }
 .navbar__item {
+  opacity: 0;
   margin: 3vh;
 }
 ion-icon {
   font-size: 2.1vw;
   color: #c4c8e6;
+}
+.one { 
+  animation: navloader 0.5s ease-out forwards;
+}
+.two {
+  animation: navloader 0.5s 0.2s ease-out forwards;
+}
+.three {
+  animation: navloader 0.5s 0.4s ease-out forwards;
+
+}
+.four {
+  animation: navloader 0.5s 0.6s ease-out forwards;
+
+}
+.five {
+  animation: navloader 0.5s 0.8s ease-out forwards;
+
+}
+.six {
+  animation: navloader 0.5s 1s ease-out forwards;
+
 }

@@ -24,7 +24,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  font-size: 8vw;
+  font-size: 7vw;
   font-family: "Noto Sans", sans-serif;
   font-weight: 100;
 }
@@ -48,8 +48,9 @@ h1 {
   flex-direction: column;
   align-items: center;
   border: 2px solid black;
-  width: 38vh;
-  height: 25vh;
+  width: 36vh;
+  height: 20vh;
+  padding-bottom: 2vh;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
