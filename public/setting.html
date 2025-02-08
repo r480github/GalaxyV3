@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://ssl.gstatic.com/classroom/favicon.png"
-    />
+
+<head>
+    <link rel="icon" type="image/x-icon" href="https://ssl.gstatic.com/classroom/favicon.png" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/styles/setting.css" />
@@ -19,128 +16,114 @@
 
     <meta charset="UTF-8" />
     <title>Home</title>
-  </head>
-  <body onload="forcereload();">
+</head>
+
+<body onload="forcereload();">
     <!--NAV BAR-->
     <nav class="navbar">
-      <div class="navbar__menu">
-        <div class="navbar__item one">
-          <a href="index.html" class="navbar__link"
-            ><ion-icon name="home-outline"></ion-icon><span>Home</span></a
-          >
+
+        <div class="navbar__menu">
+            <div class="navbar__item ">
+                <a href="/" class="navbar__link">
+                    <ion-icon name="home-outline"></ion-icon><span>Home</span>
+                </a>
+            </div>
+            <div class="navbar__item ">
+                <a href="p.html" class="navbar__link">
+                    <ion-icon name="search-outline"></ion-icon><span>Proxy</span>
+                </a>
+            </div>
+            <div class="navbar__item ">
+                <a href="game.html" class="navbar__link">
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                    <span>Games</span>
+                </a>
+            </div>
+            <div class="navbar__item ">
+                <a href="app.html" class="navbar__link">
+                    <ion-icon name="apps-outline"></ion-icon><span>Apps</span>
+                </a>
+            </div>
+            <div class="navbar__item ">
+                <a href="https://discord.gg/6wQTrrfNcr" class="navbar__link">
+                    <ion-icon name="help-circle-outline"></ion-icon><span>Help</span>
+                </a>
+            </div>
+            <div class="navbar__item ">
+                <a href="setting.html" class="navbar__link">
+                    <ion-icon name="settings-outline"></ion-icon><span>Settings</span>
+                </a>
+            </div>
         </div>
-        <div class="navbar__item two">
-          <a href="p.html" class="navbar__link"
-            ><ion-icon name="search-outline"></ion-icon><span>Proxy</span></a
-          >
-        </div>
-        <div class="navbar__item three">
-          <a href="game.html" class="navbar__link"
-            ><ion-icon name="game-controller-outline"></ion-icon>
-            <span>Games</span></a
-          >
-        </div>
-        <div class="navbar__item four">
-          <a href="app.html" class="navbar__link"
-            ><ion-icon name="apps-outline"></ion-icon><span>Apps</span></a
-          >
-        </div>
-        <div class="navbar__item five">
-          <a href="https://discord.gg/6wQTrrfNcr" class="navbar__link"
-            ><ion-icon name="help-circle-outline"></ion-icon
-            ><span>Help</span></a
-          >
-        </div>
-        <div class="navbar__item six">
-          <a href="#" class="navbar__link"
-            ><ion-icon name="settings-outline"></ion-icon
-            ><span>Settings</span></a
-          >
-        </div>
-      </div>
     </nav>
     <div class="main">
-      <h1>Settings</h1>
-      <section class="cloneable">
-        <div class="cards">
-          <div
-            class="card"
-            data-cursor="Automatically launches about:blank when opening Galaxy <br> preventing the website from appearing in your history"
-          >
-            <p>Auto Cloak</p>
-            <input
-              type="checkbox"
-              id="toggle"
-              data-on="ON"
-              data-off="OFF"
-              role="switch"
-              class="circle"
-              checked
-            />
-            <script>
-    // Check if localStorage has a value for autoAB, if not set it to true
-    if (localStorage.getItem("autoAB") === null) {
-      localStorage.setItem("autoAB", "true");
-    }
+        <h1>Settings</h1>
+        <section class="cloneable">
+            <div class="cards">
+                <div class="card" data-cursor="Automatically launches about:blank when opening Galaxy <br> preventing the website from appearing in your history">
+                    <p>Auto Cloak</p>
+                    <input type="checkbox" id="toggle" data-on="ON" data-off="OFF" role="switch" class="circle" checked />
+                    <script>
+                        // Check if localStorage has a value for autoAB, if not set it to true
+                        if (localStorage.getItem("autoAB") === null) {
+                            localStorage.setItem("autoAB", "true");
+                        }
 
-    // Set the checkbox based on localStorage value
-    document.getElementById("toggle").checked =
-      localStorage.getItem("autoAB") === "true";
+                        // Set the checkbox based on localStorage value
+                        document.getElementById("toggle").checked =
+                            localStorage.getItem("autoAB") === "true";
 
-    // Update localStorage value when the checkbox is changed
-    document.getElementById("toggle").addEventListener("change", function () {
-      localStorage.setItem("autoAB", this.checked);
-    });
-            </script>
-          </div>
-          <div class="card" data-cursor="Open tab in About:Blank">
-            <p>Launch Cloak</p>
-            <li onclick="opencloak()">Launch</li>
-          </div>
-          <div
-            class="card"
-            data-cursor="Prevents GoGuardian from closing the tab by launching <br>  'Changes you made may not be saved' prompt"
-          >
-            <p>Anti-Close</p>
-            <input type="checkbox" role="switch" class="circle" id="myToggle" />
-            <script>
-              const myToggle = document.getElementById("myToggle");
-              myToggle.checked = localStorage.getItem("toggleState") === "true";
-              myToggle.addEventListener("change", () => {
-                localStorage.setItem("toggleState", myToggle.checked);
-              });
-            </script>
-          </div>
-        </div>
-        <div class="cursor">
-          <p></p>
-        </div>
-      </section>
+                        // Update localStorage value when the checkbox is changed
+                        document.getElementById("toggle").addEventListener("change", function() {
+                            localStorage.setItem("autoAB", this.checked);
+                            location.reload();
+
+                        });
+                    </script>
+                </div>
+                <div class="card" data-cursor="Open tab in About:Blank">
+                    <p>Launch Cloak</p>
+                    <li onclick="opencloak()">Launch</li>
+                </div>
+                <div class="card" data-cursor="Prevents GoGuardian from closing the tab by launching <br>  'Changes you made may not be saved' prompt">
+                    <p>Anti-Close</p>
+                    <input type="checkbox" role="switch" class="circle" id="myToggle" />
+                    <script>
+                        const myToggle = document.getElementById("myToggle");
+                        myToggle.checked = localStorage.getItem("toggleState") === "true";
+                        myToggle.addEventListener("change", () => {
+                            localStorage.setItem("toggleState", myToggle.checked);
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="cursor">
+                <p></p>
+            </div>
+        </section>
     </div>
     <!--BACKGROUNDS-->
     <canvas id="canvas"></canvas>
 
     <script src="assets/js/starback.js"></script>
     <script>
-      const canvas = document.getElementById("canvas");
-      const starback = new Starback(canvas, {
-        width: document.body.clientWidth,
-        height: document.body.clientHeight,
-        type: "dot",
-        quantity: 150,
-        direction: 255,
-        backgroundColor: ["#0d1d31", "#0c0d13"],
-        randomOpacity: true,
-        starSize: [0, 1],
-        showFps: true,
-      });
+        const canvas = document.getElementById("canvas");
+        const starback = new Starback(canvas, {
+            width: document.body.clientWidth,
+            height: document.body.clientHeight,
+            type: "dot",
+            quantity: 150,
+            direction: 255,
+            backgroundColor: ["#0d1d31", "#0c0d13"],
+            randomOpacity: true,
+            starSize: [0, 1],
+            showFps: true,
+        });
     </script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="assets/js/script.js"></script>
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
-    ></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  </body>
+</body>
+
 </html>

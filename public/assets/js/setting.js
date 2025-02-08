@@ -89,7 +89,7 @@ function ABCloak(redirectToEducationalSite) {
 
         var name = "Home";
         var icon =
-          "https://www.gstatic.com/";
+          "https://ssl.gstatic.com/classroom/favicon.png";
         if (localStorage.getItem("cloakTitle") !== null) {
           name = localStorage.getItem("cloakTitle");
           icon = localStorage.getItem("cloakIcon");

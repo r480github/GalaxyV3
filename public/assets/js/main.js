@@ -81,4 +81,3 @@ if (form && input) {
     });
 
 }
-

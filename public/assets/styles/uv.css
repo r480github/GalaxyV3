@@ -90,7 +90,7 @@ li {
   z-index: 1000000;
   cursor: pointer;
   color: #9a8c98;
-  margin: 2.5vw;
+  margin: 30px;
   list-style-type: none;
   font-size: 2.3em;
   transition-duration: 0.2s;
@@ -106,10 +106,10 @@ li:hover {
   color: #f2e9e4;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-#form {
+.form {
   margin-top: 8%;
 }
-input, button{
+.input, button{
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -122,12 +122,11 @@ input, button{
   background: none;
   color: white;
 }
-input {
+.input {
   width: 50%;
   border-right: 0px ;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-
 }
 button {
   border-left: 0px ;
@@ -138,12 +137,42 @@ button {
   background-color: rgba(89, 89, 129, 0.432); 
 }
 .nav {
-  z-index: 1000000000;
-  background: #0d1d31;
-  width: 100vw;
-  height: 3vh;  
   display: flex;
-  justify-content: center;
+  z-index: 1000000000;
+  background-color: #030e1a;
+  width: 100vw;
+  flex-grow: 1;
+
+}
+.left {
+  margin-top: 12px;
+  display: flex;
+  float: left;
+}
+.right {
+  margin-top: 12px;
+  display: flex;
+
+  float: right;
+}
+.center{
+  margin-top: 12px;
+  width: 100%;
+  height: 25px;
+
+}
+.searchbar {
+  width: 99%;
+  height: 18px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 100000;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  outline: none;
+  background: none;
+  color: white;
+
 }
 .navbtn {
   z-index: 1000000;
@@ -154,24 +183,32 @@ button {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
-  padding: 0px 20px;
+  padding: 0px 10px 0px 10px;
   border-radius: 5px;
 
 }
+ion-icon {
+  font-size: 30px;
+  color: #c4c8e6;
+  margin: 0px;
+}
+
 a:hover {
   color: #f2e9e4;
 }
 #frame {
   z-index: 1000000;
   position: absolute;
-  top: 15px;
+  top: 46px;
   left: 0;
   width: 100%;
   max-width: 100%;
   height: 97vh;
   border-radius: 0;
 }
-
+.search{
+  flex-grow: 1;
+}
 .loading {
   z-index: 1000000;
   position: absolute;
@@ -194,7 +231,7 @@ a:hover {
 }
 #loadingMessage {
   position: fixed;
-  top: 1vh;
+  top: 4vh;
   left: 10px;
   color: white;
   font-family: "Noto Sans", sans-serif;
@@ -207,7 +244,7 @@ a:hover {
   flex-wrap: wrap;
   padding-left: 7vw;
   padding-right: 7vw;
-  gap: 2vw;
+  gap: 3vw;
 }
 
 .game {
@@ -218,8 +255,11 @@ a:hover {
   text-align: center;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  width: 163px;
 }
+.game img {
+  width: 100%
+}
+
 .game:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;

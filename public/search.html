@@ -17,34 +17,44 @@
     <script src="/assets/js/main.js"></script>
     <script src="/sw.js"></script>
     <script src="assets/js/script.js"></script>
+
     <script
       src="https://unpkg.com/@rubynetwork/rammerhead-browser"
       defer
     ></script>
   </head>
 
-  <script>
-    function forcereload() {
-      if (document.cookie.indexOf("reloadedOnce=true") === -1) {
-        console.log("Page is reloading once.");
-        document.cookie = "reloadedOnce=true; path=/";
-        location.reload();
-      }
-    }
-    forcereload();
-  </script>
-  <body onload="forcereload();">
+  <body>
     <div class="nav">
-      <a class="navbtn" class="searchbtn" onclick="back()">Back</a>
-      <a class="navbtn" class="searchbtn" onclick="reload()">Reload</a>
-      <a class="navbtn" class="searchbtn" onclick="forward()">Forward</a>
-      <a
-        class="navbtn"
-        class="searchbtn"
-        onclick="window.location.href='p.html';"
-        >Exit</a
-      >
+      <div class="left">
+        <a class="navbtn" class="searchbtn" onclick="back()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          <a class="navbtn" class="searchbtn" onclick="forward()">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+          <a class="navbtn" class="searchbtn" onclick="reload()">
+            <ion-icon name="refresh-outline"></ion-icon>
+          </a>
+        </a>
+      </div>
+      <div class="center">
+        <form id="form" class="searchform">
+          <input id="input" class="searchbar" placeholder="search bar" />
+        </form>
+      </div>
+      <div class="right">
+        <a class="navbtn" class="searchbtn" onclick="fullscreen()">
+          <ion-icon name="expand-outline"></ion-icon>
+        </a>
+        <a
+          class="navbtn"
+          class="searchbtn"
+          onclick="window.location.href='index.html';"
+        >
+        <ion-icon name="close-outline"></ion-icon>              </a>
+      </div>
     </div>
+
     <div class="container">
       <div id="hide" class="loadingthing">
         <div class="dot dot1"></div>
@@ -61,20 +71,35 @@
     <iframe src="" frameborder="0" id="frame"></iframe>
     <script>
       document.getElementById("frame").src = localStorage.getItem("url");
+
       function reload() {
-        var iframe = document.getElementById("frame");
-        iframe.contentWindow.location.reload();
+        const frame = document.getElementById("frame");
+        frame.contentWindow.location.reload();
+        location.reload();
       }
+
       function back() {
-        var iframe = document.getElementById("frame");
-        if (iframe.contentWindow.history.length > 1) {
-          iframe.contentWindow.history.back();
-        }
+        const frame = document.getElementById("frame");
+        frame.contentWindow.history.back();
       }
+
       function forward() {
+        const frame = document.getElementById("frame");
+        frame.contentWindow.history.forward();
+      }
+      function fullscreen() {
         var iframe = document.getElementById("frame");
-        if (iframe.contentWindow.history.length > 1) {
-          iframe.contentWindow.history.forward();
+        if (iframe.requestFullscreen) {
+          iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) {
+          // Firefox
+          iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) {
+          // Chrome, Safari and Opera
+          iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) {
+          // IE/Edge
+          iframe.msRequestFullscreen();
         }
       }
     </script>
@@ -105,5 +130,15 @@
         }
       });
     </script>
+    <script src="/assets/js/main.js"></script>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

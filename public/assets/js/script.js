@@ -1,4 +1,5 @@
 function opencloak() {
+  
   var win = window.open();
   var url = "/";
   var iframe = win.document.createElement("iframe");
