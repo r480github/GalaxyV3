@@ -8,7 +8,7 @@ Galaxy is a minimalistic open source proxy that is capable of evading internet c
 
 ## Demo 🏴󠁺󠁡󠁦󠁳󠁿
 
-#### https://gentle-indigo-fox.icu/
+#### https://whrhs.online
 
 ## Run Galaxy Locally 🚀
 
@@ -63,5 +63,7 @@ npm start
 ## Credits
 
 - [Titanium Network's awsome proxy](https://github.com/titaniumnetwork-dev/Ultraviolet)
-- [Background Animatino](https://codepen.io/alphardex/pen/RwrVoeL)
+- [Background made with Starback.js](https://github.com/zuramai/starback.js)
+- [Discord Server](https://discord.com/invite/6wQTrrfNcr)
+- [Icons](https://github.com/ionic-team/ionicons)
 - [da best dev ever](https://github.com/r480github)
