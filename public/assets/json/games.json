@@ -18,13 +18,13 @@
   {
     "name": "Baldi's Basics",
     "url": "https://en.gameslol.net/data/baldis-basics/index.html",
-    "image": ""
+    "image": "baldi.jpg"
   },
 
   {
     "name": "BitLife",
     "url": "https://www.rapidwebapp.com/game/BitLife/index.html",
-    "image": ""
+    "image": "bitlife.png"
   },
 
   {
@@ -45,7 +45,7 @@
   {
     "name": "Drift Hunters",
     "url": "https://games.crazygames.com/en_US/drift-hunters/index.html?aaConfigcatTest=false&abconfigcatabhra=false&v=1.320",
-    "image": ""
+    "image": "drift.jpg"
   },
 
   {
@@ -56,7 +56,7 @@
   {
     "name": "Resent Client",
     "url": "https://resent4-0.vercel.app/",
-    "image": ""
+    "image": "resent.png"
   },
   {
     "name": "ev.io",
@@ -71,12 +71,12 @@
   {
     "name": "Helix Jump",
     "url": "https://games.crazygames.com/en_US/helix-jump/index.html?v=1.319",
-    "image": ""
+    "image": "helix.jpg"
   },
   {
     "name": "Hole.io",
     "url": "https://holegame.io/hole-io.embed",
-    "image": ""
+    "image": "hole.jpeg"
   },
 
   {
@@ -115,7 +115,7 @@
   {
     "name": "Slice Master",
     "url": "https://games.crazygames.com/en_US/slice-master/index.html?v=1.319/",
-    "image": ""
+    "image": "slice.avif"
   },
 
   {
