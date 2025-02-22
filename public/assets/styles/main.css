@@ -15,7 +15,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   position: absolute;
   font-size: 10vw;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", serif;
   font-weight: 300;
   left: 35vw;
   animation: transitionIn 0.7s ease-out forwards;

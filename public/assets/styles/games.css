@@ -1,7 +1,7 @@
 body,
 html {
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-  height: auto;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll; /* Ensure scrolling is enabled */
   scrollbar-width: none; /* For Firefox */
@@ -111,17 +111,16 @@ body::-webkit-scrollbar {
   margin-top: -3.5vh;
   font-size: 140%;
   padding: 0.25vw;
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", serif;
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
-  text-shadow: 1px 1px 10px #d8bfd8;
   opacity: 0;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
 }
 .game:hover h3 {
   opacity: 1;
 }
 .game:hover img {
-  filter: brightness(0.8);
+  filter: brightness(0.6);
 }
