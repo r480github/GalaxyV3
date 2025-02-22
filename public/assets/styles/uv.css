@@ -203,7 +203,7 @@ a:hover {
   left: 0;
   width: 100%;
   max-width: 100%;
-  height: 97vh;
+  height: 96vh;
   border-radius: 0;
 }
 .search{
@@ -238,7 +238,7 @@ a:hover {
   font-size: 1.2em;
 }
 .games {
-  margin-top: 5vh;
+  margin-top: 8vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
