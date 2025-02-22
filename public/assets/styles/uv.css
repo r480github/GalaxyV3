@@ -124,8 +124,9 @@ li:hover {
   border-right: 0px ;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  background-image: url('search-icon.png');
-  background-position: 10px center; 
+  background-image: url('../../img/search.png');
+  background-size: 30px;
+  background-position: 5px 8px; 
   background-repeat: no-repeat;
   padding-left: 40px; 
 }
