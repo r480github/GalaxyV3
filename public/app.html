@@ -13,22 +13,24 @@
     <link rel="stylesheet" href="assets/styles/animation.css" />
     <link rel="stylesheet" href="assets/styles/particle.css" />
     <link rel="stylesheet" href="assets/styles/nav.css" />
-    <script src="assets/js/starback.js"></script>
     <script src="/baremux/index.js"></script>
     <script src="/epoxy/index.js"></script>
     <script src="/uv/uv.bundle.js"></script>
     <script src="/uv/uv.config.js"></script>
-    <script src="/sw.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="/sw.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="assets/js/setting.js"></script>
   </head>
+  
   <body>
+    
     <nav class="navbar">
+
       <div class="navbar__menu">
         <div class="navbar__item ">
-          <a href="/" class="navbar__link"
+            <a href="/" class="navbar__link"
             ><ion-icon name="home-outline"></ion-icon><span>Home</span></a
           >
         </div>
@@ -43,12 +45,12 @@
             <span>Games</span></a
           >
         </div>
-        <div class="navbar__item">
+        <div class="navbar__item ">
           <a href="app.html" class="navbar__link"
             ><ion-icon name="apps-outline"></ion-icon><span>Apps</span></a
           >
         </div>
-        <div class="navbar__item">
+        <div class="navbar__item ">
           <a href="https://discord.gg/6wQTrrfNcr" class="navbar__link"
             ><ion-icon name="help-circle-outline"></ion-icon
             ><span>Help</span></a
@@ -62,28 +64,31 @@
         </div>
       </div>
     </nav>
-    <canvas id="canvas"></canvas>
-    <script src="assets/js/starback.js"></script>
-    <script>
-      const canvas = document.getElementById("canvas");
-      const starback = new Starback(canvas, {
-        width: document.body.clientWidth,
-        height: document.body.clientHeight,
-        type: "dot",
-        quantity: 150,
-        direction: 255,
-        backgroundColor: ["#0d1d31", "#0c0d13"],
-        randomOpacity: true,
-        starSize: [0, 1],
-        showFps: true,
-      });
-    </script>
-
+    
     <div class="nav">
-      <div class="main"></div>
+      <div class="main">
+        <canvas id="canvas"></canvas>
+        <script src="assets/js/starback.js"></script>
+        <script>
+          const canvas = document.getElementById("canvas");
+          const starback = new Starback(canvas, {
+            width: document.body.clientWidth,
+            height: document.body.clientHeight,
+            type: "dot",
+            quantity: 100,
+            direction: 255,
+            backgroundColor: ["#0d1d31", "#0c0d13"],
+            randomOpacity: true,
+            starSize: [0, 1],
+            showFps: true,
+          });
+        </script>
+    
+      </div>
+      
     </div>
     <div class="main-div">
-      <input type="text" id="search" placeholder="Search apps..." />
+      <input type="text" id="search" placeholder="Search games..." />
     </div>
     <section class="cloneable">
       <div class="games"></div>
