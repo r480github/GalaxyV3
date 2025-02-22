@@ -20,9 +20,8 @@
 }
 .navbar__link span {
   position: absolute;
-  left: 100%;
+  left: 80%;
   transform: translate(-3rem);
-  margin-left: 1rem;
   opacity: 0;
   pointer-events: none;
   background: -webkit-linear-gradient(white, #4a4e69);
