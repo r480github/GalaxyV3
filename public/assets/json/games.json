@@ -19,13 +19,11 @@
     "url": "https://en.gameslol.net/data/baldis-basics/index.html",
     "image": "baldi.jpg"
   },
-
   {
     "name": "BitLife",
     "url": "https://www.rapidwebapp.com/game/BitLife/index.html",
     "image": "bitlife.png"
   },
-
   {
     "name": "BloonsTD",
     "url": "https://games.crazygames.com/en_US/bloons-tower-defense/index.html?v=1.309",
@@ -42,20 +40,20 @@
     "image": "cookie.jpg"
   },
   {
+    "name": "Demonin's Item Shop",
+    "url": "https://www.demonin.com/games/",
+    "image": "demonin.jpg"
+  },
+
+  {
     "name": "Drift Hunters",
     "url": "https://htmlxm.github.io/h/drift-hunters/",
     "image": "drift.jpg"
   },
-
   {
     "name": "eagtek(Minecraft)",
     "url": "https://lite.3kh0.net/projects/minecraft/",
     "image": "eagtek.jpg"
-  },
-  {
-    "name": "Resent Client",
-    "url": "https://resent4-0.vercel.app/",
-    "image": "resent.png"
   },
   {
     "name": "ev.io",
@@ -77,34 +75,30 @@
     "url": "https://holeio.me/g/41",
     "image": "hole.jpeg"
   },
-
   {
     "name": "Madalin Stunt Cars",
     "url": "https://madalinstuntcars2.io/game/",
     "image": "madalin.jpg"
   },
-
   {
     "name": "Moto X3M",
     "url": "https://moto-x3m.net/main.html",
     "image": "moto.jpg"
   },
-
   {
     "name": "Paper.io",
     "url": "https://paper-io.com/",
     "image": "paperio.jpg"
   },
-
   {
     "name": "PolyTrack",
-    "url": "https://coolubg.github.io/coolubg-list/polytrack/polytrack-0.3.1/index.html",
+    "file": "/games/polytrack",
     "image": "polytrack.jpg"
   },
   {
-    "name": "Two Player Tag",
-    "url": "https://games.construct.net/39/5545/embed.html?uid=0&o=1",
-    "image": "tpt.avif"
+    "name": "Resent Client",
+    "url": "https://resent4-0.vercel.app/",
+    "image": "resent.png"
   },
   {
     "name": "Slope",
@@ -116,7 +110,6 @@
     "url": "https://games.crazygames.com/en_US/slice-master/index.html?v=1.319/",
     "image": "slice.avif"
   },
-
   {
     "name": "Space Waves",
     "url": "https://games.crazygames.com/en_US/space-waves/index.html",
@@ -127,21 +120,104 @@
     "url": "https://bitlifeonline.github.io/stickman-dragon-fight/",
     "image": "stickman.jpg"
   },
-
   {
     "name": "SuperHot",
     "url": "https://games.crazygames.com/en_US/super-hot/index.html?v=1.309",
     "image": "superhot.jpg"
   },
-
+  {
+    "name": "Tactical Assasin 2",
+    "file": "/games/tacticalassasin2",
+    "image": "tactical.png"
+  },
+  {
+    "name": "Tanuki Sunset",
+    "file": "/games/tanuki-sunset",
+    "image": "tanuki.jpg"
+  },
+  {
+    "name": "Throw Rocks",
+    "file": "/games/throwrocks",
+    "image": "throw.png"
+  },
+  {
+    "name": "Tiny Fishing",
+    "file": "/games/tiny-fishing",
+    "image": "tiny.jpg"
+  },
+  {
+    "name": "Townscaper",
+    "file": "/games/townscaper",
+    "image": "town.jpg"
+  },
+  {
+    "name": "Tube Jumpers",
+    "file": "/games/tube-jumpers",
+    "image": "tube.jpg"
+  },
+  {
+    "name": "Tunnel Rush",
+    "file": "/games/tunnel-rush",
+    "image": "tunnel.jpg"
+  },
+  {
+    "name": "Two Player Tag",
+    "url": "https://games.construct.net/39/5545/embed.html?uid=0&o=1",
+    "image": "tpt.avif"
+  },
+  {
+    "name": "Veloce",
+    "file": "/games/veloce",
+    "image": "veloce.jpg"
+  },
   {
     "name": "Venge.io",
     "url": "https://venge.io/",
     "image": "venge.webp"
   },
   {
+    "name": "Vex 3",
+    "file": "/games/vex3",
+    "image": "v3.avif"
+  },
+  {
     "name": "Vex 4",
     "file": "https://htmlxm.github.io/h9/vex-4/",
     "image": "vex4.jpeg"
+  },
+  {
+    "name": "Vex 5",
+    "file": "/games/vex5",
+    "image": "v5.jpg"
+  },
+  {
+    "name": "Vex 6",
+    "file": "/games/vex6",
+    "image": "v6.webp"
+  },
+  {
+    "name": "Vex 7",
+    "file": "/games/vex7",
+    "image": "v7.jpg"
+  },
+  {
+    "name": "Weavesilk",
+    "file": "/games/weavesilk",
+    "image": "weave.jpg"
+  },
+  {
+    "name": "WebGL Fluid Simulation",
+    "file": "/games/webgl-fluid-simulation",
+    "image": "optic.jpg"
+  },
+  {
+    "name": "Wordle",
+    "file": "/games/wordle",
+    "image": "wordle.jpg"
+  },
+  {
+    "name": "xx142-b2exe",
+    "file": "/games/xx142-b2exe",
+    "image": "xx.jpg"
   }
 ]
