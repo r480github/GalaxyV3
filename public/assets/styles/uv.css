@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 body {
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   margin: 0;
@@ -69,8 +66,8 @@ h1 {
   background: -webkit-linear-gradient(white, #4a4e69);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 100;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
   animation: sliderdown 1s ease-in-out;
   animation-fill-mode: forwards;
   
@@ -127,6 +124,10 @@ li:hover {
   border-right: 0px ;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
+  background-image: url('search-icon.png');
+  background-position: 10px center; 
+  background-repeat: no-repeat;
+  padding-left: 40px; 
 }
 button {
   border-left: 0px ;
