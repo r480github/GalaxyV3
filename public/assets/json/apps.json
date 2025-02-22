@@ -1,35 +1,13 @@
 [
   {
+    "name": "Amazon",
+    "url": "https://amazon.com/",
+    "image": "amazon.jpg"
+  },
+  {
     "name": "AniCrush",
     "url": "https://anicrush.to/",
     "image": "anicrush.png"
-  },
-
-  {
-    "name": "Crazy Games",
-    "url": "https://crazygames.com",
-    "image": "crazygames.avif"
-  },
-  {
-    "name": "Discord",
-    "url": "https://discord.com/app",
-    "image": "Discord.webp"
-  },
-
-  {
-    "name": "Github",
-    "url": "https://github.com",
-    "image": "GitHub.webp"
-  },
-  {
-    "name": "GeForce Now",
-    "url": "https://play.geforcenow.com/mall/#/loginwall",
-    "image": "Geforce.webp"
-  },
-  {
-    "name": "Poki",
-    "url": "https://poki.com/",
-    "image": "poki.webp"
   },
   {
     "name": "AutoEmbed",
@@ -37,15 +15,79 @@
     "image": "404.png"
   },
   {
+    "name": "Chess",
+    "url": "https://chess.com",
+    "image": "chess.png"
+  },
+  {
+    "name": "Cool Math Games",
+    "url": "https://coolmathgames.com",
+    "image": "math.jpeg"
+  },
+  {
+    "name": "Crazy Games",
+    "url": "https://crazygames.com",
+    "image": "crazygames.jpg"
+  },
+  {
+    "name": "Discord",
+    "url": "https://discord.com/app",
+    "image": "Discord.webp"
+  },
+  {
+    "name": "GeForce Now",
+    "url": "https://play.geforcenow.com/mall/#/loginwall",
+    "image": "Geforce.webp"
+  },
+  {
+    "name": "Github",
+    "url": "https://github.com",
+    "image": "GitHub.webp"
+  },
+  {
+    "name": "Luna Amazon",
+    "url": "https://luna.amazon.com/",
+    "image": "luna.jpg"
+  },
+  {
     "name": "NovaFork",
     "url": "https://novafork.com/",
     "image": "novafork.jpg"
   },
-
+  {
+    "name": "Paramount Plus",
+    "url": "https://www.paramountplus.com",
+    "image": "paramount.png"
+  },
+  {
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com/",
+    "image": "pinterest.jpg"
+  },
+  {
+    "name": "Pixlr",
+    "url": "https://pixlr.com/",
+    "image": "pixlr.webp"
+  },
+  {
+    "name": "Poki",
+    "url": "https://poki.com/",
+    "image": "poki.webp"
+  },
   {
     "name": "TikTok",
     "url": "https://TikTok.com",
     "image": "TikTok.webp"
+  },
+  {
+    "name": "VS Code",
+    "url": "https://vscode.dev/",
+    "image": "vs.webp"
+  },
+  {
+    "name": "X (Twitter)",
+    "url": "https://x.com",
+    "image": "x.webp"
   },
   {
     "name": "Y8 Games",
