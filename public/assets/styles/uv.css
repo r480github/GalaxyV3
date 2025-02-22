@@ -185,17 +185,17 @@ button {
   transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
   padding: 0px 10px 0px 10px;
   border-radius: 5px;
-
 }
 ion-icon {
   font-size: 30px;
   color: #c4c8e6;
   margin: 0px;
+  transition-duration: 0.3s;
+}
+ion-icon:hover {
+  color: #9295aa;
 }
 
-a:hover {
-  color: #f2e9e4;
-}
 #frame {
   z-index: 1000000;
   position: absolute;

@@ -4,7 +4,6 @@
     "url": "https://1v1.lol",
     "image": "1v1.jpg"
   },
-
   {
     "name": "78 Hour Rain",
     "url": "https://html-classic.itch.zone/html/2937814/78HourRain_Webv1/index.html",
@@ -44,7 +43,7 @@
   },
   {
     "name": "Drift Hunters",
-    "url": "https://games.crazygames.com/en_US/drift-hunters/index.html?aaConfigcatTest=false&abconfigcatabhra=false&v=1.320",
+    "url": "https://htmlxm.github.io/h/drift-hunters/",
     "image": "drift.jpg"
   },
 
@@ -109,7 +108,7 @@
   },
   {
     "name": "Slope",
-    "url": "https://slopeonline.online/game/slope-3-v2/",
+    "file": "/games/slope",
     "image": "slope.png"
   },
   {
@@ -142,7 +141,7 @@
   },
   {
     "name": "Vex 4",
-    "url": "https://htmlxm.github.io/h9/vex-4/",
+    "file": "https://htmlxm.github.io/h9/vex-4/",
     "image": "vex4.jpeg"
   }
 ]

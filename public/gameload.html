@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://ssl.gstatic.com/classroom/favicon.png"
+    />
+    <link rel="stylesheet" href="assets/styles/gameload.css" />
+    <link rel="stylesheet" href="assets/styles/particle.css" />
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/games.js"></script>
+    <script src="/uv/uv.bundle.js?v=10-02-2024"></script>
+    <script src="/uv/uv.config.js?v=10-02-2024"></script>
+    <script src="sw.js?v=10-02-2024"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="assets/js/setting.js"></script>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="left">
+        <a class="navbtn" class="searchbtn" onclick="back()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          <a class="navbtn" class="searchbtn" onclick="forward()">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+          <a class="navbtn" class="searchbtn" onclick="reload()">
+            <ion-icon name="refresh-outline"></ion-icon>
+          </a>
+        </a>
+      </div>
+      <div class="center">
+        <form id="form" class="searchform">
+          <input id="input" class="searchbar" placeholder="search bar" />
+        </form>
+      </div>
+      <div class="right">
+        <a class="navbtn" class="searchbtn" onclick="fullscreen()">
+          <ion-icon name="expand-outline"></ion-icon>
+        </a>
+        <a
+          class="navbtn"
+          class="searchbtn"
+          onclick="window.location.href='index.html';"
+        >
+          <ion-icon name="close-outline"></ion-icon>
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="hide" class="loadingthing">
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+      </div>
+    </div>
+    <div class="loading">
+      <h1 id="loading">LOADING</h1>
+      <p id="loadingMessage">
+        Some sites/games may take a while to load. Hang Tight!
+      </p>
+    </div>
+    <iframe src="" frameborder="0" id="game"></iframe>
+    <script>
+      var savedURL = localStorage.getItem("gameload");
+      if (savedURL) {
+        var iframe = document.getElementById("game");
+        iframe.src = savedURL;
+      }
+    </script>
+    <script>  
+    
+      function reload() {
+        const frame = document.getElementById("game");
+        frame.contentWindow.location.reload();
+      }
+
+      function back() {
+        const frame = document.getElementById("game");
+        frame.contentWindow.history.back();
+      }
+
+      function forward() {
+        const frame = document.getElementById("game");
+        frame.contentWindow.history.forward();
+      }
+      function fullscreen() {
+        var iframe = document.getElementById("game");
+        if (iframe.requestFullscreen) {
+          iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) {
+          // Firefox
+          iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) {
+          // Chrome, Safari and Opera
+          iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) {
+          // IE/Edge
+          iframe.msRequestFullscreen();
+        }
+      }
+    </script>
+    <canvas id="canvas"></canvas>
+    <script src="assets/js/starback.js"></script>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const starback = new Starback(canvas, {
+        width: document.body.clientWidth,
+        height: document.body.clientHeight,
+        type: "dot",
+        quantity: 150,
+        direction: 255,
+        backgroundColor: ["#0d1d31", "#0c0d13"],
+        randomOpacity: true,
+        starSize: [0, 1],
+        showFps: true,
+      });
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const toggleState = localStorage.getItem("toggleState") === "true";
+        if (toggleState) {
+          window.addEventListener("beforeunload", function (e) {
+            e.preventDefault();
+            e.returnValue = "";
+          });
+        }
+      });
+    </script>
+    <script src="/assets/js/main.js"></script>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
