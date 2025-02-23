@@ -35,9 +35,12 @@ async function init() {
 init();
 
 if (form && input) {
+    if (window.location.pathname === '/p.html') {
+        localStorage.setItem('previous', window.location.href);
+        console.log('previous page is ' + window.location.href);
+    }
+    
     form.addEventListener("submit", async (event) => {
-
-
         function isUrl(val = "") {
             if (
                 /^http(s?):\/\//.test(val) ||

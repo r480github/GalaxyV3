@@ -14,22 +14,14 @@ fetch("/assets/json/apps.json")
       `;
 
       gameElement.addEventListener("click", async () => {
+        localStorage.setItem('previous', window.location.href);
+        console.log('previous page is ' + window.location.href);
         var ute = game.url;
         if (localStorage.getItem("proxy") == "uv") {
           ute = __uv$config.prefix + __uv$config.encodeUrl(ute);
           localStorage.setItem("url", ute);
           window.location.href = "/search.html";
         } 
-
-        async function rhEncode() {
-          ute = await RammerheadEncode(ute);
-          window.location.href = "/" + ute;
-        }
-        async function sjEncode() {
-          url = "/scram/service/" + encodeURIComponent(ute);
-          localStorage.setItem("url", ute);
-          window.location.href = "/search.html";
-        }
       });
 
       appsContainer.appendChild(gameElement);

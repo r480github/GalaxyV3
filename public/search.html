@@ -46,11 +46,7 @@
         <a class="navbtn" class="searchbtn" onclick="fullscreen()">
           <ion-icon name="expand-outline"></ion-icon>
         </a>
-        <a
-          class="navbtn"
-          class="searchbtn"
-          onclick="window.location.href='index.html';"
-        >
+        <a class="navbtn" class="searchbtn" onclick="exit()">
           <ion-icon name="close-outline"></ion-icon>
         </a>
       </div>
@@ -72,35 +68,38 @@
     <iframe src="" frameborder="0" id="frame"></iframe>
     <script>
       document.getElementById("frame").src = localStorage.getItem("url");
-
+      const frame = document.getElementById("frame");
+      var proxiframe = document.getElementById("frame");
       function reload() {
-        const frame = document.getElementById("frame");
         frame.contentWindow.location.reload();
+        location.reload();
+
       }
 
       function back() {
-        const frame = document.getElementById("frame");
         frame.contentWindow.history.back();
       }
 
       function forward() {
-        const frame = document.getElementById("frame");
         frame.contentWindow.history.forward();
       }
       function fullscreen() {
-        var iframe = document.getElementById("frame");
-        if (iframe.requestFullscreen) {
-          iframe.requestFullscreen();
-        } else if (iframe.mozRequestFullScreen) {
+        if (proxiframe.requestFullscreen) {
+          proxiframe.requestFullscreen();
+        } else if (proxiframe.mozRequestFullScreen) {
           // Firefox
-          iframe.mozRequestFullScreen();
-        } else if (iframe.webkitRequestFullscreen) {
+          proxiframe.mozRequestFullScreen();
+        } else if (proxiframe.webkitRequestFullscreen) {
           // Chrome, Safari and Opera
-          iframe.webkitRequestFullscreen();
-        } else if (iframe.msRequestFullscreen) {
+          proxiframe.webkitRequestFullscreen();
+        } else if (proxiframe.msRequestFullscreen) {
           // IE/Edge
-          iframe.msRequestFullscreen();
+          proxiframe.msRequestFullscreen();
         }
+      }
+      function exit() {
+        var link = localStorage.getItem("previous");
+        window.location.href=link;
       }
     </script>
     <canvas id="canvas"></canvas>

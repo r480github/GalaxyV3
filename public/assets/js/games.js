@@ -14,6 +14,8 @@ fetch("/assets/json/games.json")
       `;
 
       gameElement.addEventListener("click", async () => {
+        localStorage.setItem('previous', window.location.href);
+        console.log('previous page is ' + window.location.href);
         if (game.url) {
           var ute = game.url;
           if (localStorage.getItem("proxy") == "uv") {
