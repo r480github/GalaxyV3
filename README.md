@@ -8,7 +8,7 @@ Galaxy is a minimalistic open source proxy that is capable of evading internet c
 
 ## Demo 🏴󠁺󠁡󠁦󠁳󠁿
 
-#### https://whrhs.online
+#### https://galacticsurf.boats/
 
 ## Run Galaxy Locally 🚀
 
