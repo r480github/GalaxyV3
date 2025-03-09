@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 body {
   z-index: -1;
@@ -8,7 +9,7 @@ body {
   justify-content: center;
 }
 h1 {
-  opacity: 0;
+  opacity: 1;
   z-index: 10000000;
   background: -webkit-linear-gradient(white, #4a4e69);
   -webkit-background-clip: text;

@@ -77,7 +77,7 @@ try {
   inIframe = true;
 }
 const educationalSites = ["https://google.com"];
-function ABCloak(redirectToEducationalSite) {
+function ABCloak(redirectToEducationalSite) {f
   try {
     if (!inIframe) {
       const popup = open("about:blank", "_blank");
@@ -104,7 +104,7 @@ function ABCloak(redirectToEducationalSite) {
         style.overflow = "hidden";
         doc.body.style.margin = style.margin = 0;
         style.padding = 0;
-        doc.head.appendChild(link);
+        doc.head.appendChild(link);z
         doc.body.appendChild(iframe);
         doc.URLBeforeCloak = location.href;
 
