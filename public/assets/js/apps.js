@@ -12,7 +12,6 @@ fetch("/assets/json/apps.json")
                         <h3>${game.name}</h3>
 
       `;
-
       gameElement.addEventListener("click", async () => {
         localStorage.setItem('previous', window.location.href);
         console.log('previous page is ' + window.location.href);
