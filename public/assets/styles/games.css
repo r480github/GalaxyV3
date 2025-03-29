@@ -81,6 +81,7 @@ body::-webkit-scrollbar {
 .game {
   opacity: 0;
   animation: appear 0.4s;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
   align-items: center;
   transition: all 0.2s ease-in-out;

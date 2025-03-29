@@ -250,8 +250,8 @@ ion-icon:hover {
 
 .game {
   opacity: 0;
-  animation: appear 1s;
-  animation-delay: 0.3s;
+  animation: appear 0.4s;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
   text-align: center;
   transition: all 0.2s ease-in-out;
